@@ -25,8 +25,10 @@ extension LSMainController {
     //设置子控制器
     func setupControllers() {
         let array = [
-            ["clsName": "LSHomeController", "title" : "首页", "imageName": ""]
-            
+            ["clsName": "LSHomeController", "title" : "首页", "imageName": ""],
+            ["clsName": "LSDiscoverController", "title" : "发现", "imageName": ""],
+            ["clsName": "LSMessageController", "title" : "消息", "imageName": ""],
+            ["clsName": "LSProfileController", "title" : "我的", "imageName": ""]
         ]
         
         var arrayM = [UIViewController]()
