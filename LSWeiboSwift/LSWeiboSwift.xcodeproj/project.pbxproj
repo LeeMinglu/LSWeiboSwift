@@ -16,6 +16,16 @@
 		1AB68AF81EBEF98100E37B78 /* LSMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AF71EBEF98100E37B78 /* LSMessageController.swift */; };
 		1AB68AFA1EBEF99200E37B78 /* LSProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AF91EBEF99200E37B78 /* LSProfileController.swift */; };
 		1AB68AFC1EBEFA4F00E37B78 /* LSMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AFB1EBEFA4F00E37B78 /* LSMainController.swift */; };
+		1AB68B111EBF02B600E37B78 /* NSArray+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68B001EBF02B600E37B78 /* NSArray+CZAddition.m */; };
+		1AB68B121EBF02B600E37B78 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68B021EBF02B600E37B78 /* NSAttributedString+CZAdditon.m */; };
+		1AB68B131EBF02B600E37B78 /* NSObject+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68B041EBF02B600E37B78 /* NSObject+CZAddition.m */; };
+		1AB68B141EBF02B600E37B78 /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68B061EBF02B600E37B78 /* UIButton+CZAddition.m */; };
+		1AB68B151EBF02B600E37B78 /* UIColor+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68B081EBF02B600E37B78 /* UIColor+CZAddition.m */; };
+		1AB68B161EBF02B600E37B78 /* UILabel+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68B0A1EBF02B600E37B78 /* UILabel+CZAddition.m */; };
+		1AB68B171EBF02B600E37B78 /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68B0C1EBF02B600E37B78 /* UIScreen+CZAddition.m */; };
+		1AB68B181EBF02B600E37B78 /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68B0E1EBF02B600E37B78 /* UIView+CZAddition.m */; };
+		1AB68B191EBF02B600E37B78 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68B101EBF02B600E37B78 /* UIViewController+CZAddition.m */; };
+		1AB68B201EBF0BE700E37B78 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68B1F1EBF0BE700E37B78 /* Bundle+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +40,27 @@
 		1AB68AF71EBEF98100E37B78 /* LSMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSMessageController.swift; sourceTree = "<group>"; };
 		1AB68AF91EBEF99200E37B78 /* LSProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSProfileController.swift; sourceTree = "<group>"; };
 		1AB68AFB1EBEFA4F00E37B78 /* LSMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSMainController.swift; sourceTree = "<group>"; };
+		1AB68AFE1EBF02B600E37B78 /* CZAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAdditions.h; sourceTree = "<group>"; };
+		1AB68AFF1EBF02B600E37B78 /* NSArray+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CZAddition.h"; sourceTree = "<group>"; };
+		1AB68B001EBF02B600E37B78 /* NSArray+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CZAddition.m"; sourceTree = "<group>"; };
+		1AB68B011EBF02B600E37B78 /* NSAttributedString+CZAdditon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+CZAdditon.h"; sourceTree = "<group>"; };
+		1AB68B021EBF02B600E37B78 /* NSAttributedString+CZAdditon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+CZAdditon.m"; sourceTree = "<group>"; };
+		1AB68B031EBF02B600E37B78 /* NSObject+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZAddition.h"; sourceTree = "<group>"; };
+		1AB68B041EBF02B600E37B78 /* NSObject+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZAddition.m"; sourceTree = "<group>"; };
+		1AB68B051EBF02B600E37B78 /* UIButton+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CZAddition.h"; sourceTree = "<group>"; };
+		1AB68B061EBF02B600E37B78 /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
+		1AB68B071EBF02B600E37B78 /* UIColor+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CZAddition.h"; sourceTree = "<group>"; };
+		1AB68B081EBF02B600E37B78 /* UIColor+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CZAddition.m"; sourceTree = "<group>"; };
+		1AB68B091EBF02B600E37B78 /* UILabel+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CZAddition.h"; sourceTree = "<group>"; };
+		1AB68B0A1EBF02B600E37B78 /* UILabel+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CZAddition.m"; sourceTree = "<group>"; };
+		1AB68B0B1EBF02B600E37B78 /* UIScreen+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CZAddition.h"; sourceTree = "<group>"; };
+		1AB68B0C1EBF02B600E37B78 /* UIScreen+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CZAddition.m"; sourceTree = "<group>"; };
+		1AB68B0D1EBF02B600E37B78 /* UIView+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CZAddition.h"; sourceTree = "<group>"; };
+		1AB68B0E1EBF02B600E37B78 /* UIView+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
+		1AB68B0F1EBF02B600E37B78 /* UIViewController+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CZAddition.h"; sourceTree = "<group>"; };
+		1AB68B101EBF02B600E37B78 /* UIViewController+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CZAddition.m"; sourceTree = "<group>"; };
+		1AB68B1D1EBF044300E37B78 /* Weibo+Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Weibo+Bridge.h"; sourceTree = "<group>"; };
+		1AB68B1F1EBF0BE700E37B78 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +95,7 @@
 			children = (
 				1AB68AE31EBEF7C400E37B78 /* Classes */,
 				1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */,
+				1AB68B1D1EBF044300E37B78 /* Weibo+Bridge.h */,
 				1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */,
 				1A4DD4FE1EBEC8BA001F97BD /* Info.plist */,
 			);
@@ -91,6 +123,8 @@
 		1AB68AE51EBEF7C400E37B78 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				1AB68B1E1EBF0B9B00E37B78 /* LSExtension */,
+				1AB68AFD1EBF02B600E37B78 /* LSAddtions */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -154,6 +188,40 @@
 				1AB68AF91EBEF99200E37B78 /* LSProfileController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		1AB68AFD1EBF02B600E37B78 /* LSAddtions */ = {
+			isa = PBXGroup;
+			children = (
+				1AB68AFE1EBF02B600E37B78 /* CZAdditions.h */,
+				1AB68AFF1EBF02B600E37B78 /* NSArray+CZAddition.h */,
+				1AB68B001EBF02B600E37B78 /* NSArray+CZAddition.m */,
+				1AB68B011EBF02B600E37B78 /* NSAttributedString+CZAdditon.h */,
+				1AB68B021EBF02B600E37B78 /* NSAttributedString+CZAdditon.m */,
+				1AB68B031EBF02B600E37B78 /* NSObject+CZAddition.h */,
+				1AB68B041EBF02B600E37B78 /* NSObject+CZAddition.m */,
+				1AB68B051EBF02B600E37B78 /* UIButton+CZAddition.h */,
+				1AB68B061EBF02B600E37B78 /* UIButton+CZAddition.m */,
+				1AB68B071EBF02B600E37B78 /* UIColor+CZAddition.h */,
+				1AB68B081EBF02B600E37B78 /* UIColor+CZAddition.m */,
+				1AB68B091EBF02B600E37B78 /* UILabel+CZAddition.h */,
+				1AB68B0A1EBF02B600E37B78 /* UILabel+CZAddition.m */,
+				1AB68B0B1EBF02B600E37B78 /* UIScreen+CZAddition.h */,
+				1AB68B0C1EBF02B600E37B78 /* UIScreen+CZAddition.m */,
+				1AB68B0D1EBF02B600E37B78 /* UIView+CZAddition.h */,
+				1AB68B0E1EBF02B600E37B78 /* UIView+CZAddition.m */,
+				1AB68B0F1EBF02B600E37B78 /* UIViewController+CZAddition.h */,
+				1AB68B101EBF02B600E37B78 /* UIViewController+CZAddition.m */,
+			);
+			path = LSAddtions;
+			sourceTree = "<group>";
+		};
+		1AB68B1E1EBF0B9B00E37B78 /* LSExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1AB68B1F1EBF0BE700E37B78 /* Bundle+Extension.swift */,
+			);
+			path = LSExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,13 +296,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB68B111EBF02B600E37B78 /* NSArray+CZAddition.m in Sources */,
+				1AB68B201EBF0BE700E37B78 /* Bundle+Extension.swift in Sources */,
 				1AB68AFA1EBEF99200E37B78 /* LSProfileController.swift in Sources */,
+				1AB68B121EBF02B600E37B78 /* NSAttributedString+CZAdditon.m in Sources */,
+				1AB68B161EBF02B600E37B78 /* UILabel+CZAddition.m in Sources */,
 				1AB68AFC1EBEFA4F00E37B78 /* LSMainController.swift in Sources */,
 				1A4DD4F31EBEC8BA001F97BD /* AppDelegate.swift in Sources */,
 				1AB68AF61EBEF97100E37B78 /* LSDiscoverController.swift in Sources */,
 				1AB68AF01EBEF8EE00E37B78 /* LSNavigationController.swift in Sources */,
 				1AB68AF81EBEF98100E37B78 /* LSMessageController.swift in Sources */,
 				1AB68AF21EBEF90700E37B78 /* LSBaseController.swift in Sources */,
+				1AB68B191EBF02B600E37B78 /* UIViewController+CZAddition.m in Sources */,
+				1AB68B171EBF02B600E37B78 /* UIScreen+CZAddition.m in Sources */,
+				1AB68B181EBF02B600E37B78 /* UIView+CZAddition.m in Sources */,
+				1AB68B131EBF02B600E37B78 /* NSObject+CZAddition.m in Sources */,
+				1AB68B141EBF02B600E37B78 /* UIButton+CZAddition.m in Sources */,
+				1AB68B151EBF02B600E37B78 /* UIColor+CZAddition.m in Sources */,
 				1AB68AF41EBEF94F00E37B78 /* LSHomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +426,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SocererGroup.LSWeiboSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LSWeiboSwift/Weibo+Bridge.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -364,6 +443,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SocererGroup.LSWeiboSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LSWeiboSwift/Weibo+Bridge.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

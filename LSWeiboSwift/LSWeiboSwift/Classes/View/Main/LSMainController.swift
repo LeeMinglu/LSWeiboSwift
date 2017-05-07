@@ -15,22 +15,50 @@ class LSMainController: UITabBarController {
 
         self.view.backgroundColor = UIColor.red
         // Do any additional setup after loading the view.
+        
+        setupControllers()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+ //extension切分代码块，可以将相似功能 的代码放在一下，便于代码维护
+extension LSMainController {
+    
+    //设置子控制器
+    func setupControllers() {
+        let array = [
+            ["clsName": "LSHomeController", "title" : "首页", "imageName": ""]
+            
+        ]
+        
+        var arrayM = [UIViewController]()
+        
+        for dict in array {
+            arrayM.append(controller(dict: dict))
+        }
+        
+        viewControllers = arrayM
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //使用字典创建控制器
+    private func controller(dict: [String: String]) -> UIViewController {
+        
+        guard let clsName = dict["clsName"],
+            let title = dict["title"],
+            let imageName = dict["imageName"],
+            let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? UIViewController.Type else {
+                
+            return UIViewController()
+        }
+        
+        let vc = cls.init()
+        
+        vc.title = title
+        
+        let nav = LSNavigationController(rootViewController: vc)
+        
+        return nav
+    
     }
-    */
-
+    
 }
+
