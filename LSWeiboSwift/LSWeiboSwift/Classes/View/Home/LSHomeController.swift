@@ -12,7 +12,7 @@ class LSHomeController: LSBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.cz_random()
+        
         // Do any additional setup after loading the view.
     }
 

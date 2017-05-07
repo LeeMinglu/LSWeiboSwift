@@ -25,10 +25,10 @@ extension LSMainController {
     //设置子控制器
     func setupControllers() {
         let array = [
-            ["clsName": "LSHomeController", "title" : "首页", "imageName": ""],
-            ["clsName": "LSDiscoverController", "title" : "发现", "imageName": ""],
-            ["clsName": "LSMessageController", "title" : "消息", "imageName": ""],
-            ["clsName": "LSProfileController", "title" : "我的", "imageName": ""]
+            ["clsName": "LSHomeController", "title" : "首页", "imageName": "home"],
+            ["clsName": "LSDiscoverController", "title" : "发现", "imageName": "discover"],
+            ["clsName": "LSMessageController", "title" : "消息", "imageName": "message_center"],
+            ["clsName": "LSProfileController", "title" : "我", "imageName": "profile"]
         ]
         
         var arrayM = [UIViewController]()
@@ -55,6 +55,10 @@ extension LSMainController {
         let vc = cls.init()
         
         vc.title = title
+        vc.tabBarItem.image = UIImage(named: "tabbar_" + imageName)
+        vc.tabBarItem.selectedImage = UIImage(named: "tabbar_" + imageName + "_highlighted")?.withRenderingMode(.alwaysOriginal)
+
+        
         
         let nav = LSNavigationController(rootViewController: vc)
         
