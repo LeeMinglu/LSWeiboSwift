@@ -9,15 +9,27 @@
 /* Begin PBXBuildFile section */
 		1A4DD4F31EBEC8BA001F97BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */; };
 		1A4DD4FA1EBEC8BA001F97BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */; };
-		1A4DD4FD1EBEC8BA001F97BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4DD4FB1EBEC8BA001F97BD /* LaunchScreen.storyboard */; };
+		1AB68AF01EBEF8EE00E37B78 /* LSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AEF1EBEF8EE00E37B78 /* LSNavigationController.swift */; };
+		1AB68AF21EBEF90700E37B78 /* LSBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AF11EBEF90700E37B78 /* LSBaseController.swift */; };
+		1AB68AF41EBEF94F00E37B78 /* LSHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AF31EBEF94F00E37B78 /* LSHomeController.swift */; };
+		1AB68AF61EBEF97100E37B78 /* LSDiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AF51EBEF97100E37B78 /* LSDiscoverController.swift */; };
+		1AB68AF81EBEF98100E37B78 /* LSMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AF71EBEF98100E37B78 /* LSMessageController.swift */; };
+		1AB68AFA1EBEF99200E37B78 /* LSProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AF91EBEF99200E37B78 /* LSProfileController.swift */; };
+		1AB68AFC1EBEFA4F00E37B78 /* LSMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AFB1EBEFA4F00E37B78 /* LSMainController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A4DD4EF1EBEC8BA001F97BD /* LSWeiboSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSWeiboSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1A4DD4FC1EBEC8BA001F97BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A4DD4FE1EBEC8BA001F97BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AB68AEF1EBEF8EE00E37B78 /* LSNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSNavigationController.swift; sourceTree = "<group>"; };
+		1AB68AF11EBEF90700E37B78 /* LSBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSBaseController.swift; sourceTree = "<group>"; };
+		1AB68AF31EBEF94F00E37B78 /* LSHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSHomeController.swift; sourceTree = "<group>"; };
+		1AB68AF51EBEF97100E37B78 /* LSDiscoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSDiscoverController.swift; sourceTree = "<group>"; };
+		1AB68AF71EBEF98100E37B78 /* LSMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSMessageController.swift; sourceTree = "<group>"; };
+		1AB68AF91EBEF99200E37B78 /* LSProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSProfileController.swift; sourceTree = "<group>"; };
+		1AB68AFB1EBEFA4F00E37B78 /* LSMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSMainController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +62,98 @@
 		1A4DD4F11EBEC8BA001F97BD /* LSWeiboSwift */ = {
 			isa = PBXGroup;
 			children = (
+				1AB68AE31EBEF7C400E37B78 /* Classes */,
 				1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */,
 				1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */,
-				1A4DD4FB1EBEC8BA001F97BD /* LaunchScreen.storyboard */,
 				1A4DD4FE1EBEC8BA001F97BD /* Info.plist */,
 			);
 			path = LSWeiboSwift;
+			sourceTree = "<group>";
+		};
+		1AB68AE31EBEF7C400E37B78 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1AB68AE61EBEF7C400E37B78 /* View */,
+				1AB68AE71EBEF7C400E37B78 /* ViewModel */,
+				1AB68AE41EBEF7C400E37B78 /* Model */,
+				1AB68AE51EBEF7C400E37B78 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1AB68AE41EBEF7C400E37B78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1AB68AE51EBEF7C400E37B78 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		1AB68AE61EBEF7C400E37B78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1AB68AEA1EBEF86500E37B78 /* Main */,
+				1AB68AE91EBEF86500E37B78 /* Home */,
+				1AB68AE81EBEF86500E37B78 /* Discover */,
+				1AB68AEB1EBEF86500E37B78 /* Message */,
+				1AB68AEC1EBEF86500E37B78 /* Profile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1AB68AE71EBEF7C400E37B78 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1AB68AE81EBEF86500E37B78 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				1AB68AF51EBEF97100E37B78 /* LSDiscoverController.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		1AB68AE91EBEF86500E37B78 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1AB68AF31EBEF94F00E37B78 /* LSHomeController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1AB68AEA1EBEF86500E37B78 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1AB68AFB1EBEFA4F00E37B78 /* LSMainController.swift */,
+				1AB68AEF1EBEF8EE00E37B78 /* LSNavigationController.swift */,
+				1AB68AF11EBEF90700E37B78 /* LSBaseController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1AB68AEB1EBEF86500E37B78 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				1AB68AF71EBEF98100E37B78 /* LSMessageController.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		1AB68AEC1EBEF86500E37B78 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1AB68AF91EBEF99200E37B78 /* LSProfileController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +182,7 @@
 		1A4DD4E71EBEC8BA001F97BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LS;
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = SocererGroup;
@@ -118,7 +217,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A4DD4FD1EBEC8BA001F97BD /* LaunchScreen.storyboard in Resources */,
 				1A4DD4FA1EBEC8BA001F97BD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,22 +228,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB68AFA1EBEF99200E37B78 /* LSProfileController.swift in Sources */,
+				1AB68AFC1EBEFA4F00E37B78 /* LSMainController.swift in Sources */,
 				1A4DD4F31EBEC8BA001F97BD /* AppDelegate.swift in Sources */,
+				1AB68AF61EBEF97100E37B78 /* LSDiscoverController.swift in Sources */,
+				1AB68AF01EBEF8EE00E37B78 /* LSNavigationController.swift in Sources */,
+				1AB68AF81EBEF98100E37B78 /* LSMessageController.swift in Sources */,
+				1AB68AF21EBEF90700E37B78 /* LSBaseController.swift in Sources */,
+				1AB68AF41EBEF94F00E37B78 /* LSHomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1A4DD4FB1EBEC8BA001F97BD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A4DD4FC1EBEC8BA001F97BD /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1A4DD4FF1EBEC8BA001F97BD /* Debug */ = {
