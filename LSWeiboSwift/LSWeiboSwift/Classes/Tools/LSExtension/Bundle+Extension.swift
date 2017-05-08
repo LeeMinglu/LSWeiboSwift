@@ -1,15 +1,19 @@
 //
 //  Bundle+Extension.swift
-//  reFlect
+//  WeiBo
 //
-//  Created by 李明禄 on 2017/5/6.
-//  Copyright © 2017年 SocererGroup. All rights reserved.
+//  Created by yao wei on 16/9/9.
+//  Copyright © 2016年 yao wei. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension Bundle {
-    var namespace: String {
-        return Bundle.main.infoDictionary?["CFBundleName"] as? String ?? ""
+
+    //计算性属性 类似于函数 没有参数 有返回值
+    var nameSpace : String {
+    
+        return infoDictionary?["CFBundleName"] as? String ?? ""
     }
+    
 }

@@ -17,16 +17,36 @@ class LSMainController: UITabBarController {
         // Do any additional setup after loading the view.
         
         setupControllers()
+        setupComposeButton()
+       
     }
+    
+    lazy var compose: UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
+
+
 }
  //extension切分代码块，可以将相似功能 的代码放在一下，便于代码维护
 extension LSMainController {
+    
+    //设置加号按钮
+    func setupComposeButton() {
+        
+        tabBar.addSubview(compose)
+        
+        let count = CGFloat(tabBar.subviews.count)
+        
+        let composeBtnWidth = tabBar.bounds.width / count
+        compose.frame = tabBar.bounds.insetBy(dx: composeBtnWidth * 2, dy: 0)
+        
+        
+    }
     
     //设置子控制器
     func setupControllers() {
         let array = [
             ["clsName": "LSHomeController", "title" : "首页", "imageName": "home"],
             ["clsName": "LSDiscoverController", "title" : "发现", "imageName": "discover"],
+            ["clsName": ""],
             ["clsName": "LSMessageController", "title" : "消息", "imageName": "message_center"],
             ["clsName": "LSProfileController", "title" : "我", "imageName": "profile"]
         ]
@@ -47,7 +67,7 @@ extension LSMainController {
         guard let clsName = dict["clsName"],
             let title = dict["title"],
             let imageName = dict["imageName"],
-            let cls = NSClassFromString(Bundle.main.namespace + "." + clsName) as? UIViewController.Type else {
+            let cls = NSClassFromString(Bundle.main.nameSpace + "." + clsName) as? UIViewController.Type else {
                 
             return UIViewController()
         }
