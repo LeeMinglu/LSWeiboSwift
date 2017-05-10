@@ -325,6 +325,7 @@
 		1AB690181EC121C300E37B78 /* UIViewController+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB690081EC121C300E37B78 /* UIViewController+CZAddition.m */; };
 		1AB6901A1EC1220200E37B78 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB690191EC1220200E37B78 /* UIImage+Extensions.swift */; };
 		1AB690201EC12E4D00E37B78 /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6901F1EC12E4D00E37B78 /* UIButton+CZAddition.m */; };
+		1AB690231EC3576D00E37B78 /* LSDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB690221EC3576D00E37B78 /* LSDemoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -666,6 +667,7 @@
 		1AB690191EC1220200E37B78 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		1AB6901E1EC12E4D00E37B78 /* UIButton+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CZAddition.h"; sourceTree = "<group>"; };
 		1AB6901F1EC12E4D00E37B78 /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
+		1AB690221EC3576D00E37B78 /* LSDemoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSDemoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -739,6 +741,7 @@
 		1AB68AE61EBEF7C400E37B78 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1AB690211EC356ED00E37B78 /* testUI */,
 				1AB68AEA1EBEF86500E37B78 /* Main */,
 				1AB68AE91EBEF86500E37B78 /* Home */,
 				1AB68AE81EBEF86500E37B78 /* Discover */,
@@ -1247,6 +1250,14 @@
 			path = Additions;
 			sourceTree = "<group>";
 		};
+		1AB690211EC356ED00E37B78 /* testUI */ = {
+			isa = PBXGroup;
+			children = (
+				1AB690221EC3576D00E37B78 /* LSDemoController.swift */,
+			);
+			path = testUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1635,6 +1646,7 @@
 				1AB6900B1EC121C300E37B78 /* NSAttributedString+CZAdditon.m in Sources */,
 				1AB6900E1EC121C300E37B78 /* NSString+CZBase64.m in Sources */,
 				1AB690161EC121C300E37B78 /* UIView+CZAddition.m in Sources */,
+				1AB690231EC3576D00E37B78 /* LSDemoController.swift in Sources */,
 				1AB6901A1EC1220200E37B78 /* UIImage+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

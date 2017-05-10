@@ -41,13 +41,14 @@ extension LSMainController {
         
         let count = CGFloat(tabBar.subviews.count)
         
-        let composeBtnWidth = tabBar.bounds.width / count
+        let composeBtnWidth = tabBar.bounds.width / (count - 1)
         compose.frame = tabBar.bounds.insetBy(dx: composeBtnWidth * 2, dy: 0)
         
         compose.addTarget(self, action: #selector(composeStatus), for: .touchUpInside)
     }
     
     //设置子控制器
+    
     fileprivate  func setupControllers() {
         let array = [
             ["clsName": "LSHomeController", "title" : "首页", "imageName": "home"],
