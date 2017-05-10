@@ -21,7 +21,13 @@ class LSMainController: UITabBarController {
        
     }
     
+      @objc fileprivate  func composeStatus() {
+        print("编写按钮")
+    }
+    
     lazy var compose: UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
+    
+    
 
 
 }
@@ -29,7 +35,7 @@ class LSMainController: UITabBarController {
 extension LSMainController {
     
     //设置加号按钮
-    func setupComposeButton() {
+    fileprivate func setupComposeButton() {
         
         tabBar.addSubview(compose)
         
@@ -38,11 +44,11 @@ extension LSMainController {
         let composeBtnWidth = tabBar.bounds.width / count
         compose.frame = tabBar.bounds.insetBy(dx: composeBtnWidth * 2, dy: 0)
         
-        
+        compose.addTarget(self, action: #selector(composeStatus), for: .touchUpInside)
     }
     
     //设置子控制器
-    func setupControllers() {
+    fileprivate  func setupControllers() {
         let array = [
             ["clsName": "LSHomeController", "title" : "首页", "imageName": "home"],
             ["clsName": "LSDiscoverController", "title" : "发现", "imageName": "discover"],
