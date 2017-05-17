@@ -28,6 +28,11 @@ extension LSHomeController {
     override func setupUI() {
         super.setupUI()
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "好友", style: .plain, target: self, action: #selector(friendVC))
+        navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "好友",  normalColor: .blue, highlightedColor: .orange, target: self, action: #selector(friendVC), controlEvents: .touchUpInside)
+//        let nextBtn = UIButton.cz_textButton("好友", fontSize: 14, normalColor: UIColor.blue, highlightedColor: UIColor.orange)
+       
+//        nextBtn?.addTarget(self, action: #selector(friendVC), for: .touchUpInside)
+//        navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: nextBtn!)
+//        navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "好友", style: .plain, target: self, action: #selector(friendVC))
     }
 }

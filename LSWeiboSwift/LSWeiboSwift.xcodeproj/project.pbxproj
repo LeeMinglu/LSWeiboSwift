@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A4DD4F31EBEC8BA001F97BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */; };
 		1A4DD4FA1EBEC8BA001F97BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */; };
+		1A5563EF1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5563EE1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift */; };
 		1AB68AF01EBEF8EE00E37B78 /* LSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AEF1EBEF8EE00E37B78 /* LSNavigationController.swift */; };
 		1AB68AF21EBEF90700E37B78 /* LSBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AF11EBEF90700E37B78 /* LSBaseController.swift */; };
 		1AB68AF41EBEF94F00E37B78 /* LSHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AF31EBEF94F00E37B78 /* LSHomeController.swift */; };
@@ -333,6 +334,7 @@
 		1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A4DD4FE1EBEC8BA001F97BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A5563EE1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		1AB68AEF1EBEF8EE00E37B78 /* LSNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSNavigationController.swift; sourceTree = "<group>"; };
 		1AB68AF11EBEF90700E37B78 /* LSBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSBaseController.swift; sourceTree = "<group>"; };
 		1AB68AF31EBEF94F00E37B78 /* LSHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSHomeController.swift; sourceTree = "<group>"; };
@@ -1206,6 +1208,7 @@
 				1AB68FDD1EBF570B00E37B78 /* Bundle+Extension.swift */,
 				1AB68FDE1EBF570B00E37B78 /* String+Extension.swift */,
 				1AB690191EC1220200E37B78 /* UIImage+Extensions.swift */,
+				1A5563EE1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift */,
 			);
 			path = LSExtension;
 			sourceTree = "<group>";
@@ -1630,6 +1633,7 @@
 				1AB690121EC121C300E37B78 /* UIColor+CZAddition.m in Sources */,
 				1AB68AFC1EBEFA4F00E37B78 /* LSMainController.swift in Sources */,
 				1AB690101EC121C300E37B78 /* NSString+CZPath.m in Sources */,
+				1A5563EF1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift in Sources */,
 				1A4DD4F31EBEC8BA001F97BD /* AppDelegate.swift in Sources */,
 				1AB690181EC121C300E37B78 /* UIViewController+CZAddition.m in Sources */,
 				1AB6900F1EC121C300E37B78 /* NSString+CZHash.m in Sources */,
