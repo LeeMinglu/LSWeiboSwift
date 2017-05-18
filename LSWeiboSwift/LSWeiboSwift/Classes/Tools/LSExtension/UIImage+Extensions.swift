@@ -16,7 +16,7 @@ extension UIImage {
     /// - parameter backColor: 背景颜色
     ///
     /// - returns: 裁切后的图像
-    func yw_avatarImage(size: CGSize?, backColor: UIColor = UIColor.white, lineColor: UIColor = UIColor.lightGray) -> UIImage? {
+    func avatarImage(size: CGSize?, backColor: UIColor = UIColor.white, lineColor: UIColor = UIColor.lightGray) -> UIImage? {
         
         var size = size
         if size == nil || size?.width == 0 {
@@ -52,7 +52,7 @@ extension UIImage {
     /// - parameter backColor: 背景颜色
     ///
     /// - returns: 图像
-    func yw_image(size: CGSize? = nil, backColor: UIColor = UIColor.white) -> UIImage? {
+    func image(size: CGSize? = nil, backColor: UIColor = UIColor.white) -> UIImage? {
         
         var size = size
         if size == nil {
