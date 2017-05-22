@@ -11,7 +11,7 @@ import UIKit
 class LSBaseController: UIViewController {
 
     let navBar = UINavigationBar(frame: CGRect.init(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 64))
-    lazy var navbarItem = UINavigationItem()
+    lazy var navItem = UINavigationItem()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class LSBaseController: UIViewController {
     
     override var title: String? {
         didSet {
-           navbarItem.title = title
+           navItem.title = title
         }
     }
 
@@ -30,8 +30,10 @@ class LSBaseController: UIViewController {
 
 extension LSBaseController {
     func setupUI() {
-        self.view.backgroundColor = UIColor.cz_random()
+     //   self.view.backgroundColor = UIColor.cz_random()
         self.view.addSubview(navBar)
-        navBar.items = [navbarItem]
+        navBar.items = [navItem]
+        navBar.barTintColor = UIColor.cz_color(withHex: 0xF6F6F6)
+        
     }
 }
