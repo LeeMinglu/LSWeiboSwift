@@ -24,6 +24,8 @@ class LSDemoController: LSBaseController {
     @objc fileprivate func nextVC() {
         navigationController?.pushViewController(LSDemoController(), animated: true)
     }
+    
+    
 }
 
 extension LSDemoController {
@@ -31,6 +33,8 @@ extension LSDemoController {
         super.setupUI()
         
         navItem.rightBarButtonItem = UIBarButtonItem.init(title: "下一个", normalColor: .blue, highlightedColor: .orange, target: self, action:  #selector(nextVC), controlEvents: .touchUpInside)
+       
+
         
 //        let nextBtn = UIButton.cz_textButton("下一个", fontSize: 14, normalColor: UIColor.blue, highlightedColor: UIColor.orange)
 //        nextBtn?.addTarget(self, action: #selector(nextVC), for: .touchUpInside)

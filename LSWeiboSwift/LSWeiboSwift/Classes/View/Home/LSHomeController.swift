@@ -12,7 +12,7 @@ class LSHomeController: LSBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+//        setupUI()
         // Do any additional setup after loading the view.
     }
     
@@ -36,3 +36,4 @@ extension LSHomeController {
 //        navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "好友", style: .plain, target: self, action: #selector(friendVC))
     }
 }
+

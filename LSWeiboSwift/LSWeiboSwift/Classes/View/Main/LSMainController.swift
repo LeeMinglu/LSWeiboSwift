@@ -9,17 +9,21 @@
 import UIKit
 
 class LSMainController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.red
+        self.view.backgroundColor = UIColor.white
         // Do any additional setup after loading the view.
         
         setupControllers()
         setupComposeButton()
-       
+        
+        
     }
+//    /Users/luoriver/Desktop/swift/git/LSWeiboSwift/LSWeiboSwift/LSWeiboSwift/Classes/View/Main/LSMainController.swift:25:11: Method 'supportedInterfaceOrientations()' with Objective-C selector 'supportedInterfaceOrientations' conflicts with getter for 'supportedInterfaceOrientations' from superclass 'UIViewController' with the same Objective-C selector
+    
+    
     
       @objc fileprivate  func composeStatus() {
         print("编写按钮")
@@ -33,6 +37,8 @@ class LSMainController: UITabBarController {
 }
  //extension切分代码块，可以将相似功能 的代码放在一下，便于代码维护
 extension LSMainController {
+    
+    
     
     //设置加号按钮
     fileprivate func setupComposeButton() {
@@ -84,11 +90,14 @@ extension LSMainController {
         vc.title = title
         vc.tabBarItem.image = UIImage(named: "tabbar_" + imageName)
         vc.tabBarItem.selectedImage = UIImage(named: "tabbar_" + imageName + "_highlighted")?.withRenderingMode(.alwaysOriginal)
+        
 
        //设置字体大小及颜色
         vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName: UIFont.systemFont(ofSize: 15)], for: UIControlState(rawValue: 0))
         
         vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.orange], for: UIControlState.highlighted)
+        
+        
         
         let nav = LSNavigationController(rootViewController: vc)
         

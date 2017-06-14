@@ -17,8 +17,25 @@ class LSNavigationController: UINavigationController {
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if childViewControllers.count > 0 {
             viewController.hidesBottomBarWhenPushed = true
+            
+            if let vc = (viewController as? LSBaseController) {
+                
+                var title = "返回"
+                print(" navigations的控制器为:  + \(childViewControllers)")
+                
+                if childViewControllers.count == 1 {
+                    title = childViewControllers.first?.title ?? "返回"
+                }
+                
+                vc.navItem.leftBarButtonItem = UIBarButtonItem.init(title: title, normalColor: .blue, highlightedColor: .orange, target: self, action:  #selector(backVC), controlEvents: .touchUpInside)
+            }
+            
         }
         
         super.pushViewController(viewController, animated: true)
+    }
+    
+    @objc fileprivate func backVC() {
+        popViewController(animated: true)
     }
 }
