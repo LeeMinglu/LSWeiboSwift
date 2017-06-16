@@ -27,6 +27,8 @@ class LSBaseController: UIViewController {
            navItem.title = title
         }
     }
+    
+    func loaddata() {}
 
 }
 
