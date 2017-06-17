@@ -15,6 +15,8 @@ class LSBaseController: UIViewController {
     
     var tableview: UITableView?
     
+    var refreshControl: UIRefreshControl?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -39,6 +41,7 @@ extension LSBaseController {
         setupNavigationBar()
         setupTableview()
         automaticallyAdjustsScrollViewInsets = false
+        
        
         
     }
@@ -50,6 +53,8 @@ extension LSBaseController {
         tableview?.delegate = self
         tableview?.dataSource = self
         
+        refreshControl = UIRefreshControl()
+        tableview?.addSubview(refreshControl!)
         
         tableview?.contentInset = UIEdgeInsets(top: navBar.bounds.height, left: 0, bottom: tabBarController?.tabBar.bounds.height ?? 49, right: 0)
         
