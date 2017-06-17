@@ -18,6 +18,7 @@ class LSBaseController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        loaddata()
 //        self.view.backgroundColor = UIColor.cz_random()
         // Do any additional setup after loading the view.
     }
@@ -43,9 +44,12 @@ extension LSBaseController {
     }
     
     private func setupTableview() {
-        tableview = UITableView(frame: self.view.bounds, style: .plain)
+        tableview = UITableView(frame: view.bounds, style: .plain)
 //        self.view.addSubview(tableview!)
         self.view.insertSubview(tableview!, belowSubview: navBar)
+        tableview?.delegate = self
+        tableview?.dataSource = self
+        
     }
     
     private func setupNavigationBar() {
@@ -66,6 +70,8 @@ extension LSBaseController {
 
 // MARK: - 代理协议
 extension LSBaseController: UITableViewDelegate, UITableViewDataSource {
+    
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
