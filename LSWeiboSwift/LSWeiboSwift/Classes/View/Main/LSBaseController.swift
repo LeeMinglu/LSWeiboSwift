@@ -38,7 +38,7 @@ extension LSBaseController {
      //   self.view.backgroundColor = UIColor.cz_random()
         setupNavigationBar()
         setupTableview()
-        
+        automaticallyAdjustsScrollViewInsets = false
        
         
     }
@@ -49,6 +49,9 @@ extension LSBaseController {
         self.view.insertSubview(tableview!, belowSubview: navBar)
         tableview?.delegate = self
         tableview?.dataSource = self
+        
+        
+        tableview?.contentInset = UIEdgeInsets(top: navBar.bounds.height, left: 0, bottom: tabBarController?.tabBar.bounds.height ?? 49, right: 0)
         
     }
     

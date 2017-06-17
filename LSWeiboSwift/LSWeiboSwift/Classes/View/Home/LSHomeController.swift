@@ -14,7 +14,7 @@ class LSHomeController: LSBaseController {
 
    fileprivate lazy var weiboData = [String]()
     override func loaddata() {
-        for i in 0..<10 {
+        for i in 0..<20 {
             weiboData.insert(i.description, at: 0)
         }
     }
