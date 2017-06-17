@@ -54,6 +54,7 @@ extension LSBaseController {
         tableview?.dataSource = self
         
         refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(loaddata), for: .valueChanged)
         tableview?.addSubview(refreshControl!)
         
         tableview?.contentInset = UIEdgeInsets(top: navBar.bounds.height, left: 0, bottom: tabBarController?.tabBar.bounds.height ?? 49, right: 0)
