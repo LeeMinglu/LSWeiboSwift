@@ -17,6 +17,9 @@ class LSBaseController: UIViewController {
     
     var refreshControl: UIRefreshControl?
     
+    //
+    var isUpPull: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -88,6 +91,22 @@ extension LSBaseController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
+    }
+     //MARK: 上拉刷新判断条件
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let row = indexPath.row
+//        let section = indexPath.section - 1
+        let section = (tableview?.numberOfSections)! - 1
+        
+        if row < 0 || section < 0 {
+            return
+        }
+        
+        let count = tableview?.numberOfRows(inSection: section)
+        
+        if row == (count! - 1) && !isUpPull {
+            print("上拉刷新")
+        }
     }
     
 }
