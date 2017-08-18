@@ -62,6 +62,8 @@ extension LSBaseController {
         
         tableview?.contentInset = UIEdgeInsets(top: navBar.bounds.height, left: 0, bottom: tabBarController?.tabBar.bounds.height ?? 49, right: 0)
         
+        print(tableview?.bounds)
+        
     }
     
     private func setupNavigationBar() {
@@ -94,19 +96,24 @@ extension LSBaseController: UITableViewDelegate, UITableViewDataSource {
     }
      //MARK: 上拉刷新判断条件
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        //取出当前行
         let row = indexPath.row
-//        let section = indexPath.section - 1
+        //取出最后一组
         let section = (tableview?.numberOfSections)! - 1
         
         if row < 0 || section < 0 {
             return
         }
+        //获取最后一组总的行数
+        let count = tableview!.numberOfRows(inSection: section)
         
-        let count = tableview?.numberOfRows(inSection: section)
-        
-        if row == (count! - 1) && !isUpPull {
+        if row == (count - 1) && !isUpPull {
             print("上拉刷新")
+            isUpPull = true
+            loaddata()
         }
+        
+        
     }
     
 }

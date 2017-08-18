@@ -15,15 +15,22 @@ class LSHomeController: LSBaseController {
    fileprivate lazy var weiboData = [String]()
     override func loaddata() {
         print("开始刷新")
-        DispatchQueue.main.asyncAfter(deadline: .now() + 4) { 
+        DispatchQueue.main.asyncAfter(deadline: .now() ) {
             for i in 0..<5 {
-                self.weiboData.insert(i.description, at: 0)
+                
+                if self.isUpPull {
+                    self.weiboData.append("上拉" + i.description)
+                }else {
+                    self.weiboData.insert(i.description, at: 0)
+                }
             }
             self.refreshControl?.endRefreshing()
             print("结束刷新")
+            self.isUpPull = false
             self.tableview?.reloadData()
         }
         
+
       
     }
   
