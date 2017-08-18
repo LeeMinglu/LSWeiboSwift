@@ -34,7 +34,10 @@ class LSBaseController: UIViewController {
         }
     }
     
-    func loaddata() {}
+    func loaddata() {
+        //如果子类不实现任何功能，默认关闭刷新控件
+        self.refreshControl?.endRefreshing()
+    }
 
 }
 
