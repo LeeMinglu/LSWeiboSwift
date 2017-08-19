@@ -29,6 +29,7 @@ class LSBaseController: UIViewController {
         loaddata()
 //        self.view.backgroundColor = UIColor.cz_random()
         // Do any additional setup after loading the view.
+        
     }
     
     override var title: String? {
