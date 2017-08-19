@@ -17,6 +17,9 @@ class LSBaseController: UIViewController {
     
     var refreshControl: UIRefreshControl?
     
+    //登陆状态
+    let Logon: Bool = false
+    
     //
     var isUpPull: Bool = false
     
@@ -45,10 +48,17 @@ extension LSBaseController {
     func setupUI() {
      //   self.view.backgroundColor = UIColor.cz_random()
         setupNavigationBar()
-        setupTableview()
+        Logon ? setupTableview() : setupVistorView()
         automaticallyAdjustsScrollViewInsets = false
         
        
+        
+    }
+    
+    private func setupVistorView() {
+        let VisitorView = LSVisitorView(frame: self.view.bounds)
+        
+        self.view.insertSubview(VisitorView, belowSubview: navBar)
         
     }
     
@@ -65,7 +75,6 @@ extension LSBaseController {
         
         tableview?.contentInset = UIEdgeInsets(top: navBar.bounds.height, left: 0, bottom: tabBarController?.tabBar.bounds.height ?? 49, right: 0)
         
-        print(tableview?.bounds)
         
     }
     
