@@ -20,6 +20,7 @@ class LSVisitorView: UIView {
             }
             
             if imageName == "" {
+                startAnimate()
                 return
             }
             
@@ -29,6 +30,21 @@ class LSVisitorView: UIView {
             houseView.isHidden = true
             maskIconView.isHidden = true
         }
+    }
+    
+    //MARK: - 旋转动画
+    fileprivate func startAnimate()  {
+        let animate = CABasicAnimation(keyPath: "transform.rotation")
+        
+        animate.toValue = Double.pi
+        animate.duration = 20
+        animate.repeatCount = MAXFLOAT
+        
+        //必须添加在动作之前，否则是不生效的
+        animate.isRemovedOnCompletion = false
+        
+        iconView.layer.add(animate, forKey: nil)
+        
     }
     
 
