@@ -64,6 +64,8 @@ extension LSMainController {
             ["clsName": "LSProfileController", "title" : "我", "imageName": "profile", "visitorInfo":["imageName": "visitordiscover_image_profile","message": "登录后，你的微博、相册、个人资料会显示在这里，展示给别人"]]
         ]
         
+        (array as NSArray).write(toFile: "/Users/luoriver/Desktop/array.plist", atomically: true)
+        
         var arrayM = [UIViewController]()
         
         for dict in array {
