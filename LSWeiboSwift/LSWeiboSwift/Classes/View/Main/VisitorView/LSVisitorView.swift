@@ -47,7 +47,7 @@ class LSVisitorView: UIView {
 
 extension LSVisitorView {
     func setupUI() {
-        self.backgroundColor = UIColor.white
+        self.backgroundColor = UIColor.cz_color(withRed: 237, green: 237, blue: 237)
         
         //1. 添加视图
         addSubview(iconView)
@@ -163,7 +163,6 @@ extension LSVisitorView {
             constant: 100))
         
         //设置登陆按钮
-        //设置注册按钮
         addConstraint(NSLayoutConstraint(
             item: loginBtn,
             attribute: .right,
@@ -195,7 +194,7 @@ extension LSVisitorView {
         //使用VFL布局maskIcon
         
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[maskIconView]-0-|", options: .directionLeadingToTrailing, metrics: nil, views: ["maskIconView": maskIconView]))
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[maskIconView]-(-35)-[regigterBtn]", options: .directionLeadingToTrailing, metrics: nil, views: ["maskIconView": maskIconView, "regigterBtn": regigterBtn]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[maskIconView]-(0)-[regigterBtn]", options: .directionLeadingToTrailing, metrics: nil, views: ["maskIconView": maskIconView, "regigterBtn": regigterBtn]))
         
 
         
