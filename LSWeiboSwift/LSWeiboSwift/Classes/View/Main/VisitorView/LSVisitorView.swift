@@ -20,6 +20,9 @@ class LSVisitorView: UIView {
     }
     //添加image
     fileprivate lazy var iconView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_smallicon"))
+    
+    //添加MaskIconImage
+    fileprivate lazy var maskIconView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_mask_smallicon"))
     //添加小房子
     fileprivate lazy var houseView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_house"))
     //添加label
@@ -48,10 +51,14 @@ extension LSVisitorView {
         
         //1. 添加视图
         addSubview(iconView)
+        addSubview(maskIconView)
         addSubview(houseView)
         addSubview(tipLabel)
         addSubview(regigterBtn)
         addSubview(loginBtn)
+        
+        //添加maskIconImeagView
+        
         
         //sb使用autolayout  代码使用autoresize
         //2. 取消autoresize
@@ -183,6 +190,13 @@ extension LSVisitorView {
             attribute: .notAnAttribute,
             multiplier: 1.0,
             constant: 100))
+        
+        
+        //使用VFL布局maskIcon
+        
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-0-[maskIconView]-0-|", options: .directionLeadingToTrailing, metrics: nil, views: ["maskIconView": maskIconView]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-0-[maskIconView]-(-35)-[regigterBtn]", options: .directionLeadingToTrailing, metrics: nil, views: ["maskIconView": maskIconView, "regigterBtn": regigterBtn]))
+        
 
         
     }
