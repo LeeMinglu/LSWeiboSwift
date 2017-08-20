@@ -56,19 +56,30 @@ extension LSMainController {
     //设置子控制器
     
     fileprivate  func setupControllers() {
-        let array = [
-            ["clsName": "LSHomeController", "title" : "首页", "imageName": "home", "visitorInfo":["imageName": "","message": "关注一些人,回到这里看看有什么惊喜"]],
-            ["clsName": "LSDiscoverController", "title" : "发现", "imageName": "discover", "visitorInfo":["imageName": "visitordiscover_image_message","message": "登录后，最新、最热微博尽在掌握，不再会与实事潮流擦肩而过"]],
-            ["clsName": ""],
-            ["clsName": "LSMessageController", "title" : "消息", "imageName": "message_center", "visitorInfo":["imageName": "visitordiscover_image_message","message": "登录后，别人评论你的微博，发给你的消息，都会在这里收到通知"]],
-            ["clsName": "LSProfileController", "title" : "我", "imageName": "profile", "visitorInfo":["imageName": "visitordiscover_image_profile","message": "登录后，你的微博、相册、个人资料会显示在这里，展示给别人"]]
-        ]
         
-        (array as NSArray).write(toFile: "/Users/luoriver/Desktop/array.plist", atomically: true)
+        guard let path = Bundle.main.path(forResource: "main.json", ofType: nil),
+            let data = NSData.init(contentsOfFile: path),
+            let array  = try? JSONSerialization.jsonObject(with: data as Data, options: []) as?  [Dictionary<String, Any>]
+        else {
+            return
+        }
+        
+        
+//        let arrays = [
+//            ["clsName": "LSHomeController", "title" : "首页", "imageName": "home", "visitorInfo":["imageName": "","message": "关注一些人,回到这里看看有什么惊喜"]],
+//            ["clsName": "LSDiscoverController", "title" : "发现", "imageName": "discover", "visitorInfo":["imageName": "visitordiscover_image_message","message": "登录后，最新、最热微博尽在掌握，不再会与实事潮流擦肩而过"]],
+//            ["clsName": ""],
+//            ["clsName": "LSMessageController", "title" : "消息", "imageName": "message_center", "visitorInfo":["imageName": "visitordiscover_image_message","message": "登录后，别人评论你的微博，发给你的消息，都会在这里收到通知"]],
+//            ["clsName": "LSProfileController", "title" : "我", "imageName": "profile", "visitorInfo":["imageName": "visitordiscover_image_profile","message": "登录后，你的微博、相册、个人资料会显示在这里，展示给别人"]]
+//        ]
+//        
+//        let data = try! JSONSerialization.data(withJSONObject: array, options: .prettyPrinted)
+//        
+//        (data as NSData).write(toFile: "/Users/luoriver/Desktop/array.json", atomically: true)
         
         var arrayM = [UIViewController]()
         
-        for dict in array {
+        for dict in array! {
             arrayM.append(controller(dict: dict))
         }
         
