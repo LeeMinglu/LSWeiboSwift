@@ -25,6 +25,9 @@ class LSVisitorView: UIView {
             
             tipLabel.text = message
             iconView.image = UIImage(named: imageName)
+            
+            houseView.isHidden = true
+            maskIconView.isHidden = true
         }
     }
     
@@ -81,8 +84,7 @@ extension LSVisitorView {
         addSubview(regigterBtn)
         addSubview(loginBtn)
         
-        //添加maskIconImeagView
-        
+        tipLabel.textAlignment = .center
         
         //sb使用autolayout  代码使用autoresize
         //2. 取消autoresize
