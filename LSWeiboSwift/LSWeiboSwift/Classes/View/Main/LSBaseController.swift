@@ -23,6 +23,8 @@ class LSBaseController: UIViewController {
     //
     var isUpPull: Bool = false
     
+    var visitorDictionary: [String: String]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -60,6 +62,8 @@ extension LSBaseController {
         let VisitorView = LSVisitorView(frame: self.view.bounds)
         
         self.view.insertSubview(VisitorView, belowSubview: navBar)
+        
+        VisitorView.visitorInfo = visitorDictionary
         
     }
     

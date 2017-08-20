@@ -9,6 +9,25 @@
 import UIKit
 
 class LSVisitorView: UIView {
+    
+    //MARK: -设置visitorInfo
+    var visitorInfo: [String: String]? {
+        didSet {
+            guard let imageName = visitorInfo?["imageName"],
+                let  message = visitorInfo?["message"]
+                else {
+                    return
+            }
+            
+            if imageName == "" {
+                return
+            }
+            
+            tipLabel.text = message
+            iconView.image = UIImage(named: imageName)
+        }
+    }
+    
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -18,6 +37,11 @@ class LSVisitorView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
+    
+    
+    //MARK:- 懒加载视图
     //添加image
     fileprivate lazy var iconView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_smallicon"))
     
