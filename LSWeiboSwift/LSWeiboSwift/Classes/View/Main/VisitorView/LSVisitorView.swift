@@ -19,13 +19,15 @@ class LSVisitorView: UIView {
                     return
             }
             
+            tipLabel.text = message
+
+            
             if imageName == "" {
                 startAnimate()
                 return
             }
             
-            tipLabel.text = message
-            iconView.image = UIImage(named: imageName)
+                       iconView.image = UIImage(named: imageName)
             
             houseView.isHidden = true
             maskIconView.isHidden = true
@@ -69,7 +71,7 @@ class LSVisitorView: UIView {
     //添加小房子
     fileprivate lazy var houseView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_house"))
     //添加label
-    fileprivate lazy var tipLabel: UILabel = UILabel.cz_label(withText: "反正这个提示信息甭提有多长了，你还不知道么，关注一些人看看有什么惊喜吧", fontSize: 14, color: .darkGray)
+    fileprivate lazy var tipLabel: UILabel = UILabel.cz_label(withText: "关注一些人看看有什么惊喜吧", fontSize: 14, color: .darkGray)
     
     //添加注册按钮
     fileprivate lazy var regigterBtn:UIButton = UIButton.cz_textButton(

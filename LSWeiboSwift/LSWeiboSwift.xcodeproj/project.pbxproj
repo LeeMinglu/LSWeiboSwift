@@ -39,6 +39,7 @@
 		1AB690201EC12E4D00E37B78 /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6901F1EC12E4D00E37B78 /* UIButton+CZAddition.m */; };
 		1AB690231EC3576D00E37B78 /* LSDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB690221EC3576D00E37B78 /* LSDemoController.swift */; };
 		1ABC05C61F47D51100445E81 /* LSVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABC05C51F47D51100445E81 /* LSVisitorView.swift */; };
+		1ACAEB971F49D194006AFB01 /* main2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ACAEB961F49D194006AFB01 /* main2.json */; };
 		1AD171861F497E94003A58EA /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AD171851F497E94003A58EA /* main.json */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,7 @@
 		1AB6901F1EC12E4D00E37B78 /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
 		1AB690221EC3576D00E37B78 /* LSDemoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSDemoController.swift; sourceTree = "<group>"; };
 		1ABC05C51F47D51100445E81 /* LSVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSVisitorView.swift; sourceTree = "<group>"; };
+		1ACAEB961F49D194006AFB01 /* main2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main2.json; sourceTree = "<group>"; };
 		1AD171851F497E94003A58EA /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -291,6 +293,7 @@
 		1AB690211EC356ED00E37B78 /* testUI */ = {
 			isa = PBXGroup;
 			children = (
+				1ACAEB961F49D194006AFB01 /* main2.json */,
 				1AB690221EC3576D00E37B78 /* LSDemoController.swift */,
 			);
 			path = testUI;
@@ -366,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AD171861F497E94003A58EA /* main.json in Resources */,
+				1ACAEB971F49D194006AFB01 /* main2.json in Resources */,
 				1A7B3D511F4879ED00E0FF34 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

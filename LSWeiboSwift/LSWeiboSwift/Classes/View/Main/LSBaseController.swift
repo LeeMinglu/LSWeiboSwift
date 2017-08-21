@@ -18,7 +18,7 @@ class LSBaseController: UIViewController {
     var refreshControl: UIRefreshControl?
     
     //登陆状态
-    let Logon: Bool = true
+    let Logon: Bool = false
     
     //
     var isUpPull: Bool = false

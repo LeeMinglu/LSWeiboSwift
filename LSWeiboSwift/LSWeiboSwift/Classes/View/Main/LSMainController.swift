@@ -38,8 +38,6 @@ class LSMainController: UITabBarController {
  //extension切分代码块，可以将相似功能 的代码放在一下，便于代码维护
 extension LSMainController {
     
-    
-    
     //设置加号按钮
     fileprivate func setupComposeButton() {
         
@@ -57,12 +55,26 @@ extension LSMainController {
     
     fileprivate  func setupControllers() {
         
-        guard let path = Bundle.main.path(forResource: "main.json", ofType: nil),
-            let data = NSData.init(contentsOfFile: path),
-            let array  = try? JSONSerialization.jsonObject(with: data as Data, options: []) as?  [Dictionary<String, Any>]
-        else {
-            return
+        let docDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        let jsonPath = (docDir as NSString).appendingPathComponent("main2.json")
+        
+        var data = NSData(contentsOfFile: jsonPath)
+//        print(data ?? "没有数据")
+        
+         print(docDir)
+        
+        if data == nil {
+            let path = Bundle.main.path(forResource: "main.json", ofType: nil)
+            data = NSData.init(contentsOfFile: path!)
         }
+        
+        guard let array  = try? JSONSerialization.jsonObject(with: data! as Data, options: []) as? [[String: AnyObject]]
+            else {
+                return
+            }
+        
+       
+        
         
         
 //        let arrays = [
@@ -72,9 +84,9 @@ extension LSMainController {
 //            ["clsName": "LSMessageController", "title" : "消息", "imageName": "message_center", "visitorInfo":["imageName": "visitordiscover_image_message","message": "登录后，别人评论你的微博，发给你的消息，都会在这里收到通知"]],
 //            ["clsName": "LSProfileController", "title" : "我", "imageName": "profile", "visitorInfo":["imageName": "visitordiscover_image_profile","message": "登录后，你的微博、相册、个人资料会显示在这里，展示给别人"]]
 //        ]
-//        
+        
 //        let data = try! JSONSerialization.data(withJSONObject: array, options: .prettyPrinted)
-//        
+        
 //        (data as NSData).write(toFile: "/Users/luoriver/Desktop/array.json", atomically: true)
         
         var arrayM = [UIViewController]()
@@ -88,7 +100,7 @@ extension LSMainController {
     }
     
     //使用字典创建控制器
-    private func controller(dict: [String: Any]) -> UIViewController {
+    private func controller(dict: [String: AnyObject]) -> UIViewController {
         
         guard let clsName = dict["clsName"] as? String,
             let title = dict["title"] as? String,
