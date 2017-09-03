@@ -10,6 +10,31 @@ import UIKit
 
 class LSVisitorView: UIView {
     
+    //添加注册按钮
+    lazy var regigterBtn:UIButton = UIButton.cz_textButton(
+        "注册",
+        fontSize: 16,
+        normalColor: .orange,
+        highlightedColor: .black,
+        backgroundImageName: "common_button_white_disable")
+    //添加登陆按钮
+    lazy var loginBtn:UIButton = UIButton.cz_textButton(
+        "登录",
+        fontSize: 16,
+        normalColor: .orange,
+        highlightedColor: .black,
+        backgroundImageName: "common_button_white_disable")
+    
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupUI()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     //MARK: -设置visitorInfo
     var visitorInfo: [String: String]? {
         didSet {
@@ -33,7 +58,8 @@ class LSVisitorView: UIView {
             maskIconView.isHidden = true
         }
     }
-    
+
+
     //MARK: - 旋转动画
     fileprivate func startAnimate()  {
         let animate = CABasicAnimation(keyPath: "transform.rotation")
@@ -49,19 +75,6 @@ class LSVisitorView: UIView {
         
     }
     
-
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setupUI()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    
-    
-    
     //MARK:- 懒加载视图
     //添加image
     fileprivate lazy var iconView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_smallicon"))
@@ -73,22 +86,9 @@ class LSVisitorView: UIView {
     //添加label
     fileprivate lazy var tipLabel: UILabel = UILabel.cz_label(withText: "关注一些人看看有什么惊喜吧", fontSize: 14, color: .darkGray)
     
-    //添加注册按钮
-    fileprivate lazy var regigterBtn:UIButton = UIButton.cz_textButton(
-        "注册",
-        fontSize: 16,
-        normalColor: .orange,
-        highlightedColor: .black,
-        backgroundImageName: "common_button_white_disable")
-    //添加登陆按钮
-    fileprivate lazy var loginBtn:UIButton = UIButton.cz_textButton(
-        "登录",
-        fontSize: 16,
-        normalColor: .orange,
-        highlightedColor: .black,
-        backgroundImageName: "common_button_white_disable")
-
+    
 }
+
 
 extension LSVisitorView {
     func setupUI() {

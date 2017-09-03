@@ -18,7 +18,7 @@ class LSBaseController: UIViewController {
     var refreshControl: UIRefreshControl?
     
     //登陆状态
-    let Logon: Bool = false
+    let Logon: Bool = true
     
     //
     var isUpPull: Bool = false
@@ -47,6 +47,7 @@ class LSBaseController: UIViewController {
 
 }
 
+
 extension LSBaseController {
     func setupUI() {
      //   self.view.backgroundColor = UIColor.cz_random()
@@ -64,6 +65,12 @@ extension LSBaseController {
         self.view.insertSubview(VisitorView, belowSubview: navBar)
         
         VisitorView.visitorInfo = visitorDictionary
+        
+        VisitorView.loginBtn.addTarget(self, action: #selector(loginEvent), for: .touchUpInside)
+        
+        VisitorView.regigterBtn.addTarget(self, action: #selector(registerEvent), for: .touchUpInside)
+        
+        navItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: .plain, target: self, action: #selector(loginEvent))
         
     }
     
@@ -98,6 +105,17 @@ extension LSBaseController {
         
     }
 }
+
+extension LSBaseController {
+    @objc func loginEvent() {
+        print("点击了登陆按钮")
+    }
+    
+    @objc func registerEvent() {
+        print("点击了注册按钮")
+    }
+}
+
 
 // MARK: - 代理协议
 extension LSBaseController: UITableViewDelegate, UITableViewDataSource {
