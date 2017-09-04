@@ -49,7 +49,7 @@ class LSBaseController: UIViewController {
 
 
 extension LSBaseController {
-    func setupUI() {
+   fileprivate func setupUI() {
      //   self.view.backgroundColor = UIColor.cz_random()
         setupNavigationBar()
         Logon ? setupTableview() : setupVistorView()
@@ -59,7 +59,7 @@ extension LSBaseController {
         
     }
     
-    private func setupVistorView() {
+    fileprivate func setupVistorView() {
         let VisitorView = LSVisitorView(frame: self.view.bounds)
         
         self.view.insertSubview(VisitorView, belowSubview: navBar)
@@ -71,10 +71,11 @@ extension LSBaseController {
         VisitorView.regigterBtn.addTarget(self, action: #selector(registerEvent), for: .touchUpInside)
         
         navItem.rightBarButtonItem = UIBarButtonItem(title: "登录", style: .plain, target: self, action: #selector(loginEvent))
+        navItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: .plain, target: self, action: #selector(registerEvent))
         
     }
     
-    private func setupTableview() {
+     func setupTableview() {
         tableview = UITableView(frame: view.bounds, style: .plain)
 //        self.view.addSubview(tableview!)
         self.view.insertSubview(tableview!, belowSubview: navBar)

@@ -12,7 +12,7 @@ class LSDemoController: LSBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+        setupTableview()
         title = "第  \(navigationController?.childViewControllers.count ?? 0) 个"
         
         print("进入DeMo控制器")
@@ -29,19 +29,12 @@ class LSDemoController: LSBaseController {
 }
 
 extension LSDemoController {
-    override func setupUI() {
-        super.setupUI()
-        
+    
+    override func setupTableview() {
+        super.setupTableview()
         navItem.rightBarButtonItem = UIBarButtonItem.init(title: "下一个", normalColor: .blue, highlightedColor: .orange, target: self, action:  #selector(nextVC), controlEvents: .touchUpInside)
-       
+        
 
-        
-//        let nextBtn = UIButton.cz_textButton("下一个", fontSize: 14, normalColor: UIColor.blue, highlightedColor: UIColor.orange)
-//        nextBtn?.addTarget(self, action: #selector(nextVC), for: .touchUpInside)
-//        
-//        navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: nextBtn!)
-//        navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "下一个", style: .plain, target: self, action: #selector(nextVC))
-        
-        
     }
+    
 }

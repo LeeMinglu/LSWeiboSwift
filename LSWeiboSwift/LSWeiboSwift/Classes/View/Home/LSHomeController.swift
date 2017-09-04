@@ -64,21 +64,15 @@ extension LSHomeController {
 }
 
 extension LSHomeController {
-    override func setupUI() {
-        super.setupUI()
-        
-        if !Logon {
-            navItem.leftBarButtonItem = UIBarButtonItem(title: "注册", style: .plain, target: self, action: #selector(loginEvent))
-        } else {
+    
+    override func setupTableview() {
+        super.setupTableview()
         navItem.leftBarButtonItem = UIBarButtonItem.init(title: "好友",  normalColor: .blue, highlightedColor: .orange, target: self, action: #selector(friendVC), controlEvents: .touchUpInside)
-        }
+        //        }
         // 注册原型 cell
         tableview?.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
-//        let nextBtn = UIButton.cz_textButton("好友", fontSize: 14, normalColor: UIColor.blue, highlightedColor: UIColor.orange)
-       
-//        nextBtn?.addTarget(self, action: #selector(friendVC), for: .touchUpInside)
-//        navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: nextBtn!)
-//        navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "好友", style: .plain, target: self, action: #selector(friendVC))
+
     }
+    
 }
 
