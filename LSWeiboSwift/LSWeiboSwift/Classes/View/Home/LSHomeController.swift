@@ -15,6 +15,7 @@ class LSHomeController: LSBaseController {
    fileprivate lazy var weiboData = [String]()
     override func loaddata() {
         print("开始刷新")
+        print(LSNetworkManager.shared)
         DispatchQueue.main.asyncAfter(deadline: .now() ) {
             for i in 0..<5 {
                 

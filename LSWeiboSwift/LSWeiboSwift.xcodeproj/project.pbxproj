@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A39E6CC1F5EE8F700B9E7DB /* LSNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39E6CB1F5EE8F700B9E7DB /* LSNetworkManager.swift */; };
 		1A4DD4F31EBEC8BA001F97BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */; };
 		1A5563EF1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5563EE1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift */; };
 		1A7B3D511F4879ED00E0FF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */; };
@@ -41,9 +42,12 @@
 		1ABC05C61F47D51100445E81 /* LSVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABC05C51F47D51100445E81 /* LSVisitorView.swift */; };
 		1ACAEB971F49D194006AFB01 /* main2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ACAEB961F49D194006AFB01 /* main2.json */; };
 		1AD171861F497E94003A58EA /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AD171851F497E94003A58EA /* main.json */; };
+		B3A0C29174BED67BC7B4D97B /* Pods_LSWeiboSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6837540665F81B6C95449AD8 /* Pods_LSWeiboSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09A1E441EDF6558C424263FD /* Pods-LSWeiboSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSWeiboSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSWeiboSwift/Pods-LSWeiboSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		1A39E6CB1F5EE8F700B9E7DB /* LSNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSNetworkManager.swift; sourceTree = "<group>"; };
 		1A4DD4EF1EBEC8BA001F97BD /* LSWeiboSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSWeiboSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,6 +102,8 @@
 		1ABC05C51F47D51100445E81 /* LSVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSVisitorView.swift; sourceTree = "<group>"; };
 		1ACAEB961F49D194006AFB01 /* main2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main2.json; sourceTree = "<group>"; };
 		1AD171851F497E94003A58EA /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		6837540665F81B6C95449AD8 /* Pods_LSWeiboSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSWeiboSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E36DDD7F3C95F1E71382DF18 /* Pods-LSWeiboSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSWeiboSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSWeiboSwift/Pods-LSWeiboSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,17 +111,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3A0C29174BED67BC7B4D97B /* Pods_LSWeiboSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A39E6CA1F5EE8D900B9E7DB /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				1A39E6CB1F5EE8F700B9E7DB /* LSNetworkManager.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
 		1A4DD4E61EBEC8BA001F97BD = {
 			isa = PBXGroup;
 			children = (
 				1A4DD4F11EBEC8BA001F97BD /* LSWeiboSwift */,
 				1A4DD4F01EBEC8BA001F97BD /* Products */,
+				7873BBD0D879DDF3AF530B89 /* Pods */,
+				F2A8CA05CB79D6A9826434C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +177,7 @@
 		1AB68AE51EBEF7C400E37B78 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				1A39E6CA1F5EE8D900B9E7DB /* NetWork */,
 				1AB68FE71EC121C300E37B78 /* Additions */,
 				1AB68FDC1EBF570B00E37B78 /* LSExtension */,
 				1AB68F731EBF500B00E37B78 /* FFLabel */,
@@ -307,6 +325,23 @@
 			path = VisitorView;
 			sourceTree = "<group>";
 		};
+		7873BBD0D879DDF3AF530B89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09A1E441EDF6558C424263FD /* Pods-LSWeiboSwift.debug.xcconfig */,
+				E36DDD7F3C95F1E71382DF18 /* Pods-LSWeiboSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2A8CA05CB79D6A9826434C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6837540665F81B6C95449AD8 /* Pods_LSWeiboSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -314,9 +349,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A4DD5011EBEC8BA001F97BD /* Build configuration list for PBXNativeTarget "LSWeiboSwift" */;
 			buildPhases = (
+				72B8294DA17968310FC0B5D4 /* [CP] Check Pods Manifest.lock */,
 				1A4DD4EB1EBEC8BA001F97BD /* Sources */,
 				1A4DD4EC1EBEC8BA001F97BD /* Frameworks */,
 				1A4DD4ED1EBEC8BA001F97BD /* Resources */,
+				BBFFC72428682F858C672DB6 /* [CP] Embed Pods Frameworks */,
+				671DB88414C1CE9A99B2F935 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -376,6 +414,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		671DB88414C1CE9A99B2F935 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LSWeiboSwift/Pods-LSWeiboSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72B8294DA17968310FC0B5D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LSWeiboSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBFFC72428682F858C672DB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LSWeiboSwift/Pods-LSWeiboSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LSWeiboSwift/Pods-LSWeiboSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1A4DD4EB1EBEC8BA001F97BD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -402,6 +504,7 @@
 				1AB68AF01EBEF8EE00E37B78 /* LSNavigationController.swift in Sources */,
 				1AB690151EC121C300E37B78 /* UIScreen+CZAddition.m in Sources */,
 				1AB68AF81EBEF98100E37B78 /* LSMessageController.swift in Sources */,
+				1A39E6CC1F5EE8F700B9E7DB /* LSNetworkManager.swift in Sources */,
 				1AB68AF21EBEF90700E37B78 /* LSBaseController.swift in Sources */,
 				1AB690091EC121C300E37B78 /* NSArray+CZAddition.m in Sources */,
 				1AB68F9F1EBF500B00E37B78 /* FFLabel.swift in Sources */,
@@ -515,12 +618,13 @@
 		};
 		1A4DD5021EBEC8BA001F97BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09A1E441EDF6558C424263FD /* Pods-LSWeiboSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = T9A27F8Q5D;
 				INFOPLIST_FILE = LSWeiboSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SocererGroup.LSWeiboSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,12 +636,13 @@
 		};
 		1A4DD5031EBEC8BA001F97BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E36DDD7F3C95F1E71382DF18 /* Pods-LSWeiboSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = T9A27F8Q5D;
 				INFOPLIST_FILE = LSWeiboSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SocererGroup.LSWeiboSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
