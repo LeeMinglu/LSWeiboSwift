@@ -17,10 +17,16 @@ class LSHomeController: LSBaseController {
         print("开始刷新")
         let URLString = "https://api.weibo.com/2/statuses/public_timeline.json"
         let parameters = ["access_token": "2.00r27RPGk3T56D2cc9a26c312LjLeE"]
-        LSNetworkManager.shared.get(URLString, parameters: parameters, success: { (_, json) in
-            print(json)
-        }) { (_, error) in
-            print(error)
+//        LSNetworkManager.shared.get(URLString,
+//            parameters: parameters,success: {
+//                (_, json) in
+//            print(json)
+//        }) {
+//            (_, error) in
+//            print(error)
+//        }
+        LSNetworkManager.shared.request(method: .GET, URLString: URLString, parameters: parameters as [String : AnyObject]) { (json, isSucess) in
+            print(json!)
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() ) {
