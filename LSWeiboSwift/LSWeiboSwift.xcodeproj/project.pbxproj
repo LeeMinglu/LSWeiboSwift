@@ -40,6 +40,7 @@
 		1AB690201EC12E4D00E37B78 /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6901F1EC12E4D00E37B78 /* UIButton+CZAddition.m */; };
 		1AB690231EC3576D00E37B78 /* LSDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB690221EC3576D00E37B78 /* LSDemoController.swift */; };
 		1AB9E7221F6399BB0020F9C5 /* LSNetworkManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB9E7211F6399BB0020F9C5 /* LSNetworkManager+Extension.swift */; };
+		1AB9E7241F641E660020F9C5 /* LSStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB9E7231F641E660020F9C5 /* LSStatus.swift */; };
 		1ABC05C61F47D51100445E81 /* LSVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABC05C51F47D51100445E81 /* LSVisitorView.swift */; };
 		1ACAEB971F49D194006AFB01 /* main2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ACAEB961F49D194006AFB01 /* main2.json */; };
 		1AD171861F497E94003A58EA /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AD171851F497E94003A58EA /* main.json */; };
@@ -101,6 +102,7 @@
 		1AB6901F1EC12E4D00E37B78 /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
 		1AB690221EC3576D00E37B78 /* LSDemoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSDemoController.swift; sourceTree = "<group>"; };
 		1AB9E7211F6399BB0020F9C5 /* LSNetworkManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LSNetworkManager+Extension.swift"; sourceTree = "<group>"; };
+		1AB9E7231F641E660020F9C5 /* LSStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSStatus.swift; path = LSWeiboSwift/Classes/LSStatus.swift; sourceTree = SOURCE_ROOT; };
 		1ABC05C51F47D51100445E81 /* LSVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSVisitorView.swift; sourceTree = "<group>"; };
 		1ACAEB961F49D194006AFB01 /* main2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main2.json; sourceTree = "<group>"; };
 		1AD171851F497E94003A58EA /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		1AB68AE41EBEF7C400E37B78 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1AB9E7231F641E660020F9C5 /* LSStatus.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				1AB68FE31EBF570B00E37B78 /* String+Extension.swift in Sources */,
 				1AB690171EC121C300E37B78 /* UIView+JKFrame.m in Sources */,
 				1AB6900A1EC121C300E37B78 /* NSArray+Log.m in Sources */,
+				1AB9E7241F641E660020F9C5 /* LSStatus.swift in Sources */,
 				1AB690121EC121C300E37B78 /* UIColor+CZAddition.m in Sources */,
 				1AB68AFC1EBEFA4F00E37B78 /* LSMainController.swift in Sources */,
 				1AB690101EC121C300E37B78 /* NSString+CZPath.m in Sources */,

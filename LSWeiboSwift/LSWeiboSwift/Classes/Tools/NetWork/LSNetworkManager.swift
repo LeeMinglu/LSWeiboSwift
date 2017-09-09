@@ -25,6 +25,9 @@ class LSNetworkManager: AFHTTPSessionManager {
         
         guard let token = accessToken else {
             print("没有token,请登录")
+            
+            //FIXME: 发送通知
+            
             completion(nil, false)
             return
         }
@@ -54,13 +57,17 @@ class LSNetworkManager: AFHTTPSessionManager {
            completion(json, true)
         }
 
-        let failure = {(task: URLSessionDataTask, error: Any)->() in
-            
+        let failure = {(task: URLSessionDataTask?, error: Any)->() in
+            if (task?.response as? HTTPURLResponse)?.statusCode == 400 {
+                print("Token已经过期了")
+                
+                //FIXME:  发送通知不知道谁调用了这个方法
+            }
             print("网络发生错误" + "\(error)")
             completion(error, false)
             
         }
-    
+     
         
         if method == .GET {
             
