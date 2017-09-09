@@ -13,7 +13,7 @@ extension LSNetworkManager {
         let URLString = "https://api.weibo.com/2/statuses/public_timeline.json"
         let parameters = ["access_token": "2.00r27RPGk3T56D2cc9a26c312LjLeE"]
         
-        request(method: .GET, URLString: URLString, parameters: parameters as [String : AnyObject]) { (json, isSucess) in
+        tokenRequest(URLString: URLString, parameters: parameters as [String : AnyObject]) { (json, isSucess) in
             
             
             let result = (json as? [String: Any])?["statuses"] as? [[String: Any]]

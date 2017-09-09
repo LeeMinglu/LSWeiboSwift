@@ -19,6 +19,27 @@ class LSNetworkManager: AFHTTPSessionManager {
    
     static let shared = LSNetworkManager()
     
+    var accessToken: String? = "2.00r27RPGk3T56D2cc9a26c312LjLeE"
+    
+    func tokenRequest(method: LSRequestMethod = .GET, URLString: String, parameters: [String: Any]?, completion: @escaping (_ json: Any?, _ isSuccess: Bool)->()) {
+        
+        guard let token = accessToken else {
+            print("没有token,请登录")
+            completion(nil, false)
+            return
+        }
+        
+        var parameters = parameters
+        if parameters == nil {
+            parameters = [String: Any]()
+        }
+        
+        parameters!["access_token"] = token
+        
+        request(method: .GET, URLString: URLString, parameters: parameters!, completion: completion)
+    
+    }
+    
     /// GET /POST 网络请求
     ///
     /// - 参数说明:
