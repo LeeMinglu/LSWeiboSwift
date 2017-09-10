@@ -11,33 +11,38 @@ import UIKit
 
 class LSHomeController: LSBaseController {
     fileprivate let cellID = "cellID"
+    
+    var resultData: [[String: Any]]?
+    
+    //列表模型
+    let statusViewModel = LSStatusListViewModel()
 
    fileprivate lazy var weiboData = [String]()
     override func loaddata() {
         print("开始刷新")
-        
-        LSNetworkManager.shared.statusList { (json, isSucess) in
-            
-            print(json)
-        }
-    
-        DispatchQueue.main.asyncAfter(deadline: .now() ) {
-            for i in 0..<5 {
-                
-                if self.isUpPull {
-                    self.weiboData.append("上拉" + i.description)
-                }else {
-                    self.weiboData.insert(i.description, at: 0)
-                }
-            }
-            self.refreshControl?.endRefreshing()
-            print("结束刷新")
-            self.isUpPull = false
-            self.tableview?.reloadData()
-        }
-        
+       statusViewModel.loadStatus { (isSucess) in
+        self.refreshControl?.endRefreshing()
+        print("结束刷新")
+        self.isUpPull = false
+        self.tableview?.reloadData()
 
-      
+        }
+        
+//        DispatchQueue.main.asyncAfter(deadline: .now() ) {
+//            for i in 0..<5 {
+//                
+//                if self.isUpPull {
+//                    self.weiboData.append("上拉" + i.description)
+//                }else {
+//                    self.weiboData.insert(i.description, at: 0)
+//                }
+//            }
+//            self.refreshControl?.endRefreshing()
+//            print("结束刷新")
+//            self.isUpPull = false
+//            self.tableview?.reloadData()
+//        }
+    
     }
   
     @objc fileprivate func friendVC () {
@@ -54,14 +59,14 @@ class LSHomeController: LSBaseController {
 
 extension LSHomeController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return weiboData.count
+        return statusViewModel.statusList.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview?.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
         
-        cell?.textLabel?.text = weiboData[indexPath.row]
+        cell?.textLabel?.text = statusViewModel.statusList[indexPath.row].text
         
         return cell!
     }
