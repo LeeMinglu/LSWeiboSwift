@@ -20,29 +20,17 @@ class LSHomeController: LSBaseController {
    fileprivate lazy var weiboData = [String]()
     override func loaddata() {
         print("开始刷新")
-        statusViewModel.loadStatus(pullUp: isUpPull) { (isSucess) in
+        statusViewModel.loadStatus(pullUp: isUpPull) { (isSucess, shouldPullup) in
         self.refreshControl?.endRefreshing()
         print("结束刷新")
         self.isUpPull = false
-        self.tableview?.reloadData()
+            
+        if shouldPullup {
+            self.tableview?.reloadData()
+        }
 
         }
-        
-//        DispatchQueue.main.asyncAfter(deadline: .now() ) {
-//            for i in 0..<5 {
-//                
-//                if self.isUpPull {
-//                    self.weiboData.append("上拉" + i.description)
-//                }else {
-//                    self.weiboData.insert(i.description, at: 0)
-//                }
-//            }
-//            self.refreshControl?.endRefreshing()
-//            print("结束刷新")
-//            self.isUpPull = false
-//            self.tableview?.reloadData()
-//        }
-    
+            
     }
   
     @objc fileprivate func friendVC () {

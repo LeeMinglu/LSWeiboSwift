@@ -8,12 +8,21 @@
 
 import Foundation
 
+
+
 class LSStatusListViewModel {
-    
+    private let pullupTryTimes = 3
     //设置status Model数组
     lazy var statusList = [LSStatus]()
+    var pullUpErrorTimes = 0
+   
     
-    func loadStatus(pullUp: Bool,completion: @escaping (_ isSuccess: Bool) ->()){
+    func loadStatus(pullUp: Bool,completion: @escaping (_ isSuccess: Bool, _ shouldRefresh: Bool) ->()){
+        
+       if pullUp && pullUpErrorTimes > self.pullupTryTimes {
+            completion(true, false)
+            return
+        }
         
         
         let since_id = pullUp ? 0 : (self.statusList.first?.id ?? 0)
@@ -25,10 +34,11 @@ class LSStatusListViewModel {
                 with: LSStatus.self,
                 json: list ?? []) as? [LSStatus]
                 else {
-                    completion(isSucess)
+                    
+                    completion(isSucess, false)
                     return
             }
-            print("加载了 \(array.count)条数据,最后一条消息是\(array.last?.text)")
+            print("加载了 \(array.count)条数据,最后一条消息是\(String(describing: array.last?.text))")
             
             
             if pullUp {
@@ -38,7 +48,12 @@ class LSStatusListViewModel {
             }
             
             
-            completion(isSucess)
+            if pullUp && array.count == 0 {
+                self.pullUpErrorTimes += 1
+                completion(isSucess, false)
+            } else {
+                completion(isSucess,true)
+            }
             
         })
     }
