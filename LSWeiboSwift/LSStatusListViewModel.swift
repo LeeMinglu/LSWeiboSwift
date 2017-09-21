@@ -17,7 +17,13 @@ class LSStatusListViewModel {
     var pullUpErrorTimes = 0
    
     
+    /// 加载微博list
+    ///
+    /// - Parameters:
+    ///   - pullUp: 判断是否为上拉刷新
+    ///   - completion: 刷新结果回调(刷新是否成功、是否刷新表格)
     func loadStatus(pullUp: Bool,completion: @escaping (_ isSuccess: Bool, _ shouldRefresh: Bool) ->()){
+        
         
        if pullUp && pullUpErrorTimes > self.pullupTryTimes {
             completion(true, false)

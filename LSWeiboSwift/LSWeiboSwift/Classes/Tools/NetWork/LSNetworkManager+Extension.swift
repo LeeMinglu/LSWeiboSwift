@@ -23,4 +23,24 @@ extension LSNetworkManager {
         }
         
     }
+    
+    
+    /// 未读消息
+    ///
+    /// - Parameter completion: 回调未读数量
+    func unReadCount(completion:@escaping (_ count: Int64) -> ()) {
+        guard let uid = uid else {
+            return
+        }
+        let URLString = "https://rm.api.weibo.com/2/remind/unread_count.json"
+        let parameters = ["uid": uid]
+        
+        tokenRequest(URLString: URLString, parameters: parameters) { (json, isSuccess) in
+            let dict = json as? [String: Any]
+            let count = dict?["status"] as? Int64
+            
+            completion(count ?? 0)
+            
+        }
+    }
 }

@@ -21,6 +21,8 @@ class LSNetworkManager: AFHTTPSessionManager {
     
     var accessToken: String? = "2.00r27RPGk3T56D2cc9a26c312LjLeE"
     
+    var uid : String? = "5722594907"
+    
     func tokenRequest(method: LSRequestMethod = .GET, URLString: String, parameters: [String: Any]?, completion: @escaping (_ json: Any?, _ isSuccess: Bool)->()) {
         
         guard let token = accessToken else {

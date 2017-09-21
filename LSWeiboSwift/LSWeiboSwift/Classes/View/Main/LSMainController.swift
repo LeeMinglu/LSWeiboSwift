@@ -19,6 +19,9 @@ class LSMainController: UITabBarController {
         setupControllers()
         setupComposeButton()
         
+        LSNetworkManager.shared.unReadCount { (count) in
+            print("有 \(count)条未读消息")
+        }
         
     }
 //    /Users/luoriver/Desktop/swift/git/LSWeiboSwift/LSWeiboSwift/LSWeiboSwift/Classes/View/Main/LSMainController.swift:25:11: Method 'supportedInterfaceOrientations()' with Objective-C selector 'supportedInterfaceOrientations' conflicts with getter for 'supportedInterfaceOrientations' from superclass 'UIViewController' with the same Objective-C selector
