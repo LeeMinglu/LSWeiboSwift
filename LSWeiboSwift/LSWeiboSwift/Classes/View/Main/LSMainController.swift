@@ -10,6 +10,8 @@ import UIKit
 
 class LSMainController: UITabBarController {
     
+    var timer: Timer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,12 +20,15 @@ class LSMainController: UITabBarController {
         
         setupControllers()
         setupComposeButton()
+        setupTimer()
         
-        LSNetworkManager.shared.unReadCount { (count) in
-            print("有 \(count)条未读消息")
-        }
         
     }
+    
+    deinit {
+        self.timer?.invalidate()
+    }
+    
 //    /Users/luoriver/Desktop/swift/git/LSWeiboSwift/LSWeiboSwift/LSWeiboSwift/Classes/View/Main/LSMainController.swift:25:11: Method 'supportedInterfaceOrientations()' with Objective-C selector 'supportedInterfaceOrientations' conflicts with getter for 'supportedInterfaceOrientations' from superclass 'UIViewController' with the same Objective-C selector
     
     
@@ -39,6 +44,21 @@ class LSMainController: UITabBarController {
 
 }
  //extension切分代码块，可以将相似功能 的代码放在一下，便于代码维护
+extension LSMainController {
+    
+    fileprivate func setupTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(timerEvent), userInfo: nil, repeats: true)
+    }
+    
+    
+    /// 获取新微博
+    @objc private func timerEvent() {
+        LSNetworkManager.shared.unReadCount { (count) in
+            self.tabBar.items?.first?.badgeValue = count > 0 ? "\(count)":nil
+        }
+    }
+}
+
 extension LSMainController {
     
     //设置加号按钮
