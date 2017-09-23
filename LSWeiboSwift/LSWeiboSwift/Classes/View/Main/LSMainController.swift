@@ -55,6 +55,8 @@ extension LSMainController {
     @objc private func timerEvent() {
         LSNetworkManager.shared.unReadCount { (count) in
             self.tabBar.items?.first?.badgeValue = count > 0 ? "\(count)":nil
+            
+            UIApplication.shared.applicationIconBadgeNumber = Int(count)
         }
     }
 }
