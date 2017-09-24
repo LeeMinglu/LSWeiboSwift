@@ -22,6 +22,8 @@ class LSMainController: UITabBarController {
         setupComposeButton()
         setupTimer()
         
+        delegate = self
+        
         
     }
     
@@ -42,6 +44,13 @@ class LSMainController: UITabBarController {
     
 
 
+}
+
+//解决添加按钮穿帮的问题
+extension LSMainController: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        return !viewController.isMember(of: UIViewController.self)
+    }
 }
  //extension切分代码块，可以将相似功能 的代码放在一下，便于代码维护
 extension LSMainController {
@@ -70,7 +79,8 @@ extension LSMainController {
         
         let count = CGFloat(tabBar.subviews.count)
         
-        let composeBtnWidth = tabBar.bounds.width / (count - 1)
+        let composeBtnWidth = tabBar.bounds.width / count + 50 
+        
         compose.frame = tabBar.bounds.insetBy(dx: composeBtnWidth * 2, dy: 0)
         
         compose.addTarget(self, action: #selector(composeStatus), for: .touchUpInside)
