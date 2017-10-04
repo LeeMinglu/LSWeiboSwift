@@ -49,6 +49,24 @@ class LSMainController: UITabBarController {
 //解决添加按钮穿帮的问题
 extension LSMainController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        
+        //1.获取选择控制器的索引
+        let index = childViewControllers.index(of: viewController)
+        
+        if index == 0 {
+            print("点击了首页")
+            let nav = tabBarController.childViewControllers.first as! LSNavigationController
+            let vc = nav.childViewControllers.first as! LSHomeController
+            
+            let y = nav.navigationBar.bounds.height
+            vc.tableview?.setContentOffset(
+                CGPoint.init(x: 0, y: -64), animated: true)
+            
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: { 
+                vc.loaddata()
+            })
+        }
+        
         return !viewController.isMember(of: UIViewController.self)
     }
 }
