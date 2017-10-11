@@ -45,6 +45,7 @@
 		1ACAEB971F49D194006AFB01 /* main2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ACAEB961F49D194006AFB01 /* main2.json */; };
 		1AD171861F497E94003A58EA /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AD171851F497E94003A58EA /* main.json */; };
 		1AF89C011F64D10F00EAC2CC /* LSStatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF89C001F64D10F00EAC2CC /* LSStatusListViewModel.swift */; };
+		1AFDEC7F1F8E602000ACBFCD /* LSWeiBoCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFDEC7E1F8E602000ACBFCD /* LSWeiBoCommon.swift */; };
 		B3A0C29174BED67BC7B4D97B /* Pods_LSWeiboSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6837540665F81B6C95449AD8 /* Pods_LSWeiboSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +109,7 @@
 		1ACAEB961F49D194006AFB01 /* main2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main2.json; sourceTree = "<group>"; };
 		1AD171851F497E94003A58EA /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		1AF89C001F64D10F00EAC2CC /* LSStatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSStatusListViewModel.swift; sourceTree = SOURCE_ROOT; };
+		1AFDEC7E1F8E602000ACBFCD /* LSWeiBoCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSWeiBoCommon.swift; sourceTree = "<group>"; };
 		6837540665F81B6C95449AD8 /* Pods_LSWeiboSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSWeiboSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36DDD7F3C95F1E71382DF18 /* Pods-LSWeiboSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSWeiboSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSWeiboSwift/Pods-LSWeiboSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +131,7 @@
 			children = (
 				1A39E6CB1F5EE8F700B9E7DB /* LSNetworkManager.swift */,
 				1AB9E7211F6399BB0020F9C5 /* LSNetworkManager+Extension.swift */,
+				1AFDEC7E1F8E602000ACBFCD /* LSWeiBoCommon.swift */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				1AB6900D1EC121C300E37B78 /* NSObject+CZRuntime.m in Sources */,
 				1AB68FE21EBF570B00E37B78 /* Bundle+Extension.swift in Sources */,
 				1AB68AFA1EBEF99200E37B78 /* LSProfileController.swift in Sources */,
+				1AFDEC7F1F8E602000ACBFCD /* LSWeiBoCommon.swift in Sources */,
 				1AB690131EC121C300E37B78 /* UIImage+Extension.m in Sources */,
 				1AB68FE31EBF570B00E37B78 /* String+Extension.swift in Sources */,
 				1AB690171EC121C300E37B78 /* UIView+JKFrame.m in Sources */,

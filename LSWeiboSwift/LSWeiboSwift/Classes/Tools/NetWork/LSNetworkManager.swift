@@ -19,9 +19,14 @@ class LSNetworkManager: AFHTTPSessionManager {
    
     static let shared = LSNetworkManager()
     
-    var accessToken: String? = "2.00r27RPGk3T56D2cc9a26c312LjLeE"
+    var accessToken: String? //= "2.00r27RPGk3T56D2cc9a26c312LjLeE"
     
     var uid : String? = "5722594907"
+    
+    var userLogon :Bool {
+        return accessToken != nil
+    }
+
     
     func tokenRequest(method: LSRequestMethod = .GET, URLString: String, parameters: [String: Any]?, completion: @escaping (_ json: Any?, _ isSuccess: Bool)->()) {
         

@@ -24,11 +24,16 @@ class LSMainController: UITabBarController {
         
         delegate = self
         
+        //注册用户 登录通知
+        NotificationCenter.default.addObserver(self, selector: #selector(login), name: NSNotification.Name(rawValue: LSUserShouleLoginNotification), object: nil)
+        
         
     }
     
     deinit {
         self.timer?.invalidate()
+        
+        NotificationCenter.default.removeObserver(self)
     }
     
 //    /Users/luoriver/Desktop/swift/git/LSWeiboSwift/LSWeiboSwift/LSWeiboSwift/Classes/View/Main/LSMainController.swift:25:11: Method 'supportedInterfaceOrientations()' with Objective-C selector 'supportedInterfaceOrientations' conflicts with getter for 'supportedInterfaceOrientations' from superclass 'UIViewController' with the same Objective-C selector
@@ -37,6 +42,10 @@ class LSMainController: UITabBarController {
     
       @objc fileprivate  func composeStatus() {
         print("编写按钮")
+    }
+    
+    @objc fileprivate  func login( n: Notification) {
+        print("用户通知 \(n)")
     }
     
     lazy var compose: UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
@@ -60,7 +69,7 @@ extension LSMainController: UITabBarControllerDelegate {
             
             let y = nav.navigationBar.bounds.height
             vc.tableview?.setContentOffset(
-                CGPoint.init(x: 0, y: -64), animated: true)
+                CGPoint.init(x: 0, y: y-24), animated: true)
             
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: { 
                 vc.loaddata()
@@ -74,12 +83,16 @@ extension LSMainController: UITabBarControllerDelegate {
 extension LSMainController {
     
     fileprivate func setupTimer() {
-        timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(timerEvent), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(timerEvent), userInfo: nil, repeats: true)
     }
     
     
     /// 获取新微博
     @objc private func timerEvent() {
+        if !LSNetworkManager.shared.userLogon {
+            return
+        }
+        
         LSNetworkManager.shared.unReadCount { (count) in
             self.tabBar.items?.first?.badgeValue = count > 0 ? "\(count)":nil
             

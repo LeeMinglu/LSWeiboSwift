@@ -17,8 +17,10 @@ class LSBaseController: UIViewController {
     
     var refreshControl: UIRefreshControl?
     
-    //登陆状态
-    let Logon: Bool = true
+//    //登陆状态
+//    let Logon: Bool = true
+       
+    
     
     //
     var isUpPull: Bool = false
@@ -41,6 +43,7 @@ class LSBaseController: UIViewController {
     }
     
     func loaddata() {
+        
         //如果子类不实现任何功能，默认关闭刷新控件
         self.refreshControl?.endRefreshing()
     }
@@ -52,7 +55,7 @@ extension LSBaseController {
    fileprivate func setupUI() {
      //   self.view.backgroundColor = UIColor.cz_random()
         setupNavigationBar()
-        Logon ? setupTableview() : setupVistorView()
+        (LSNetworkManager.shared.accessToken != nil) ? setupTableview() : setupVistorView()
         automaticallyAdjustsScrollViewInsets = false
         
        
@@ -110,6 +113,7 @@ extension LSBaseController {
 extension LSBaseController {
     @objc func loginEvent() {
         print("点击了登陆按钮")
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: LSUserShouleLoginNotification), object: nil)
     }
     
     @objc func registerEvent() {
