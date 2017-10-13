@@ -11,20 +11,26 @@ import UIKit
 extension UIBarButtonItem {
 
     
-    /// 自定义UIBarButtonItem
+    /// 创建 UIBarButtonItem
     ///
     /// - Parameters:
-    ///   - title: 标题
-    ///   - fontSize: 字体大小
-    ///   - normalColor: 字体普通颜色
-    ///   - highlightedColor: 字体高亮颜色
+    ///   - title: title
+    ///   - fontSize: fontSize,默认16号
     ///   - target: target
-    ///   - action: 执行操作
-    ///   - controlEvents: 触摸事件
-    convenience init(title: String?, fontSize: CGFloat = 15, normalColor: UIColor, highlightedColor: UIColor, target: Any?, action: Selector, controlEvents: UIControlEvents) {
-        let button = UIButton.cz_textButton(title, fontSize: 14, normalColor: normalColor, highlightedColor: highlightedColor)
-        button?.addTarget(target, action: action, for: controlEvents)
+    ///   - action: action
+    ///   - isBack: 是否是返回按钮，如果是，加上箭头
+    convenience init(title: String, fontSize: CGFloat = 16, target: AnyObject?, action: Selector, isBack: Bool = false) {
+        let btn: UIButton = UIButton.cz_textButton(title, fontSize: fontSize, normalColor: UIColor.darkGray, highlightedColor: UIColor.orange)
+        btn.addTarget(target, action: action, for: .touchUpInside)
         
-        self.init(customView: button!)
+        if isBack {
+            let imageName = "navigationbar_back_withtext"
+            btn.setImage(UIImage(named: imageName), for: .normal)
+            btn.setImage(UIImage(named: imageName + "_highlighted"), for: .highlighted)
+            btn.sizeToFit()
+        }
+        
+        //实例化 uibarbuttonitem
+        self.init(customView: btn)
     }
 }

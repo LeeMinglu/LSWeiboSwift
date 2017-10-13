@@ -32,9 +32,8 @@ extension LSDemoController {
     
     override func setupTableview() {
         super.setupTableview()
-        navItem.rightBarButtonItem = UIBarButtonItem.init(title: "下一个", normalColor: .blue, highlightedColor: .orange, target: self, action:  #selector(nextVC), controlEvents: .touchUpInside)
         
-
+        navItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", fontSize: 15, target: self, action:  #selector(nextVC), isBack: true)
     }
     
 }

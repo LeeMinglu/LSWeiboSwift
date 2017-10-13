@@ -113,7 +113,7 @@ extension LSBaseController {
 extension LSBaseController {
     @objc func loginEvent() {
         print("点击了登陆按钮")
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: LSUserShouleLoginNotification), object: nil)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: LSUserShouldeLoginNotification), object: nil)
     }
     
     @objc func registerEvent() {

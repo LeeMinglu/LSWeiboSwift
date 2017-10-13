@@ -8,4 +8,4 @@
 
 import Foundation
 
-let LSUserShouleLoginNotification = "LSUserShouleLoginNotification"
+let LSUserShouldeLoginNotification = "LSUserShouldeLoginNotification"

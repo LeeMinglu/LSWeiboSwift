@@ -27,7 +27,8 @@ class LSNavigationController: UINavigationController {
                     title = childViewControllers.first?.title ?? "返回"
                 }
                 
-                vc.navItem.leftBarButtonItem = UIBarButtonItem.init(title: title, normalColor: .blue, highlightedColor: .orange, target: self, action:  #selector(backVC), controlEvents: .touchUpInside)
+                
+                vc.navItem.leftBarButtonItem = UIBarButtonItem(title: title, fontSize: 15, target: self, action:  #selector(backVC), isBack: true)
             }
             
         }

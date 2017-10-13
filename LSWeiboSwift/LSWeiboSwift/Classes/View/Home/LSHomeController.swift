@@ -66,7 +66,8 @@ extension LSHomeController {
     
     override func setupTableview() {
         super.setupTableview()
-        navItem.leftBarButtonItem = UIBarButtonItem.init(title: "好友",  normalColor: .blue, highlightedColor: .orange, target: self, action: #selector(friendVC), controlEvents: .touchUpInside)
+        
+        navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", fontSize: 15, target: self, action:  #selector(friendVC), isBack: true)
         //        }
         // 注册原型 cell
         tableview?.register(UITableViewCell.self, forCellReuseIdentifier: cellID)

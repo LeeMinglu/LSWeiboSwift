@@ -25,7 +25,7 @@ class LSMainController: UITabBarController {
         delegate = self
         
         //注册用户 登录通知
-        NotificationCenter.default.addObserver(self, selector: #selector(login), name: NSNotification.Name(rawValue: LSUserShouleLoginNotification), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(login), name: NSNotification.Name(rawValue: LSUserShouldeLoginNotification), object: nil)
         
         
     }
@@ -46,9 +46,15 @@ class LSMainController: UITabBarController {
     
     @objc fileprivate  func login( n: Notification) {
         print("用户通知 \(n)")
-    }
+        let nav = UINavigationController(rootViewController: LSOAthViewController())
+        
+        self.present(nav, animated: true, completion: nil)
+        
+           }
     
     lazy var compose: UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
+    
+    
     
     
 

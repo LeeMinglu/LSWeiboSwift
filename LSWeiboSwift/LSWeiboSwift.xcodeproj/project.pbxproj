@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A148A131F910FB600D35BD8 /* LSOAthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A148A121F910FB600D35BD8 /* LSOAthViewController.swift */; };
 		1A39E6CC1F5EE8F700B9E7DB /* LSNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39E6CB1F5EE8F700B9E7DB /* LSNetworkManager.swift */; };
 		1A4DD4F31EBEC8BA001F97BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */; };
 		1A5563EF1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5563EE1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		09A1E441EDF6558C424263FD /* Pods-LSWeiboSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSWeiboSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSWeiboSwift/Pods-LSWeiboSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		1A148A121F910FB600D35BD8 /* LSOAthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSOAthViewController.swift; sourceTree = "<group>"; };
 		1A39E6CB1F5EE8F700B9E7DB /* LSNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSNetworkManager.swift; sourceTree = "<group>"; };
 		1A4DD4EF1EBEC8BA001F97BD /* LSWeiboSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSWeiboSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A148A111F910F7B00D35BD8 /* LSOAthController */ = {
+			isa = PBXGroup;
+			children = (
+				1A148A121F910FB600D35BD8 /* LSOAthViewController.swift */,
+			);
+			path = LSOAthController;
+			sourceTree = "<group>";
+		};
 		1A39E6CA1F5EE8D900B9E7DB /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +246,7 @@
 		1AB68AEA1EBEF86500E37B78 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1A148A111F910F7B00D35BD8 /* LSOAthController */,
 				1AD171851F497E94003A58EA /* main.json */,
 				1AB68AFB1EBEFA4F00E37B78 /* LSMainController.swift */,
 				1ABC05C41F47D4F400445E81 /* VisitorView */,
@@ -513,6 +524,7 @@
 				1ABC05C61F47D51100445E81 /* LSVisitorView.swift in Sources */,
 				1AB690181EC121C300E37B78 /* UIViewController+CZAddition.m in Sources */,
 				1AB6900F1EC121C300E37B78 /* NSString+CZHash.m in Sources */,
+				1A148A131F910FB600D35BD8 /* LSOAthViewController.swift in Sources */,
 				1AB68AF61EBEF97100E37B78 /* LSDiscoverController.swift in Sources */,
 				1AB690141EC121C300E37B78 /* UILabel+CZAddition.m in Sources */,
 				1AB68AF01EBEF8EE00E37B78 /* LSNavigationController.swift in Sources */,
