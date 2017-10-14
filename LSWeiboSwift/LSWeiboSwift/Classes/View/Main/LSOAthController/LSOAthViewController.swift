@@ -24,7 +24,19 @@ class LSOAthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-                // Do any additional setup after loading the view.
+        //1.请求URI String
+        let urlString = "https://api.weibo.com/oauth2/authorize?client_id=\(AppKey)&redirect_uri=\(RedictURI)"
+        
+        //2.URL
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        
+        //3.设置请求
+        let request = URLRequest(url: url)
+        
+        //4.请求数据
+        webView.loadRequest(request)
     }
     
     @objc fileprivate func back() {
