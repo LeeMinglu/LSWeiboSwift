@@ -11,18 +11,20 @@ import UIKit
 class LSOAthViewController: UIViewController {
     
     lazy var webView = UIWebView()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    
+    override func loadView() {
         view = webView
         
         webView.backgroundColor = UIColor.white
         
         title = "用户认证界面"
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "返回", target: self, action: #selector(back))
+    }
 
-        // Do any additional setup after loading the view.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+                // Do any additional setup after loading the view.
     }
     
     @objc fileprivate func back() {
