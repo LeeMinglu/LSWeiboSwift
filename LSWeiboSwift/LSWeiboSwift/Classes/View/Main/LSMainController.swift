@@ -45,7 +45,7 @@ class LSMainController: UITabBarController {
     }
     
     @objc fileprivate  func login( n: Notification) {
-        print("用户通知 \(n)")
+//        print("用户通知 \(n)")
         let nav = UINavigationController(rootViewController: LSOAthViewController())
         
         self.present(nav, animated: true, completion: nil)
@@ -54,11 +54,6 @@ class LSMainController: UITabBarController {
     
     lazy var compose: UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
     
-    
-    
-    
-
-
 }
 
 //解决添加按钮穿帮的问题
@@ -195,9 +190,7 @@ extension LSMainController {
         vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName: UIFont.systemFont(ofSize: 15)], for: UIControlState(rawValue: 0))
         
         vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.orange], for: UIControlState.highlighted)
-        
-        
-        
+    
         let nav = LSNavigationController(rootViewController: vc)
         
         return nav
