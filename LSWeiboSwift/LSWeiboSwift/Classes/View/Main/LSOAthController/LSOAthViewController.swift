@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class LSOAthViewController: UIViewController {
     
@@ -15,10 +16,11 @@ class LSOAthViewController: UIViewController {
     override func loadView() {
         view = webView
         
+        webView.scrollView.isScrollEnabled = false
         webView.backgroundColor = UIColor.white
         
         title = "用户认证界面"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "返回", target: self, action: #selector(back))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "返回", target: self, action: #selector(close))
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "自动填充", target: self, action: #selector(autoStuff))
     }
@@ -26,12 +28,15 @@ class LSOAthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        webviewRequest()
+        
+        webView.delegate = self
+        
+    }
+    
+    func webviewRequest() {
 //        1.请求URI String
         let urlString = "https://api.weibo.com/oauth2/authorize?client_id=\(AppKey)&redirect_uri=\(RedictURI)"
-        
-        //测试链接
-//        let urlString = "https://passport.weibo.cn/signin/login?entry=mweibo&res=wel&wm=3349&r=http%3A%2F%2Fm.weibo.cn%2F%3F%26jumpfrom%3Dweibocom"
-        
         
         //2.URL
         guard let url = URL(string: urlString) else {
@@ -43,26 +48,70 @@ class LSOAthViewController: UIViewController {
         
         //4.请求数据
         webView.loadRequest(request)
-        
     }
     
-    //私有方法
     
-    @objc fileprivate func back() {
+    //私有方法-------------------------------------------------
+    
+    @objc fileprivate func close() {
+        
+        SVProgressHUD.dismiss()
         self.dismiss(animated: true, completion: nil)
     }
     
+
+    /// 自动填充用户名与密码的方法
     @objc fileprivate func autoStuff() {
         
         let AutoStuffContent = "document.getElementById('userId').value='13522154166';" +
          "document.getElementById('passwd').value='luoriver';"
         
-        //测试javascript注入
-//        let AutoStuffContent = "document.getElementById('loginName').value='13522154166';" +
-//                            "document.getElementById('loginPassword').value='luoriver';"
-        
         webView.stringByEvaluatingJavaScript(from: AutoStuffContent)
     
     }
 
+}
+
+extension LSOAthViewController: UIWebViewDelegate {
+    
+
+    /// Description
+    ///
+    /// - Parameters:
+    ///   - webView: webView
+    ///   - request: 请求的链接
+    ///   - navigationType: type
+    /// - Returns:
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        
+        //1.判断链接中是否有“https://www.baidu.com”
+        if request.url?.absoluteString.hasPrefix(RedictURI) == false {
+            return true
+        }
+        
+        //2.判断链接中是否有code=
+        
+        if request.url?.query?.hasPrefix("code=") == false {
+            
+            print("授权失败")
+            close()
+            return false
+        }
+        
+        //3.获取授权码
+        let code = request.url?.query?.substring(from: "code=".endIndex) ?? ""
+        
+        print("授权码为：\(code)")
+
+        
+        return false
+    }
+    
+    func webViewDidStartLoad(_ webView: UIWebView) {
+        SVProgressHUD.show()
+    }
+    
+    func webViewDidFinishLoad(_ webView: UIWebView) {
+        SVProgressHUD.dismiss()
+    }
 }
