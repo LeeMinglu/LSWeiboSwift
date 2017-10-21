@@ -43,4 +43,24 @@ extension LSNetworkManager {
             
         }
     }
+    
+}
+
+extension LSNetworkManager {
+    func loadAccessToken(code: String) {
+        let urlString = "https://api.weibo.com/oauth2/access_token"
+        
+        let parameters = [
+            "client_id":AppKey,
+            "client_secret":AppSecret,
+            "grant_type":"authorization_code",
+            "code":code,
+            "redirect_uri":RedirectURL]
+        
+        request(method: .POST, URLString: urlString, parameters: parameters) { (json, success) in
+            
+            print(json ?? "")
+        }
+        
+    }
 }

@@ -36,7 +36,7 @@ class LSOAthViewController: UIViewController {
     
     func webviewRequest() {
 //        1.请求URI String
-        let urlString = "https://api.weibo.com/oauth2/authorize?client_id=\(AppKey)&redirect_uri=\(RedictURI)"
+        let urlString = "https://api.weibo.com/oauth2/authorize?client_id=\(AppKey)&redirect_uri=\(RedirectURL)"
         
         //2.URL
         guard let url = URL(string: urlString) else {
@@ -85,7 +85,7 @@ extension LSOAthViewController: UIWebViewDelegate {
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         
         //1.判断链接中是否有“https://www.baidu.com”
-        if request.url?.absoluteString.hasPrefix(RedictURI) == false {
+        if request.url?.absoluteString.hasPrefix(RedirectURL) == false {
             return true
         }
         
@@ -102,6 +102,9 @@ extension LSOAthViewController: UIWebViewDelegate {
         let code = request.url?.query?.substring(from: "code=".endIndex) ?? ""
         
         print("授权码为：\(code)")
+        
+        //获取token
+        LSNetworkManager.shared.loadAccessToken(code: code)
 
         
         return false
