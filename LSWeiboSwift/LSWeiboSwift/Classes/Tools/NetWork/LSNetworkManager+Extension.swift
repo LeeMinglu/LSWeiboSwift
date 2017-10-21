@@ -59,7 +59,7 @@ extension LSNetworkManager {
         
         request(method: .POST, URLString: urlString, parameters: parameters) { (json, success) in
             
-          //  print(json ?? "")
+            print(json ?? "")
             //因为这里没有remind_in,使用KVC会导致崩溃
             self.userAccount.yy_modelSet(withJSON: (json as? [String: Any]) ?? [:])
             

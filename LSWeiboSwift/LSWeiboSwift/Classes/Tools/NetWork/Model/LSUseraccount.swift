@@ -11,9 +11,9 @@ import YYModel
 
 class LSUserAccount: NSObject {
     
-    var access_token: String?
-    var uid: String?
-    var expired_in: TimeInterval = 0
+    var access_token: String? //= "2.00r27RPGzrWmFE98234ab1dcUgbmJC"
+    var uid: String? //= "5722594907"
+    var expires_in: TimeInterval = 0
     
     override var description: String {
         return yy_modelDescription()
