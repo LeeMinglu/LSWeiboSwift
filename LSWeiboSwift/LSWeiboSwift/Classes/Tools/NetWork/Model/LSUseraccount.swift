@@ -9,7 +9,7 @@
 import UIKit
 import YYModel
 
-class LSAccessCount: NSObject {
+class LSUserAccount: NSObject {
     
     var access_token: String?
     var uid: String?

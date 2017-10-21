@@ -55,7 +55,7 @@ extension LSBaseController {
    fileprivate func setupUI() {
      //   self.view.backgroundColor = UIColor.cz_random()
         setupNavigationBar()
-        (LSNetworkManager.shared.accessToken != nil) ? setupTableview() : setupVistorView()
+        LSNetworkManager.shared.userLogon ? setupTableview() : setupVistorView()
         automaticallyAdjustsScrollViewInsets = false
         
        

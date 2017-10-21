@@ -29,7 +29,7 @@ extension LSNetworkManager {
     ///
     /// - Parameter completion: 回调未读数量
     func unReadCount(completion:@escaping (_ count: Int64) -> ()) {
-        guard let uid = uid else {
+        guard let uid = userAccount.uid else {
             return
         }
         let URLString = "https://rm.api.weibo.com/2/remind/unread_count.json"

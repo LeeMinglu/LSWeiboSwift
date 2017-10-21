@@ -19,18 +19,17 @@ class LSNetworkManager: AFHTTPSessionManager {
    
     static let shared = LSNetworkManager()
     
-    var accessToken: String? //= "2.00r27RPGk3T56D2cc9a26c312LjLeE"
-    
-    var uid : String? = "5722594907"
+   // var accessToken: String? //= "2.00r27RPGk3T56D2cc9a26c312LjLeE"
+    lazy var userAccount = LSUserAccount()
     
     var userLogon :Bool {
-        return accessToken != nil
+        return userAccount.access_token != nil
     }
 
     
     func tokenRequest(method: LSRequestMethod = .GET, URLString: String, parameters: [String: Any]?, completion: @escaping (_ json: Any?, _ isSuccess: Bool)->()) {
         
-        guard let token = accessToken else {
+        guard let token = userAccount.access_token else {
             print("没有token,请登录")
             
             //FIXME: 发送通知
