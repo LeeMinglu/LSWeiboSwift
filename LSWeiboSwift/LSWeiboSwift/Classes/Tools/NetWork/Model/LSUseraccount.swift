@@ -11,9 +11,20 @@ import YYModel
 
 class LSUserAccount: NSObject {
     
-    var access_token: String? //= "2.00r27RPGzrWmFE98234ab1dcUgbmJC"
+    var access_token: String?// = "2.00r27RPGzrWmFE98234ab1dcUgbmJC"
     var uid: String? //= "5722594907"
-    var expires_in: TimeInterval = 0
+    
+    
+    /// 过期日期开发者是5年，测试者是3天
+    var expires_in: TimeInterval = 0 {
+        didSet {
+            
+            expiresDate = Date(timeIntervalSinceNow: expires_in)
+            
+        }
+    }
+    //过期日期
+    var expiresDate: Date?
     
     override var description: String {
         return yy_modelDescription()
