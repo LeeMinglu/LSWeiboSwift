@@ -13,6 +13,7 @@
 #import "NSString+CZBase64.h"
 #import "NSString+CZHash.h"
 #import "NSString+CZPath.h"
+#import "NSString+CZPath.h"
 #import "UILabel+CZAddition.h"
 #import "UIButton+CZAddition.h"
 #import "UIImage+Extension.h"

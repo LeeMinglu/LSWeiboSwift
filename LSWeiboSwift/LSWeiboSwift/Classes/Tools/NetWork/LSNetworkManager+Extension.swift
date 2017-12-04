@@ -46,6 +46,7 @@ extension LSNetworkManager {
     
 }
 
+// MARK: - OAuth 相关方法
 extension LSNetworkManager {
     func loadAccessToken(code: String) {
         let urlString = "https://api.weibo.com/oauth2/access_token"
@@ -64,6 +65,11 @@ extension LSNetworkManager {
             self.userAccount.yy_modelSet(withJSON: (json as? [String: Any]) ?? [:])
             
             print(self.userAccount)
+            
+            //保存账户模型
+            self.userAccount.saveAccount()
+            
+            
         }
         
     }

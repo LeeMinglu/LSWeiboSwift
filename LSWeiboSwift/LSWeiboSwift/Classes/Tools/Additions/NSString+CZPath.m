@@ -9,25 +9,22 @@
 
 @implementation NSString (CZPath)
 
-- (NSString *)yw_appendDocumentDir {
+- (NSString *)cz_appendDocumentDir {
     NSString *dir = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject;
     
     return [dir stringByAppendingPathComponent:self.lastPathComponent];
 }
 
-- (NSString *)yw_appendCacheDir {
+- (NSString *)cz_appendCacheDir {
     NSString *dir = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject;
     
     return [dir stringByAppendingPathComponent:self.lastPathComponent];
 }
 
-- (NSString *)yw_appendTempDir {
+- (NSString *)cz_appendTempDir {
     NSString *dir = NSTemporaryDirectory();
     
     return [dir stringByAppendingPathComponent:self.lastPathComponent];
 }
-
-
-
 
 @end
