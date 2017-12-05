@@ -104,8 +104,15 @@ extension LSOAthViewController: UIWebViewDelegate {
         print("授权码为：\(code)")
         
         //获取token
-        LSNetworkManager.shared.loadAccessToken(code: code)
-
+        LSNetworkManager.shared.loadAccessToken(code: code) { (isSuccess) in
+            
+            if !isSuccess {
+              SVProgressHUD.showInfo(withStatus: "网络请求失败")
+            } else {
+                SVProgressHUD.showInfo(withStatus: "用户登录成功")
+                self.close()
+            }
+        }
         
         return false
     }

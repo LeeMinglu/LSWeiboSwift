@@ -48,7 +48,7 @@ extension LSNetworkManager {
 
 // MARK: - OAuth 相关方法
 extension LSNetworkManager {
-    func loadAccessToken(code: String) {
+    func loadAccessToken(code: String, completion: @escaping (_ isSuccess: Bool)->()) {
         let urlString = "https://api.weibo.com/oauth2/access_token"
         
         let parameters = [
@@ -58,7 +58,7 @@ extension LSNetworkManager {
             "code":code,
             "redirect_uri":RedirectURL]
         
-        request(method: .POST, URLString: urlString, parameters: parameters) { (json, success) in
+        request(method: .POST, URLString: urlString, parameters: parameters) { (json, isSucess) in
             
             print(json ?? "")
             //因为这里没有remind_in,使用KVC会导致崩溃
@@ -68,6 +68,9 @@ extension LSNetworkManager {
             
             //保存账户模型
             self.userAccount.saveAccount()
+            
+            //完成回调
+            completion(isSucess)
             
             
         }
