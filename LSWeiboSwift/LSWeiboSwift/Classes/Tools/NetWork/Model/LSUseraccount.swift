@@ -33,6 +33,7 @@ class LSUserAccount: NSObject {
         return yy_modelDescription()
     }
     
+    //构造函数
     override init() {
         super.init()
         
@@ -44,10 +45,24 @@ class LSUserAccount: NSObject {
         }
         
         
-        //保存在模型中
+        //使用字典设置属性值
         yy_modelSet(with: dict ?? [:])
-        
         print("从沙盒中加载用户信息")
+        
+        //测试账户过期代码
+//        expiresDate = Date(timeIntervalSinceNow: -3600*24)
+//        print(expiresDate)
+        
+        //判断token是否过期
+        if expiresDate?.compare(Date()) != .orderedDescending {
+            print("账户过期")
+            access_token = nil
+            uid = nil
+            
+            try? FileManager.default.removeItem(atPath: path)
+            
+        }
+        print("账户正常 \(self)")
     
     }
     
