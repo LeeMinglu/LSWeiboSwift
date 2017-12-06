@@ -64,8 +64,13 @@ class LSNetworkManager: AFHTTPSessionManager {
         }
 
         let failure = {(task: URLSessionDataTask?, error: Any)->() in
-            if (task?.response as? HTTPURLResponse)?.statusCode == 400 {
+            if (task?.response as? HTTPURLResponse)?.statusCode == 403 {
                 print("Token已经过期了")
+                
+                //发送通知，让用户去登录
+                NotificationCenter.default.post(
+                    name: NSNotification.Name(rawValue: LSUserShouldeLoginNotification),
+                    object: "bakd token")
                 
                 //FIXME:  发送通知不知道谁调用了这个方法
             }

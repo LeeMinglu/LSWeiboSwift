@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class LSMainController: UITabBarController {
     
@@ -46,6 +47,21 @@ class LSMainController: UITabBarController {
     
     @objc fileprivate  func login( n: Notification) {
 //        print("用户通知 \(n)")
+        
+        var when = DispatchTime.now()
+        
+        if n.object != nil {
+            SVProgressHUD.setDefaultMaskType(.gradient)
+            SVProgressHUD.showInfo(withStatus: "用户登录超时，需要重新登录")
+            
+            //修改延时时间
+            when = DispatchTime.now() + 2
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: when) { 
+            SVProgressHUD.setDefaultMaskType(.clear)
+        }
+        
         let nav = UINavigationController(rootViewController: LSOAthViewController())
         
         self.present(nav, animated: true, completion: nil)

@@ -46,7 +46,7 @@ class LSUserAccount: NSObject {
         
         
         //使用字典设置属性值
-        yy_modelSet(with: dict ?? [:])
+//        yy_modelSet(with: dict ?? [:])
         print("从沙盒中加载用户信息")
         
         //测试账户过期代码

@@ -8,6 +8,8 @@
 
 import UIKit
 import UserNotifications
+import SVProgressHUD
+import AFNetworking
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,17 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        if #available(iOS 10.0, *) {
-            UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge, .carPlay]) { (isSucess, error) in
-                print("授权 \(isSucess ? "成功": "失败")")
-            }
-        } else {
-            let notifySettings = UIUserNotificationSettings(types: [.alert,.badge,.sound], categories: nil)
-            
-            application.registerUserNotificationSettings(notifySettings)
-        }
-        
-        
+        setupAdditions()
         
         window = UIWindow()
         
@@ -42,6 +34,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
+}
+
+//设置应用程序额外信息
+extension AppDelegate {
+    
+    func setupAdditions() {
+    
+        SVProgressHUD.setAnimationDuration(5)
+        
+        //设置网络加载指示器
+        AFNetworkActivityIndicatorManager.shared().isEnabled = true
+        
+        //设置用户授权显示通知
+        if #available(iOS 10.0, *) {
+            UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge, .carPlay]) { (isSucess, error) in
+                print("授权 \(isSucess ? "成功": "失败")")
+            }
+        } else {
+            let notifySettings = UIUserNotificationSettings(types: [.alert,.badge,.sound], categories: nil)
+            
+            UIApplication.shared.registerUserNotificationSettings(notifySettings)
+        }
+        
+    }
+    
 }
 
 extension AppDelegate {

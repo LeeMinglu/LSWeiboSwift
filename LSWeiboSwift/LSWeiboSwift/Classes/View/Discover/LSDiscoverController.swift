@@ -12,6 +12,10 @@ class LSDiscoverController: LSBaseController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        LSNetworkManager.shared.userAccount.access_token = "sss"
+        
+        
 
         // Do any additional setup after loading the view.
     }
