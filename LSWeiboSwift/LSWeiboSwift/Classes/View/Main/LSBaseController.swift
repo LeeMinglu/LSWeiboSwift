@@ -61,6 +61,12 @@ extension LSBaseController {
     @objc func loginSuccess(n: Notification){
         
         print("登录成功")
+        //取消显示登录与注册字样
+        navItem.leftBarButtonItem = nil
+        navItem.rightBarButtonItem = nil
+        
+        //修改指示器的Inset
+        tableview?.scrollIndicatorInsets = tableview!.contentInset
         
         //更新UI，当view=nil时，会调用loadView->viewDidLoad方法
         view = nil
@@ -119,6 +125,8 @@ extension LSBaseController {
         tableview?.addSubview(refreshControl!)
         
         tableview?.contentInset = UIEdgeInsets(top: navBar.bounds.height, left: 0, bottom: tabBarController?.tabBar.bounds.height ?? 49, right: 0)
+        
+        
         
         
     }
