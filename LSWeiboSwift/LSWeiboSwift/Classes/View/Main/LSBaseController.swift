@@ -20,9 +20,7 @@ class LSBaseController: UIViewController {
 //    //登陆状态
 //    let Logon: Bool = true
        
-    
-    
-    //
+
     var isUpPull: Bool = false
     
     var visitorDictionary: [String: String]?
@@ -31,9 +29,15 @@ class LSBaseController: UIViewController {
         super.viewDidLoad()
         setupUI()
         loaddata()
-//        self.view.backgroundColor = UIColor.cz_random()
-        // Do any additional setup after loading the view.
         
+        //监听通知
+        NotificationCenter.default.addObserver(self, selector: #selector(loginSuccess), name: NSNotification.Name(rawValue: LSUSERLoginSuccessNotification), object: nil)
+        
+    }
+    
+    deinit {
+        //注销通知
+        NotificationCenter.default.removeObserver(self)
     }
     
     override var title: String? {
@@ -50,6 +54,33 @@ class LSBaseController: UIViewController {
 
 }
 
+//访客视频监听方法
+extension LSBaseController {
+    
+    //登录成功处理
+    @objc func loginSuccess(n: Notification){
+        
+        print("登录成功")
+        
+        //更新UI，当view=nil时，会调用loadView->viewDidLoad方法
+        view = nil
+        
+        //注销通知，执行ViewDidLoad方法后再次注册，避免通知被重复注册
+        NotificationCenter.default.removeObserver(self)
+        
+    }
+    
+    @objc func loginEvent() {
+        print("点击了登陆按钮")
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: LSUserShouldeLoginNotification), object: nil)
+    }
+    
+    @objc func registerEvent() {
+        print("点击了注册按钮")
+    }
+}
+
+
 
 extension LSBaseController {
    fileprivate func setupUI() {
@@ -57,9 +88,7 @@ extension LSBaseController {
         setupNavigationBar()
         LSNetworkManager.shared.userLogon ? setupTableview() : setupVistorView()
         automaticallyAdjustsScrollViewInsets = false
-        
-       
-        
+   
     }
     
     fileprivate func setupVistorView() {
@@ -110,16 +139,6 @@ extension LSBaseController {
     }
 }
 
-extension LSBaseController {
-    @objc func loginEvent() {
-        print("点击了登陆按钮")
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: LSUserShouldeLoginNotification), object: nil)
-    }
-    
-    @objc func registerEvent() {
-        print("点击了注册按钮")
-    }
-}
 
 
 // MARK: - 代理协议

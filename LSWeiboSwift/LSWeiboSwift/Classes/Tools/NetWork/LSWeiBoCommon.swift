@@ -20,3 +20,5 @@ let RedirectURL = "https://www.baidu.com"
 // MARK: -----全局通知定义-----
 //登陆通知
 let LSUserShouldeLoginNotification = "LSUserShouldeLoginNotification"
+//用户登陆成功通知
+let LSUSERLoginSuccessNotification = "LSUSERLoginSuccessNotification"

@@ -110,6 +110,9 @@ extension LSOAthViewController: UIWebViewDelegate {
               SVProgressHUD.showInfo(withStatus: "网络请求失败")
             } else {
                 SVProgressHUD.showInfo(withStatus: "用户登录成功")
+                //发送通知
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: LSUSERLoginSuccessNotification), object: nil)
+                
                 self.close()
             }
         }
