@@ -46,6 +46,24 @@ extension LSNetworkManager {
     
 }
 
+extension LSNetworkManager {
+    func loadUserInfo(completion: @escaping (_ dict: [String: AnyObject]) ->()) {
+        
+        guard let uid = userAccount.uid else {
+            return
+        }
+        
+        let url = "https://api.weibo.com/2/users/show.json"
+        
+        let params = ["uid": uid]
+        
+        //加载当前用户信息，登录成功后立即执行
+        tokenRequest(URLString: url, parameters: params) { (json, isSuccess) in
+            completion((json as? [String: AnyObject]) ?? [:])
+        }
+    }
+}
+
 // MARK: - OAuth 相关方法
 extension LSNetworkManager {
     func loadAccessToken(code: String, completion: @escaping (_ isSuccess: Bool)->()) {
@@ -66,11 +84,21 @@ extension LSNetworkManager {
             
             print(self.userAccount)
             
-            //保存账户模型
-            self.userAccount.saveAccount()
             
-            //完成回调
-            completion(isSucess)
+            
+            
+            self.loadUserInfo(completion: { (dict) in
+                
+                self.userAccount.yy_modelSet(with: dict)
+                print(self.userAccount)
+                //保存账户模型
+                self.userAccount.saveAccount()
+                
+                //完成回调
+                completion(isSucess)
+
+            })
+            
             
             
         }

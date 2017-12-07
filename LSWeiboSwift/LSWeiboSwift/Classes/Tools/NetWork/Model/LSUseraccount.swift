@@ -29,6 +29,12 @@ class LSUserAccount: NSObject {
     //过期日期
     var expiresDate: Date?
     
+    //用户图像
+    var avatar_large: String?
+    
+    //用户昵称
+    var screen_name: String?
+    
     override var description: String {
         return yy_modelDescription()
     }
