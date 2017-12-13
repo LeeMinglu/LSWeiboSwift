@@ -89,6 +89,7 @@ extension LSNetworkManager {
             
             self.loadUserInfo(completion: { (dict) in
                 
+                //使用用户信息字典设置用户账户信息
                 self.userAccount.yy_modelSet(with: dict)
                 print(self.userAccount)
                 //保存账户模型

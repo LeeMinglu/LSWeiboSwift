@@ -32,8 +32,8 @@ class LSNetworkManager: AFHTTPSessionManager {
         guard let token = userAccount.access_token else {
             print("没有token,请登录")
             
-            //FIXME: 发送通知
             
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: LSUserShouldeLoginNotification), object: nil)
             completion(nil, false)
             return
         }
@@ -72,7 +72,8 @@ class LSNetworkManager: AFHTTPSessionManager {
                     name: NSNotification.Name(rawValue: LSUserShouldeLoginNotification),
                     object: "bakd token")
                 
-                //FIXME:  发送通知不知道谁调用了这个方法
+                //发送通知不知道谁调用了这个方法
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: LSUserShouldeLoginNotification), object: "bad Token", userInfo: nil)
             }
             print("网络发生错误" + "\(error)")
             completion(error, false)

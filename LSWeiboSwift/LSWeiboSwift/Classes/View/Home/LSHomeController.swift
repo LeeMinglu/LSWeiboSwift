@@ -61,7 +61,7 @@ extension LSHomeController {
     
 
 }
-
+ //设置界面
 extension LSHomeController {
     
     override func setupTableview() {
@@ -71,7 +71,25 @@ extension LSHomeController {
         //        }
         // 注册原型 cell
         tableview?.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+        
+        setupNavTitle()
 
+    }
+    
+    private func setupNavTitle() {
+        
+        let button = UIButton.cz_textButton("rock", fontSize: 17, normalColor: UIColor.black, highlightedColor: UIColor.orange)
+        
+        button?.setImage(UIImage(named: "navigationbar_arrow_down"), for: .normal)
+        button?.setImage(UIImage(named: "navigationbar_arrow_up"), for: .selected)
+        
+        button?.addTarget(self, action: #selector(iconClicked), for: .touchUpInside)
+        
+        navItem.titleView = button
+    }
+    
+    @objc func iconClicked(btn: UIButton) {
+        btn.isSelected = !btn.isSelected
     }
     
 }
