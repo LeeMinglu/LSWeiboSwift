@@ -78,12 +78,12 @@ extension LSHomeController {
     
     private func setupNavTitle() {
         
-        let button = UIButton.cz_textButton("rock", fontSize: 17, normalColor: UIColor.black, highlightedColor: UIColor.orange)
+        let title = LSNetworkManager.shared.userAccount.screen_name
         
-        button?.setImage(UIImage(named: "navigationbar_arrow_down"), for: .normal)
-        button?.setImage(UIImage(named: "navigationbar_arrow_up"), for: .selected)
+        let button = LSTitleButton.init(title: title)
         
-        button?.addTarget(self, action: #selector(iconClicked), for: .touchUpInside)
+        button.addTarget(self, action: #selector(iconClicked), for: .touchUpInside)
+
         
         navItem.titleView = button
     }
