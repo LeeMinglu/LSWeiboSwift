@@ -36,5 +36,23 @@ class LSTitleButton: UIButton {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        guard let titleL = titleLabel,
+            let imageV = imageView else {
+            return
+        }
+        
+        if imageV.frame.origin.x == 0 {
+
+            titleL.frame = titleL.frame.offsetBy(dx: -imageV.bounds.width, dy: 0)
+            imageV.frame = imageV.frame.offsetBy(dx: titleL.bounds.width, dy: 0)
+            
+        }
+
+    
+    }
 
 }
