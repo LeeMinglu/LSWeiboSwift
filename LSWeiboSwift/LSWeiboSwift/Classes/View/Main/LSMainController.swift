@@ -138,6 +138,15 @@ extension LSMainController {
     }
     
     private var isNewVersion: Bool {
+        
+        //1.取当前的版本号； 
+        
+        //2.获取保存在doucument当中的版本号； 
+        
+        //3.保存当前的版本号
+        
+        //4.前后版本号进行对比
+        
         return true
     }
 }
