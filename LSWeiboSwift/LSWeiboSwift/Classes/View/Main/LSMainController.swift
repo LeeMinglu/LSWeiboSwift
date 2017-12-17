@@ -22,6 +22,7 @@ class LSMainController: UITabBarController {
         setupControllers()
         setupComposeButton()
         setupTimer()
+        setNewFeatureViews()
         
         delegate = self
         
@@ -115,6 +116,29 @@ extension LSMainController {
             
             UIApplication.shared.applicationIconBadgeNumber = Int(count)
         }
+    }
+}
+
+
+// MARK: - 新视图功能处理
+extension LSMainController {
+    
+    //设置新视图
+    fileprivate func setNewFeatureViews() {
+        
+        //1.如果更新显示新特性，否则显示欢迎
+        let v = isNewVersion ? LSNewFeature() : LSWelcomeView()
+        
+        //2.添加视图
+        v.frame = UIScreen.main.bounds
+        
+        view.addSubview(v)
+        
+    
+    }
+    
+    private var isNewVersion: Bool {
+        return true
     }
 }
 

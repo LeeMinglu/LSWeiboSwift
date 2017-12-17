@@ -11,6 +11,8 @@
 		1A17E47C1FE2B7390025D5E0 /* LSTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17E47B1FE2B7390025D5E0 /* LSTitleButton.swift */; };
 		1A1E32D31F9AEDA600984D43 /* LSUseraccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E32D21F9AEDA600984D43 /* LSUseraccount.swift */; };
 		1A39E6CC1F5EE8F700B9E7DB /* LSNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39E6CB1F5EE8F700B9E7DB /* LSNetworkManager.swift */; };
+		1A3AB6571FE6B2E3003C12C6 /* LSWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AB6561FE6B2E3003C12C6 /* LSWelcomeView.swift */; };
+		1A3AB6591FE6B2FD003C12C6 /* LSNewFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AB6581FE6B2FD003C12C6 /* LSNewFeature.swift */; };
 		1A4DD4F31EBEC8BA001F97BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */; };
 		1A5563EF1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5563EE1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift */; };
 		1A7B3D511F4879ED00E0FF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */; };
@@ -58,6 +60,8 @@
 		1A17E47B1FE2B7390025D5E0 /* LSTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSTitleButton.swift; sourceTree = "<group>"; };
 		1A1E32D21F9AEDA600984D43 /* LSUseraccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSUseraccount.swift; sourceTree = "<group>"; };
 		1A39E6CB1F5EE8F700B9E7DB /* LSNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSNetworkManager.swift; sourceTree = "<group>"; };
+		1A3AB6561FE6B2E3003C12C6 /* LSWelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSWelcomeView.swift; sourceTree = "<group>"; };
+		1A3AB6581FE6B2FD003C12C6 /* LSNewFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSNewFeature.swift; sourceTree = "<group>"; };
 		1A4DD4EF1EBEC8BA001F97BD /* LSWeiboSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSWeiboSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -167,6 +171,15 @@
 			path = NetWork;
 			sourceTree = "<group>";
 		};
+		1A3AB6551FE6B1E5003C12C6 /* NewFeature */ = {
+			isa = PBXGroup;
+			children = (
+				1A3AB6561FE6B2E3003C12C6 /* LSWelcomeView.swift */,
+				1A3AB6581FE6B2FD003C12C6 /* LSNewFeature.swift */,
+			);
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
 		1A4DD4E61EBEC8BA001F97BD = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +281,7 @@
 		1AB68AEA1EBEF86500E37B78 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1A3AB6551FE6B1E5003C12C6 /* NewFeature */,
 				1A148A111F910F7B00D35BD8 /* LSOAthController */,
 				1AD171851F497E94003A58EA /* main.json */,
 				1AB68AFB1EBEFA4F00E37B78 /* LSMainController.swift */,
@@ -535,6 +549,7 @@
 				1AFDEC7F1F8E602000ACBFCD /* LSWeiBoCommon.swift in Sources */,
 				1AB690131EC121C300E37B78 /* UIImage+Extension.m in Sources */,
 				1AB68FE31EBF570B00E37B78 /* String+Extension.swift in Sources */,
+				1A3AB6591FE6B2FD003C12C6 /* LSNewFeature.swift in Sources */,
 				1AB690171EC121C300E37B78 /* UIView+JKFrame.m in Sources */,
 				1AB6900A1EC121C300E37B78 /* NSArray+Log.m in Sources */,
 				1AB9E7241F641E660020F9C5 /* LSStatus.swift in Sources */,
@@ -548,6 +563,7 @@
 				1AB6900F1EC121C300E37B78 /* NSString+CZHash.m in Sources */,
 				1A148A131F910FB600D35BD8 /* LSOAthViewController.swift in Sources */,
 				1AB68AF61EBEF97100E37B78 /* LSDiscoverController.swift in Sources */,
+				1A3AB6571FE6B2E3003C12C6 /* LSWelcomeView.swift in Sources */,
 				1AB690141EC121C300E37B78 /* UILabel+CZAddition.m in Sources */,
 				1AB68AF01EBEF8EE00E37B78 /* LSNavigationController.swift in Sources */,
 				1AB690151EC121C300E37B78 /* UIScreen+CZAddition.m in Sources */,
