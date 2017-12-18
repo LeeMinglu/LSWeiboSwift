@@ -10,14 +10,16 @@ import UIKit
 
 class LSWelcomeView: UIView {
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    class func welcomeView() -> LSWelcomeView {
         
-        backgroundColor = UIColor.red
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        let nib = UINib(nibName: "LSWelcomeView", bundle: nil)
+        let view = nib.instantiate(withOwner: nil, options: nil)[0] as! LSWelcomeView
+
+        
+        //2.添加视图
+        view.frame = UIScreen.main.bounds
+        return view
+  
     }
 
 }

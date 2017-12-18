@@ -127,10 +127,9 @@ extension LSMainController {
     fileprivate func setNewFeatureViews() {
         
         //1.如果更新显示新特性，否则显示欢迎
-        let v = isNewVersion ? LSNewFeature() : LSWelcomeView()
+        let v = isNewVersion ? LSNewFeature() : LSWelcomeView.welcomeView()
         
-        //2.添加视图
-        v.frame = UIScreen.main.bounds
+        
         
         view.addSubview(v)
         
