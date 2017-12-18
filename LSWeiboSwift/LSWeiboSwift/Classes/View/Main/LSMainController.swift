@@ -134,20 +134,22 @@ extension LSMainController {
         
         view.addSubview(v)
         
-    
     }
     
     private var isNewVersion: Bool {
         
         //1.取当前的版本号； 
+        let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
         
         //2.获取保存在doucument当中的版本号； 
+        let path: String = ("version" as NSString).cz_appendDocumentDir()
+        let sandBoxVersion = try? String(contentsOfFile: path)
         
         //3.保存当前的版本号
+         try? currentVersion.write(toFile: path, atomically: true, encoding: .utf8)
         
         //4.前后版本号进行对比
-        
-        return true
+        return currentVersion != sandBoxVersion
     }
 }
 
