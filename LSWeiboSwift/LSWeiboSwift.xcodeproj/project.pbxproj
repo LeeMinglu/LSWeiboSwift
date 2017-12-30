@@ -12,10 +12,11 @@
 		1A1E32D31F9AEDA600984D43 /* LSUseraccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E32D21F9AEDA600984D43 /* LSUseraccount.swift */; };
 		1A39E6CC1F5EE8F700B9E7DB /* LSNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39E6CB1F5EE8F700B9E7DB /* LSNetworkManager.swift */; };
 		1A3AB6571FE6B2E3003C12C6 /* LSWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AB6561FE6B2E3003C12C6 /* LSWelcomeView.swift */; };
-		1A3AB6591FE6B2FD003C12C6 /* LSNewFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AB6581FE6B2FD003C12C6 /* LSNewFeature.swift */; };
+		1A3AB6591FE6B2FD003C12C6 /* LSNewFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AB6581FE6B2FD003C12C6 /* LSNewFeatureView.swift */; };
 		1A4AA6331FE8006B00E5D0DE /* LSWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4AA6321FE8006B00E5D0DE /* LSWelcomeView.xib */; };
 		1A4DD4F31EBEC8BA001F97BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */; };
 		1A5563EF1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5563EE1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift */; };
+		1A62A20B1FF3D69500FFB099 /* LSNewFeatureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A62A20A1FF3D69500FFB099 /* LSNewFeatureView.xib */; };
 		1A7B3D511F4879ED00E0FF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */; };
 		1AB68AF01EBEF8EE00E37B78 /* LSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AEF1EBEF8EE00E37B78 /* LSNavigationController.swift */; };
 		1AB68AF21EBEF90700E37B78 /* LSBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AF11EBEF90700E37B78 /* LSBaseController.swift */; };
@@ -62,13 +63,14 @@
 		1A1E32D21F9AEDA600984D43 /* LSUseraccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSUseraccount.swift; sourceTree = "<group>"; };
 		1A39E6CB1F5EE8F700B9E7DB /* LSNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSNetworkManager.swift; sourceTree = "<group>"; };
 		1A3AB6561FE6B2E3003C12C6 /* LSWelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSWelcomeView.swift; sourceTree = "<group>"; };
-		1A3AB6581FE6B2FD003C12C6 /* LSNewFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSNewFeature.swift; sourceTree = "<group>"; };
+		1A3AB6581FE6B2FD003C12C6 /* LSNewFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSNewFeatureView.swift; sourceTree = "<group>"; };
 		1A4AA6321FE8006B00E5D0DE /* LSWelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSWelcomeView.xib; sourceTree = "<group>"; };
 		1A4DD4EF1EBEC8BA001F97BD /* LSWeiboSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSWeiboSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A4DD4FE1EBEC8BA001F97BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A5563EE1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		1A62A20A1FF3D69500FFB099 /* LSNewFeatureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSNewFeatureView.xib; sourceTree = "<group>"; };
 		1AB68AEF1EBEF8EE00E37B78 /* LSNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSNavigationController.swift; sourceTree = "<group>"; };
 		1AB68AF11EBEF90700E37B78 /* LSBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSBaseController.swift; sourceTree = "<group>"; };
 		1AB68AF31EBEF94F00E37B78 /* LSHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSHomeController.swift; sourceTree = "<group>"; };
@@ -178,7 +180,8 @@
 			children = (
 				1A3AB6561FE6B2E3003C12C6 /* LSWelcomeView.swift */,
 				1A4AA6321FE8006B00E5D0DE /* LSWelcomeView.xib */,
-				1A3AB6581FE6B2FD003C12C6 /* LSNewFeature.swift */,
+				1A3AB6581FE6B2FD003C12C6 /* LSNewFeatureView.swift */,
+				1A62A20A1FF3D69500FFB099 /* LSNewFeatureView.xib */,
 			);
 			path = NewFeature;
 			sourceTree = "<group>";
@@ -469,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A4AA6331FE8006B00E5D0DE /* LSWelcomeView.xib in Resources */,
+				1A62A20B1FF3D69500FFB099 /* LSNewFeatureView.xib in Resources */,
 				1AD171861F497E94003A58EA /* main.json in Resources */,
 				1ACAEB971F49D194006AFB01 /* main2.json in Resources */,
 				1A7B3D511F4879ED00E0FF34 /* Assets.xcassets in Resources */,
@@ -553,7 +557,7 @@
 				1AFDEC7F1F8E602000ACBFCD /* LSWeiBoCommon.swift in Sources */,
 				1AB690131EC121C300E37B78 /* UIImage+Extension.m in Sources */,
 				1AB68FE31EBF570B00E37B78 /* String+Extension.swift in Sources */,
-				1A3AB6591FE6B2FD003C12C6 /* LSNewFeature.swift in Sources */,
+				1A3AB6591FE6B2FD003C12C6 /* LSNewFeatureView.swift in Sources */,
 				1AB690171EC121C300E37B78 /* UIView+JKFrame.m in Sources */,
 				1AB6900A1EC121C300E37B78 /* NSArray+Log.m in Sources */,
 				1AB9E7241F641E660020F9C5 /* LSStatus.swift in Sources */,

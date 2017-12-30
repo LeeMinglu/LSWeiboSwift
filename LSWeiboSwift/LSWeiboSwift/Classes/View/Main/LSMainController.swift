@@ -127,7 +127,7 @@ extension LSMainController {
     fileprivate func setNewFeatureViews() {
         
         //1.如果更新显示新特性，否则显示欢迎
-        let v = isNewVersion ? LSNewFeature() : LSWelcomeView.welcomeView()
+        let v = isNewVersion ? LSNewFeatureView.newFeatureView() : LSWelcomeView.welcomeView()
         
         
         
@@ -148,7 +148,7 @@ extension LSMainController {
          try? currentVersion.write(toFile: path, atomically: true, encoding: .utf8)
         
         //4.前后版本号进行对比
-        return currentVersion != sandBoxVersion
+        return currentVersion == sandBoxVersion
     }
 }
 
