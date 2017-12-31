@@ -148,7 +148,7 @@ extension LSMainController {
          try? currentVersion.write(toFile: path, atomically: true, encoding: .utf8)
         
         //4.前后版本号进行对比
-        return currentVersion != sandBoxVersion
+        return currentVersion == sandBoxVersion
     }
 }
 

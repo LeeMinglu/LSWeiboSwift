@@ -27,6 +27,7 @@ class LSWelcomeView: UIView {
     
     override func awakeFromNib() {
         
+<<<<<<< .merge_file_C0Julw
        guard let urlString = LSNetworkManager.shared.userAccount.avatar_large,
         let url = URL(string: urlString) else {
             
@@ -38,6 +39,16 @@ class LSWelcomeView: UIView {
         
         iconImage.layer.cornerRadius = iconImage.bounds.width * 0.5
         iconImage.layer.masksToBounds = true
+=======
+        guard let urlString = LSNetworkManager.shared.userAccount.avatar_large,
+            let url = URL(string: urlString) else {
+                return
+        }
+        
+        iconImage.sd_setImage(with: url, placeholderImage:
+        UIImage(named: "avatar_default_big"))
+    }
+>>>>>>> .merge_file_FLvliE
     
     }
     
@@ -45,7 +56,12 @@ class LSWelcomeView: UIView {
     override func didMoveToWindow() {
         
         avatarBottomConstant.constant = avatarBottomConstant.constant + 200
+<<<<<<< .merge_file_C0Julw
         UIView.animate(withDuration: 3.0, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options:[], animations: {
+=======
+        
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options:[], animations: {
+>>>>>>> .merge_file_FLvliE
             self.layoutIfNeeded()
             
         }) { (_) in
