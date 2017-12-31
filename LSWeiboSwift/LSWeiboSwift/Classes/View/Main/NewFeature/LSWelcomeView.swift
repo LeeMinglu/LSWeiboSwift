@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class LSWelcomeView: UIView {
 
@@ -24,16 +25,41 @@ class LSWelcomeView: UIView {
   
     }
     
+    override func awakeFromNib() {
+        
+       guard let urlString = LSNetworkManager.shared.userAccount.avatar_large,
+        let url = URL(string: urlString) else {
+            
+            return
+            
+        }
+        
+        iconImage.sd_setImage(with: url, placeholderImage: UIImage(named: "avatar_default_big"))
+        
+        iconImage.layer.cornerRadius = iconImage.bounds.width * 0.5
+        iconImage.layer.masksToBounds = true
     
+    }
+    
+
     override func didMoveToWindow() {
         
         avatarBottomConstant.constant = avatarBottomConstant.constant + 200
-        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options:[], animations: {
+        UIView.animate(withDuration: 3.0, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0, options:[], animations: {
             self.layoutIfNeeded()
+            
         }) { (_) in
-            UIView.animate(withDuration: 1, animations: {
-                self.nameLabel.alpha = 1
+            
+            UIView.animate(withDuration: 1.0, animations: {
+                
+            self.nameLabel.alpha = 1
+                
+            }, completion: { (_) in
+                
+                self.removeFromSuperview()
+                
             })
+            
         }
     }
 
