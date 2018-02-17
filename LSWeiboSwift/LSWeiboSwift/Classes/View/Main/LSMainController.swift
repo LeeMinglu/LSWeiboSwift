@@ -161,7 +161,7 @@ extension LSMainController {
         
         let count = CGFloat(tabBar.subviews.count)
         
-        let composeBtnWidth = tabBar.bounds.width / count + 50 
+        let composeBtnWidth = tabBar.bounds.width / count 
         
         compose.frame = tabBar.bounds.insetBy(dx: composeBtnWidth * 2, dy: 0)
         
