@@ -70,7 +70,9 @@ extension LSHomeController {
         navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", fontSize: 15, target: self, action:  #selector(friendVC), isBack: true)
         //        }
         // 注册原型 cell
-        tableview?.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+   //     tableview?.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+        
+        tableview?.register(UINib(nibName: "WeiBoStatusNormalCell", bundle: nil), forCellReuseIdentifier: cellID)
         
         setupNavTitle()
 

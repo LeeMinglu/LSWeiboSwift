@@ -10,6 +10,8 @@
 		1A148A131F910FB600D35BD8 /* LSOAthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A148A121F910FB600D35BD8 /* LSOAthViewController.swift */; };
 		1A17E47C1FE2B7390025D5E0 /* LSTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17E47B1FE2B7390025D5E0 /* LSTitleButton.swift */; };
 		1A1E32D31F9AEDA600984D43 /* LSUseraccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E32D21F9AEDA600984D43 /* LSUseraccount.swift */; };
+		1A3769C020395BE9009A2576 /* WeiBoStatusNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A3769BF20395BE9009A2576 /* WeiBoStatusNormalCell.xib */; };
+		1A3769C220395C85009A2576 /* LSStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3769C120395C85009A2576 /* LSStatusCell.swift */; };
 		1A39E6CC1F5EE8F700B9E7DB /* LSNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A39E6CB1F5EE8F700B9E7DB /* LSNetworkManager.swift */; };
 		1A3AB6571FE6B2E3003C12C6 /* LSWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AB6561FE6B2E3003C12C6 /* LSWelcomeView.swift */; };
 		1A3AB6591FE6B2FD003C12C6 /* LSNewFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AB6581FE6B2FD003C12C6 /* LSNewFeature.swift */; };
@@ -60,6 +62,8 @@
 		1A148A121F910FB600D35BD8 /* LSOAthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSOAthViewController.swift; sourceTree = "<group>"; };
 		1A17E47B1FE2B7390025D5E0 /* LSTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSTitleButton.swift; sourceTree = "<group>"; };
 		1A1E32D21F9AEDA600984D43 /* LSUseraccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSUseraccount.swift; sourceTree = "<group>"; };
+		1A3769BF20395BE9009A2576 /* WeiBoStatusNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeiBoStatusNormalCell.xib; sourceTree = "<group>"; };
+		1A3769C120395C85009A2576 /* LSStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSStatusCell.swift; sourceTree = "<group>"; };
 		1A39E6CB1F5EE8F700B9E7DB /* LSNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSNetworkManager.swift; sourceTree = "<group>"; };
 		1A3AB6561FE6B2E3003C12C6 /* LSWelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSWelcomeView.swift; sourceTree = "<group>"; };
 		1A3AB6581FE6B2FD003C12C6 /* LSNewFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSNewFeature.swift; sourceTree = "<group>"; };
@@ -160,6 +164,15 @@
 				1A1E32D21F9AEDA600984D43 /* LSUseraccount.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1A3769BC20395B76009A2576 /* StatusCell */ = {
+			isa = PBXGroup;
+			children = (
+				1A3769BF20395BE9009A2576 /* WeiBoStatusNormalCell.xib */,
+				1A3769C120395C85009A2576 /* LSStatusCell.swift */,
+			);
+			path = StatusCell;
 			sourceTree = "<group>";
 		};
 		1A39E6CA1F5EE8D900B9E7DB /* NetWork */ = {
@@ -275,6 +288,7 @@
 		1AB68AE91EBEF86500E37B78 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1A3769BC20395B76009A2576 /* StatusCell */,
 				1A17E47A1FE2B6930025D5E0 /* TitleButton */,
 				1AB68AF31EBEF94F00E37B78 /* LSHomeController.swift */,
 			);
@@ -468,6 +482,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A3769C020395BE9009A2576 /* WeiBoStatusNormalCell.xib in Resources */,
 				1A4AA6331FE8006B00E5D0DE /* LSWelcomeView.xib in Resources */,
 				1AD171861F497E94003A58EA /* main.json in Resources */,
 				1ACAEB971F49D194006AFB01 /* main2.json in Resources */,
@@ -580,6 +595,7 @@
 				1A17E47C1FE2B7390025D5E0 /* LSTitleButton.swift in Sources */,
 				1AB68F9F1EBF500B00E37B78 /* FFLabel.swift in Sources */,
 				1AB690201EC12E4D00E37B78 /* UIButton+CZAddition.m in Sources */,
+				1A3769C220395C85009A2576 /* LSStatusCell.swift in Sources */,
 				1AB68AF41EBEF94F00E37B78 /* LSHomeController.swift in Sources */,
 				1AB6900B1EC121C300E37B78 /* NSAttributedString+CZAdditon.m in Sources */,
 				1AB6900E1EC121C300E37B78 /* NSString+CZBase64.m in Sources */,
