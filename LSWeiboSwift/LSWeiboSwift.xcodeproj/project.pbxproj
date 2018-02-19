@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A148A131F910FB600D35BD8 /* LSOAthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A148A121F910FB600D35BD8 /* LSOAthViewController.swift */; };
 		1A1574B3203AB8A9008D7CB9 /* LSUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1574B2203AB8A9008D7CB9 /* LSUser.swift */; };
+		1A1574B5203AC839008D7CB9 /* LSStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1574B4203AC839008D7CB9 /* LSStatusViewModel.swift */; };
 		1A17E47C1FE2B7390025D5E0 /* LSTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17E47B1FE2B7390025D5E0 /* LSTitleButton.swift */; };
 		1A1E32D31F9AEDA600984D43 /* LSUseraccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E32D21F9AEDA600984D43 /* LSUseraccount.swift */; };
 		1A3769C020395BE9009A2576 /* WeiBoStatusNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A3769BF20395BE9009A2576 /* WeiBoStatusNormalCell.xib */; };
@@ -62,6 +63,7 @@
 		09A1E441EDF6558C424263FD /* Pods-LSWeiboSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSWeiboSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSWeiboSwift/Pods-LSWeiboSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		1A148A121F910FB600D35BD8 /* LSOAthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSOAthViewController.swift; sourceTree = "<group>"; };
 		1A1574B2203AB8A9008D7CB9 /* LSUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSUser.swift; path = LSWeiboSwift/Classes/View/Home/StatusCell/LSUser.swift; sourceTree = SOURCE_ROOT; };
+		1A1574B4203AC839008D7CB9 /* LSStatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSStatusViewModel.swift; path = LSWeiboSwift/Classes/View/Home/StatusCell/LSStatusViewModel.swift; sourceTree = SOURCE_ROOT; };
 		1A17E47B1FE2B7390025D5E0 /* LSTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSTitleButton.swift; sourceTree = "<group>"; };
 		1A1E32D21F9AEDA600984D43 /* LSUseraccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSUseraccount.swift; sourceTree = "<group>"; };
 		1A3769BF20395BE9009A2576 /* WeiBoStatusNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeiBoStatusNormalCell.xib; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				1AF89C001F64D10F00EAC2CC /* LSStatusListViewModel.swift */,
+				1A1574B4203AC839008D7CB9 /* LSStatusViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				1AB9E7241F641E660020F9C5 /* LSStatus.swift in Sources */,
 				1AB690121EC121C300E37B78 /* UIColor+CZAddition.m in Sources */,
 				1AB68AFC1EBEFA4F00E37B78 /* LSMainController.swift in Sources */,
+				1A1574B5203AC839008D7CB9 /* LSStatusViewModel.swift in Sources */,
 				1AB690101EC121C300E37B78 /* NSString+CZPath.m in Sources */,
 				1A5563EF1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift in Sources */,
 				1A4DD4F31EBEC8BA001F97BD /* AppDelegate.swift in Sources */,

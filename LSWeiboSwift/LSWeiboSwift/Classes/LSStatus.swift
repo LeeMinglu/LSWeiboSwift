@@ -14,8 +14,10 @@ class LSStatus: NSObject {
     var id: Int64 = 0
     var text: String?
     
+    var user: LSUser?
+    
     override var description: String {
-        return ("id: \(id), text: \(String(describing: text))")
+        return yy_modelDescription()
     }
 
 }

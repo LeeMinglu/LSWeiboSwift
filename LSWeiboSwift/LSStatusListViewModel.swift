@@ -36,15 +36,14 @@ class LSStatusListViewModel {
         //获取网络数据进行字典转模型
         LSNetworkManager.shared.statusList(since_id: since_id, max_id: max_id, completion: { (list, isSucess) in
             
-            guard let array = NSArray.yy_modelArray(
-                with: LSStatus.self,
-                json: list ?? []) as? [LSStatus]
+            guard let array = NSArray.yy_modelArray(with: LSStatus.self,json: list ?? []) as? [LSStatus]
                 else {
                     
                     completion(isSucess, false)
                     return
             }
             print("加载了 \(array.count)条数据,最后一条消息是\(String(describing: array.last?.text))")
+            print("array 数据：\(array)")
             
             
             if pullUp {
