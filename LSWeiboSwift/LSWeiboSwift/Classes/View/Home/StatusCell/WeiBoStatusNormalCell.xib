@@ -36,7 +36,7 @@
                             <constraint firstAttribute="height" constant="8" id="XXD-dV-zOi"/>
                         </constraints>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zj4-dI-k1d" userLabel="头像">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="Zj4-dI-k1d" userLabel="头像">
                         <rect key="frame" x="19" y="20" width="32" height="32"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="32" id="LGk-O2-NNC"/>
@@ -100,6 +100,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Default" width="320" height="480"/>
         <image name="avatar_enterprise_vip" width="17" height="17"/>
         <image name="common_icon_membership" width="14" height="14"/>
     </resources>
