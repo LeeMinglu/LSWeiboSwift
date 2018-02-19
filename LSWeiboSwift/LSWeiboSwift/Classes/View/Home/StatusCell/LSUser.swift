@@ -25,6 +25,8 @@ class LSUser: NSObject {
     //会员等级0-6
     var mbrank: Int = 0
     
-    
+    override var description: String {
+        return yy_modelDescription()
+    }
 
 }
