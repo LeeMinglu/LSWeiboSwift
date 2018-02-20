@@ -52,11 +52,11 @@ extension LSHomeController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableview?.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
+        let cell = tableview?.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! LSStatusCell
         
-        cell?.textLabel?.text = statusViewModel.statusList[indexPath.row].text
+        cell.statusLabel.text = statusViewModel.statusList[indexPath.row].status.text
         
-        return cell!
+        return cell
     }
     
 
@@ -73,6 +73,9 @@ extension LSHomeController {
    //     tableview?.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
         
         tableview?.register(UINib(nibName: "WeiBoStatusNormalCell", bundle: nil), forCellReuseIdentifier: cellID)
+        
+        tableview?.separatorStyle = .none
+        tableview?.estimatedRowHeight = 300
         
         setupNavTitle()
 
