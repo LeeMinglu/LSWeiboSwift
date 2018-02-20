@@ -10,17 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LSStatusCell" customModule="LSWeiboSwift" customModuleProvider="target">
-            <connections>
-                <outlet property="iconView" destination="Zj4-dI-k1d" id="24I-8w-VZi"/>
-                <outlet property="memberIconView" destination="IKp-oq-i6B" id="xJ5-Kw-kpi"/>
-                <outlet property="nameLabel" destination="00M-SF-SFe" id="5bw-oN-g0F"/>
-                <outlet property="sourceLabel" destination="7fU-ba-svi" id="J1s-Ui-ijy"/>
-                <outlet property="statusLabel" destination="zvb-kX-poO" id="KBN-SX-sud"/>
-                <outlet property="timeLabel" destination="3KO-hn-UMy" id="LTa-gL-jRg"/>
-                <outlet property="vipIconView" destination="gYM-Ub-j3S" id="64b-Qa-OPE"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LSStatusCell" customModule="LSWeiboSwift" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="217" id="jfT-Od-Mkq" customClass="LSStatusCell" customModule="LSWeiboSwift" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="444" height="217"/>

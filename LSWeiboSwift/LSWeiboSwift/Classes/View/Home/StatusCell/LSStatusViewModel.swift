@@ -9,13 +9,17 @@
 //单条微博视图模型
 import Foundation
 
-class LSStatusViewModel {
+class LSStatusViewModel: CustomStringConvertible {
     
     var status: LSStatus
     
     init(model: LSStatus) {
         
         self.status = model
+    }
+    
+    var description: String {
+        return  status.description
     }
     
 }

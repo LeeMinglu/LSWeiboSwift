@@ -65,8 +65,8 @@ class LSStatusListViewModel {
             */
             
             
-          /*
-            print("加载了 \(array.count)条数据,最后一条消息是\(String(describing: array.last?.text))")
+          
+            print("加载了 \(array.count)条数据,最后一条消息是\(String(describing: array.last?.status.text))")
             print("array 数据：\(array)")
             
             
@@ -83,7 +83,7 @@ class LSStatusListViewModel {
             } else {
                 completion(isSucess,true)
             }
-            */
+            
         })
     }
 }
