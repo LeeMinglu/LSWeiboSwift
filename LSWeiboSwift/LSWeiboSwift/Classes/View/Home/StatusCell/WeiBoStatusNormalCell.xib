@@ -57,7 +57,7 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_enterprise_vip" translatesAutoresizingMaskIntoConstraints="NO" id="gYM-Ub-j3S" userLabel="认证图标">
                         <rect key="frame" x="42.5" y="43.5" width="17" height="17"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvb-kX-poO" userLabel="正文">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvb-kX-poO" userLabel="正文">
                         <rect key="frame" x="19" y="64" width="42" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -86,6 +86,15 @@
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="zvb-kX-poO" secondAttribute="bottom" constant="12" id="xVU-cO-6uS"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="iconView" destination="Zj4-dI-k1d" id="9co-mD-78B"/>
+                <outlet property="memberIconView" destination="IKp-oq-i6B" id="gU2-ge-KGw"/>
+                <outlet property="nameLabel" destination="00M-SF-SFe" id="8eB-0r-Cf3"/>
+                <outlet property="sourceLabel" destination="7fU-ba-svi" id="A97-lX-ws2"/>
+                <outlet property="statusLabel" destination="zvb-kX-poO" id="FHL-aF-eQ8"/>
+                <outlet property="timeLabel" destination="3KO-hn-UMy" id="elg-oX-0VI"/>
+                <outlet property="vipIconView" destination="gYM-Ub-j3S" id="gh0-7J-Wfi"/>
+            </connections>
             <point key="canvasLocation" x="75" y="89.5"/>
         </tableViewCell>
     </objects>
