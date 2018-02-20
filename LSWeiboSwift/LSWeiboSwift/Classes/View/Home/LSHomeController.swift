@@ -54,11 +54,7 @@ extension LSHomeController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview?.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! LSStatusCell
         
-        let iconImageName = statusViewModel.statusList[indexPath.row].user?.screen_name ?? ""
-        
-        cell.iconView.image = UIImage(named: iconImageName)
-        
-        cell.statusLabel.text = statusViewModel.statusList[indexPath.row].text
+        cell.statusLabel.text = statusViewModel.statusList[indexPath.row].status.text
         
         return cell
     }
