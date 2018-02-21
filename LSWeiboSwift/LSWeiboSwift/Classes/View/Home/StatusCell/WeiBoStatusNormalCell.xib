@@ -55,7 +55,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_enterprise_vip" translatesAutoresizingMaskIntoConstraints="NO" id="gYM-Ub-j3S" userLabel="认证图标">
-                        <rect key="frame" x="42.5" y="43.5" width="17" height="17"/>
+                        <rect key="frame" x="37.5" y="38.5" width="17" height="17"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvb-kX-poO" userLabel="正文">
                         <rect key="frame" x="19" y="64" width="42" height="20.5"/>
@@ -71,14 +71,14 @@
                     <constraint firstItem="IKp-oq-i6B" firstAttribute="centerY" secondItem="00M-SF-SFe" secondAttribute="centerY" id="GDz-H4-fj6"/>
                     <constraint firstItem="00M-SF-SFe" firstAttribute="top" secondItem="Zj4-dI-k1d" secondAttribute="top" constant="4" id="LLJ-0C-uyT"/>
                     <constraint firstItem="JIV-da-LtX" firstAttribute="leading" secondItem="7oU-2g-bLw" secondAttribute="leading" id="O93-bQ-BRR"/>
-                    <constraint firstItem="gYM-Ub-j3S" firstAttribute="centerX" secondItem="Zj4-dI-k1d" secondAttribute="trailing" id="Q2a-zW-FUE"/>
+                    <constraint firstItem="gYM-Ub-j3S" firstAttribute="centerX" secondItem="Zj4-dI-k1d" secondAttribute="trailing" constant="-5" id="Q2a-zW-FUE"/>
                     <constraint firstItem="Zj4-dI-k1d" firstAttribute="top" secondItem="JIV-da-LtX" secondAttribute="bottom" constant="12" id="QtC-nk-fIG"/>
                     <constraint firstItem="7fU-ba-svi" firstAttribute="leading" secondItem="3KO-hn-UMy" secondAttribute="trailing" constant="6" id="ZXA-xo-ZvV"/>
                     <constraint firstAttribute="trailing" secondItem="JIV-da-LtX" secondAttribute="trailing" id="aNy-IA-pbs"/>
                     <constraint firstItem="zvb-kX-poO" firstAttribute="top" secondItem="Zj4-dI-k1d" secondAttribute="bottom" constant="12" id="ard-ka-rcR"/>
                     <constraint firstItem="00M-SF-SFe" firstAttribute="leading" secondItem="Zj4-dI-k1d" secondAttribute="trailing" constant="11" id="bQx-Ob-uJV"/>
                     <constraint firstItem="IKp-oq-i6B" firstAttribute="leading" secondItem="00M-SF-SFe" secondAttribute="trailing" constant="3" id="e72-aw-vjX"/>
-                    <constraint firstItem="gYM-Ub-j3S" firstAttribute="centerY" secondItem="Zj4-dI-k1d" secondAttribute="bottom" id="iJC-8t-LfD"/>
+                    <constraint firstItem="gYM-Ub-j3S" firstAttribute="centerY" secondItem="Zj4-dI-k1d" secondAttribute="bottom" constant="-5" id="iJC-8t-LfD"/>
                     <constraint firstItem="Zj4-dI-k1d" firstAttribute="leading" secondItem="7oU-2g-bLw" secondAttribute="leadingMargin" constant="11" id="mXI-jP-Nvq"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zvb-kX-poO" secondAttribute="trailing" constant="11" id="naE-Ul-hf3"/>
                     <constraint firstItem="3KO-hn-UMy" firstAttribute="bottom" secondItem="Zj4-dI-k1d" secondAttribute="bottom" id="re3-JO-0VJ"/>
@@ -95,7 +95,7 @@
                 <outlet property="timeLabel" destination="3KO-hn-UMy" id="elg-oX-0VI"/>
                 <outlet property="vipIconView" destination="gYM-Ub-j3S" id="gh0-7J-Wfi"/>
             </connections>
-            <point key="canvasLocation" x="75" y="89.5"/>
+            <point key="canvasLocation" x="-221" y="36"/>
         </tableViewCell>
     </objects>
     <resources>

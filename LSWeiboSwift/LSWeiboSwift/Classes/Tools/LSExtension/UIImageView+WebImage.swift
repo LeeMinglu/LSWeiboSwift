@@ -9,7 +9,7 @@
 import SDWebImage
 
 extension UIImageView {
-    func ls_setImage(urlString: String?, placeholderImage: UIImage?) {
+    func ls_setImage(urlString: String?, placeholderImage: UIImage?, isAvatar: Bool) {
         
         guard let urlString = urlString,
             let url = URL(string: urlString) else {
@@ -19,6 +19,9 @@ extension UIImageView {
         
         sd_setImage(with: url, placeholderImage: placeholderImage, options: [], progress: nil) { (image, _, _, _) in
             
+            if isAvatar {
+                self.image = image?.avatarImage(size: self.bounds.size)
+            }
         }
     }
 
