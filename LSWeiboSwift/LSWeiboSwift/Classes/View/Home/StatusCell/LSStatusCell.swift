@@ -17,6 +17,7 @@ class LSStatusCell: UITableViewCell {
             nameLabel.text = viewModel?.status.user?.screen_name
             memberIconView.image = viewModel?.memberIcon
             vipIconView.image = viewModel?.vipIcon
+            iconView.ls_setImage(urlString: viewModel?.status.user?.profile_image_url, placeholderImage: UIImage(named: "avatar_default_big"))
         }
     }
     
