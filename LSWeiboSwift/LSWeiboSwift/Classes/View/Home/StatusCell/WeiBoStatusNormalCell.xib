@@ -63,7 +63,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlS-9w-wBg">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlS-9w-wBg" userLabel="底部工具栏" customClass="LSToolBar" customModule="LSWeiboSwift" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="188" width="444" height="28"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Iy-Fp-oZl">
@@ -90,14 +90,14 @@
                                     <color key="titleColor" red="0.50980392159999999" green="0.50980392159999999" blue="0.50980392159999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timeline_card_bottom_line_highlighted" translatesAutoresizingMaskIntoConstraints="NO" id="TBe-Ce-1Iq" userLabel="分隔线">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timeline_card_bottom_line_highlighted" translatesAutoresizingMaskIntoConstraints="NO" id="TBe-Ce-1Iq" userLabel="左侧分隔线">
                                 <rect key="frame" x="147" y="5" width="1" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="Xot-b7-YI8"/>
                                     <constraint firstAttribute="height" constant="18" id="x2L-hB-jVR"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timeline_card_bottom_line_highlighted" translatesAutoresizingMaskIntoConstraints="NO" id="RIm-oU-yiY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timeline_card_bottom_line_highlighted" translatesAutoresizingMaskIntoConstraints="NO" id="RIm-oU-yiY" userLabel="右侧分隔线">
                                 <rect key="frame" x="304" y="5" width="1" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="4Aa-Bj-jdp"/>
@@ -124,6 +124,11 @@
                             <constraint firstItem="HIx-us-RcE" firstAttribute="leading" secondItem="TBe-Ce-1Iq" secondAttribute="trailing" id="p8c-GV-Dcw"/>
                             <constraint firstItem="1Iy-Fp-oZl" firstAttribute="top" secondItem="vlS-9w-wBg" secondAttribute="top" id="tkR-0l-lwu"/>
                         </constraints>
+                        <connections>
+                            <outlet property="comment" destination="HIx-us-RcE" id="gyi-Ex-75y"/>
+                            <outlet property="like" destination="n46-QG-j9a" id="rfU-9b-5v1"/>
+                            <outlet property="retweet" destination="1Iy-Fp-oZl" id="9ud-vh-1R1"/>
+                        </connections>
                     </view>
                 </subviews>
                 <constraints>
@@ -158,6 +163,7 @@
                 <outlet property="sourceLabel" destination="7fU-ba-svi" id="A97-lX-ws2"/>
                 <outlet property="statusLabel" destination="zvb-kX-poO" id="AHd-Uz-13s"/>
                 <outlet property="timeLabel" destination="3KO-hn-UMy" id="elg-oX-0VI"/>
+                <outlet property="toolBar" destination="vlS-9w-wBg" id="tH3-jy-5jI"/>
                 <outlet property="vipIconView" destination="gYM-Ub-j3S" id="gh0-7J-Wfi"/>
             </connections>
             <point key="canvasLocation" x="-221" y="35.5"/>

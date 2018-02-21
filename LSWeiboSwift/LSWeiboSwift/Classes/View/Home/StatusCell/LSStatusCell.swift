@@ -18,6 +18,8 @@ class LSStatusCell: UITableViewCell {
             memberIconView.image = viewModel?.memberIcon
             vipIconView.image = viewModel?.vipIcon
             iconView.ls_setImage(urlString: viewModel?.status.user?.profile_image_url, placeholderImage: UIImage(named: "avatar_default_big"), isAvatar: true)
+            
+            toolBar.viewModel = viewModel
         }
     }
     
@@ -42,6 +44,7 @@ class LSStatusCell: UITableViewCell {
     //正文
     @IBOutlet weak var statusLabel: UILabel!
     
+    @IBOutlet weak var toolBar: LSToolBar!
 
     override func awakeFromNib() {
         super.awakeFromNib()
