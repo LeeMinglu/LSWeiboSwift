@@ -91,7 +91,7 @@
                 <outlet property="memberIconView" destination="IKp-oq-i6B" id="gU2-ge-KGw"/>
                 <outlet property="nameLabel" destination="00M-SF-SFe" id="8eB-0r-Cf3"/>
                 <outlet property="sourceLabel" destination="7fU-ba-svi" id="A97-lX-ws2"/>
-                <outlet property="statusLabel" destination="zvb-kX-poO" id="FHL-aF-eQ8"/>
+                <outlet property="statusLabel" destination="zvb-kX-poO" id="AHd-Uz-13s"/>
                 <outlet property="timeLabel" destination="3KO-hn-UMy" id="elg-oX-0VI"/>
                 <outlet property="vipIconView" destination="gYM-Ub-j3S" id="gh0-7J-Wfi"/>
             </connections>

@@ -10,6 +10,15 @@ import UIKit
 
 class LSStatusCell: UITableViewCell {
     
+    var viewModel: LSStatusViewModel? {
+        didSet {
+            
+            statusLabel.text = viewModel?.status.text
+            nameLabel.text = viewModel?.status.user?.screen_name
+            memberIconView.image = viewModel?.memberIcon
+        }
+    }
+    
     //头像
     @IBOutlet weak var iconView: UIImageView!
     
