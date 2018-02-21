@@ -10,6 +10,17 @@ import UIKit
 
 class LSStatusCell: UITableViewCell {
     
+    var viewModel: LSStatusViewModel? {
+        didSet {
+            
+            statusLabel.text = viewModel?.status.text
+            nameLabel.text = viewModel?.status.user?.screen_name
+            memberIconView.image = viewModel?.memberIcon
+            vipIconView.image = viewModel?.vipIcon
+            iconView.ls_setImage(urlString: viewModel?.status.user?.profile_image_url, placeholderImage: UIImage(named: "avatar_default_big"))
+        }
+    }
+    
     //头像
     @IBOutlet weak var iconView: UIImageView!
     

@@ -54,7 +54,8 @@ extension LSHomeController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableview?.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! LSStatusCell
         
-        cell.statusLabel.text = statusViewModel.statusList[indexPath.row].status.text
+        let viewModel = statusViewModel.statusList[indexPath.row]
+        cell.viewModel = viewModel
         
         return cell
     }
