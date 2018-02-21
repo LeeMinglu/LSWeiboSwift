@@ -82,16 +82,22 @@ extension LSMainController: UITabBarControllerDelegate {
         
         if index == 0 {
             print("点击了首页")
+            //让表格滚动到顶部
+            //a获取到控制器
             let nav = tabBarController.childViewControllers.first as! LSNavigationController
             let vc = nav.childViewControllers.first as! LSHomeController
-            
+            //b滚动到顶部
             let y = nav.navigationBar.bounds.height
             vc.tableview?.setContentOffset(
                 CGPoint.init(x: 0, y: y-24), animated: true)
-            
+            //4> 刷新数据，增加延迟是保证先滚动到顶部再刷新数据
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1, execute: { 
                 vc.loaddata()
             })
+            
+            //5> 清除tabItem 的badgeNumber
+            vc.tabBarItem.badgeValue = nil
+            UIApplication.shared.applicationIconBadgeNumber = 0
         }
         
         return !viewController.isMember(of: UIViewController.self)
@@ -161,7 +167,7 @@ extension LSMainController {
         
         let count = CGFloat(tabBar.subviews.count)
         
-        let composeBtnWidth = tabBar.bounds.width / count + 50 
+        let composeBtnWidth = tabBar.bounds.width / count 
         
         compose.frame = tabBar.bounds.insetBy(dx: composeBtnWidth * 2, dy: 0)
         

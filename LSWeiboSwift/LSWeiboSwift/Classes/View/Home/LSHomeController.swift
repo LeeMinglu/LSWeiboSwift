@@ -52,11 +52,12 @@ extension LSHomeController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableview?.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
+        let cell = tableview?.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! LSStatusCell
         
-        cell?.textLabel?.text = statusViewModel.statusList[indexPath.row].text
+        let viewModel = statusViewModel.statusList[indexPath.row]
+        cell.viewModel = viewModel
         
-        return cell!
+        return cell
     }
     
 
@@ -70,7 +71,12 @@ extension LSHomeController {
         navItem.leftBarButtonItem = UIBarButtonItem(title: "好友", fontSize: 15, target: self, action:  #selector(friendVC), isBack: true)
         //        }
         // 注册原型 cell
-        tableview?.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+   //     tableview?.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
+        
+        tableview?.register(UINib(nibName: "WeiBoStatusNormalCell", bundle: nil), forCellReuseIdentifier: cellID)
+        
+        tableview?.separatorStyle = .none
+        tableview?.estimatedRowHeight = 300
         
         setupNavTitle()
 

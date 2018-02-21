@@ -66,6 +66,7 @@ class LSWelcomeView: UIView {
             
         }) { (_) in
             
+<<<<<<< HEAD
             UIView.animate(withDuration: 1.0, animations: {
                 
             self.nameLabel.alpha = 1
@@ -74,6 +75,12 @@ class LSWelcomeView: UIView {
                 
                 self.removeFromSuperview()
                 
+=======
+            UIView.animate(withDuration: 1, animations: { 
+                self.nameLabel.alpha = 1
+            }, completion: { (_) in
+                self.removeFromSuperview()
+>>>>>>> test
             })
             
         }
