@@ -16,6 +16,7 @@ class LSStatusCell: UITableViewCell {
             statusLabel.text = viewModel?.status.text
             nameLabel.text = viewModel?.status.user?.screen_name
             memberIconView.image = viewModel?.memberIcon
+            vipIconView.image = viewModel?.vipIcon
         }
     }
     
