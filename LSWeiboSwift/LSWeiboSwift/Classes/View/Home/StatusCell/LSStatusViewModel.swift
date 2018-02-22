@@ -19,6 +19,12 @@ class LSStatusViewModel: CustomStringConvertible {
     //认证图标
     var vipIcon: UIImage?
     
+    var retweetString: String?
+    
+    var comentString: String?
+    
+    var likeString: String?
+    
     init(model: LSStatus) {
         
         self.status = model
@@ -44,10 +50,32 @@ class LSStatusViewModel: CustomStringConvertible {
         default:
             break
         }
+        
+        // MARK: 测试数据代码
+    //    model.reposts_count = Int(arc4random_uniform(100000))
+        
+        
+        retweetString = countString(count: model.reposts_count, DefaultString: "转发")
+        comentString = countString(count: model.comments_count, DefaultString: "评论")
+        likeString = countString(count: model.attitudes_count, DefaultString: "赞")
     }
     
     var description: String {
         return  status.description
+    }
+    
+    //使用数字反馈一个字符串
+    private func countString(count: Int, DefaultString: String) -> String {
+    
+        if count == 0 {
+            return DefaultString
+        }
+        
+        if count < 10000 {
+            return count.description
+        }
+        
+       return String(format: "%.02f万", Double(count)/10000)
     }
     
 }
