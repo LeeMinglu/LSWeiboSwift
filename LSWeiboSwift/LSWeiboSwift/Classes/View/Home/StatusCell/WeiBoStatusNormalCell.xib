@@ -131,20 +131,19 @@
                         </connections>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHM-uO-8wY" userLabel="配图" customClass="LSStatusPicture" customModule="LSWeiboSwift" customModuleProvider="target">
-                        <rect key="frame" x="19" y="96.5" width="396" height="200"/>
+                        <rect key="frame" x="19" y="84.5" width="396" height="200"/>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="200" id="gbI-R2-eVd"/>
                         </constraints>
                         <connections>
                             <outlet property="heightCons" destination="gbI-R2-eVd" id="XBM-Bh-ViE"/>
-                            <outlet property="topCons" destination="1Tw-su-edV" id="yGb-Dr-46i"/>
                         </connections>
                     </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="3KO-hn-UMy" firstAttribute="leading" secondItem="00M-SF-SFe" secondAttribute="leading" id="0ep-w8-z8i"/>
-                    <constraint firstItem="ZHM-uO-8wY" firstAttribute="top" secondItem="zvb-kX-poO" secondAttribute="bottom" constant="12" id="1Tw-su-edV"/>
+                    <constraint firstItem="ZHM-uO-8wY" firstAttribute="top" secondItem="zvb-kX-poO" secondAttribute="bottom" id="1Tw-su-edV"/>
                     <constraint firstItem="7fU-ba-svi" firstAttribute="centerY" secondItem="3KO-hn-UMy" secondAttribute="centerY" id="9Ry-or-Cd2"/>
                     <constraint firstItem="vlS-9w-wBg" firstAttribute="leading" secondItem="7oU-2g-bLw" secondAttribute="leading" id="AOw-nI-1eo"/>
                     <constraint firstAttribute="trailingMargin" secondItem="ZHM-uO-8wY" secondAttribute="trailing" constant="12" id="CMG-fr-9f2"/>

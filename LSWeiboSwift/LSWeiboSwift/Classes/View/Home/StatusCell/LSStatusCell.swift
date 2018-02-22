@@ -22,8 +22,7 @@ class LSStatusCell: UITableViewCell {
             toolBar.viewModel = viewModel
             
             //代码设置配图的高度
-            statusPicture.heightCons.constant = 0
-            statusPicture.topCons.constant = 0
+            statusPicture.heightCons.constant = 200
         }
     }
     

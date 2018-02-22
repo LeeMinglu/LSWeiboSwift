@@ -10,6 +10,6 @@ import UIKit
 
 class LSStatusPicture: UIView {
     @IBOutlet weak var heightCons: NSLayoutConstraint!
-    @IBOutlet weak var topCons: NSLayoutConstraint!
+
     
 }
