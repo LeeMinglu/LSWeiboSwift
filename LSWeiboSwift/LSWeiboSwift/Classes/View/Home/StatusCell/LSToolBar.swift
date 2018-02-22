@@ -12,9 +12,13 @@ class LSToolBar: UIView {
     
     var viewModel: LSStatusViewModel? {
         didSet {
-            retweet.setTitle("\(viewModel?.status.reposts_count)" , for: [])
-            comment.setTitle("\(viewModel?.status.comments_count)" , for: [])
-            like.setTitle("\(viewModel?.status.attitudes_count)" , for: [])
+      //      retweet.setTitle("\(viewModel?.status.reposts_count)" , for: [])
+   //         comment.setTitle("\(viewModel?.status.comments_count)" , for: [])
+     //       like.setTitle("\(viewModel?.status.attitudes_count)" , for: [])
+           retweet.setTitle(viewModel?.retweetString, for: [])
+            comment.setTitle(viewModel?.comentString, for: [])
+            like.setTitle(viewModel?.likeString, for: [])
+            
         }
     }
 
