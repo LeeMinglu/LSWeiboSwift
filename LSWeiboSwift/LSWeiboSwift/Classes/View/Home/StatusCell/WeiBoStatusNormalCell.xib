@@ -12,15 +12,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LSStatusCell" customModule="LSWeiboSwift" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="217" id="jfT-Od-Mkq" customClass="LSStatusCell" customModule="LSWeiboSwift" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="444" height="217"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="344" id="jfT-Od-Mkq" customClass="LSStatusCell" customModule="LSWeiboSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="435" height="344"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jfT-Od-Mkq" id="7oU-2g-bLw">
-                <rect key="frame" x="0.0" y="0.0" width="444" height="216.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="435" height="343.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JIV-da-LtX" userLabel="顶部视图">
-                        <rect key="frame" x="0.0" y="0.0" width="444" height="8"/>
+                        <rect key="frame" x="0.0" y="0.0" width="435" height="8"/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="8" id="XXD-dV-zOi"/>
@@ -64,10 +64,10 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlS-9w-wBg" userLabel="底部工具栏" customClass="LSToolBar" customModule="LSWeiboSwift" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="188" width="444" height="28"/>
+                        <rect key="frame" x="0.0" y="315.5" width="435" height="28"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Iy-Fp-oZl">
-                                <rect key="frame" x="0.0" y="0.0" width="148" height="28"/>
+                                <rect key="frame" x="0.0" y="0.0" width="145" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="转发" image="timeline_icon_retweet">
@@ -75,7 +75,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n46-QG-j9a">
-                                <rect key="frame" x="296" y="0.0" width="148" height="28"/>
+                                <rect key="frame" x="290" y="0.0" width="145" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="赞" image="timeline_icon_unlike">
@@ -83,7 +83,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIx-us-RcE">
-                                <rect key="frame" x="148" y="0.0" width="148" height="28"/>
+                                <rect key="frame" x="145" y="0.0" width="145" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="评论" image="timeline_icon_comment">
@@ -91,14 +91,14 @@
                                 </state>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timeline_card_bottom_line_highlighted" translatesAutoresizingMaskIntoConstraints="NO" id="TBe-Ce-1Iq" userLabel="左侧分隔线">
-                                <rect key="frame" x="147" y="5" width="1" height="18"/>
+                                <rect key="frame" x="144" y="5" width="1" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="Xot-b7-YI8"/>
                                     <constraint firstAttribute="height" constant="18" id="x2L-hB-jVR"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timeline_card_bottom_line_highlighted" translatesAutoresizingMaskIntoConstraints="NO" id="RIm-oU-yiY" userLabel="右侧分隔线">
-                                <rect key="frame" x="304" y="5" width="1" height="18"/>
+                                <rect key="frame" x="298" y="5" width="1" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="4Aa-Bj-jdp"/>
                                 </constraints>
@@ -130,17 +130,26 @@
                             <outlet property="retweet" destination="1Iy-Fp-oZl" id="9ud-vh-1R1"/>
                         </connections>
                     </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHM-uO-8wY">
+                        <rect key="frame" x="19" y="96.5" width="396" height="200"/>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="gbI-R2-eVd"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="3KO-hn-UMy" firstAttribute="leading" secondItem="00M-SF-SFe" secondAttribute="leading" id="0ep-w8-z8i"/>
-                    <constraint firstItem="vlS-9w-wBg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="zvb-kX-poO" secondAttribute="bottom" constant="12" id="5M5-3r-rCN"/>
+                    <constraint firstItem="ZHM-uO-8wY" firstAttribute="top" secondItem="zvb-kX-poO" secondAttribute="bottom" constant="12" id="1Tw-su-edV"/>
                     <constraint firstItem="7fU-ba-svi" firstAttribute="centerY" secondItem="3KO-hn-UMy" secondAttribute="centerY" id="9Ry-or-Cd2"/>
                     <constraint firstItem="vlS-9w-wBg" firstAttribute="leading" secondItem="7oU-2g-bLw" secondAttribute="leading" id="AOw-nI-1eo"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ZHM-uO-8wY" secondAttribute="trailing" constant="12" id="CMG-fr-9f2"/>
                     <constraint firstItem="zvb-kX-poO" firstAttribute="leading" secondItem="Zj4-dI-k1d" secondAttribute="leading" id="F8f-LB-uXQ"/>
                     <constraint firstAttribute="bottom" secondItem="vlS-9w-wBg" secondAttribute="bottom" id="FwZ-0g-rSx"/>
                     <constraint firstItem="IKp-oq-i6B" firstAttribute="centerY" secondItem="00M-SF-SFe" secondAttribute="centerY" id="GDz-H4-fj6"/>
                     <constraint firstItem="00M-SF-SFe" firstAttribute="top" secondItem="Zj4-dI-k1d" secondAttribute="top" constant="4" id="LLJ-0C-uyT"/>
                     <constraint firstItem="JIV-da-LtX" firstAttribute="leading" secondItem="7oU-2g-bLw" secondAttribute="leading" id="O93-bQ-BRR"/>
+                    <constraint firstItem="HIx-us-RcE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ZHM-uO-8wY" secondAttribute="bottom" constant="12" id="Pre-Au-0FI"/>
                     <constraint firstItem="gYM-Ub-j3S" firstAttribute="centerX" secondItem="Zj4-dI-k1d" secondAttribute="trailing" constant="-5" id="Q2a-zW-FUE"/>
                     <constraint firstItem="Zj4-dI-k1d" firstAttribute="top" secondItem="JIV-da-LtX" secondAttribute="bottom" constant="12" id="QtC-nk-fIG"/>
                     <constraint firstItem="7fU-ba-svi" firstAttribute="leading" secondItem="3KO-hn-UMy" secondAttribute="trailing" constant="6" id="ZXA-xo-ZvV"/>
@@ -148,6 +157,7 @@
                     <constraint firstItem="zvb-kX-poO" firstAttribute="top" secondItem="Zj4-dI-k1d" secondAttribute="bottom" constant="12" id="ard-ka-rcR"/>
                     <constraint firstItem="00M-SF-SFe" firstAttribute="leading" secondItem="Zj4-dI-k1d" secondAttribute="trailing" constant="11" id="bQx-Ob-uJV"/>
                     <constraint firstItem="IKp-oq-i6B" firstAttribute="leading" secondItem="00M-SF-SFe" secondAttribute="trailing" constant="3" id="e72-aw-vjX"/>
+                    <constraint firstItem="ZHM-uO-8wY" firstAttribute="leading" secondItem="zvb-kX-poO" secondAttribute="leading" id="eZ4-p7-pwQ"/>
                     <constraint firstItem="gYM-Ub-j3S" firstAttribute="centerY" secondItem="Zj4-dI-k1d" secondAttribute="bottom" constant="-5" id="iJC-8t-LfD"/>
                     <constraint firstItem="Zj4-dI-k1d" firstAttribute="leading" secondItem="7oU-2g-bLw" secondAttribute="leadingMargin" constant="11" id="mXI-jP-Nvq"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zvb-kX-poO" secondAttribute="trailing" constant="11" id="naE-Ul-hf3"/>
@@ -166,7 +176,7 @@
                 <outlet property="toolBar" destination="vlS-9w-wBg" id="tH3-jy-5jI"/>
                 <outlet property="vipIconView" destination="gYM-Ub-j3S" id="gh0-7J-Wfi"/>
             </connections>
-            <point key="canvasLocation" x="-221" y="35.5"/>
+            <point key="canvasLocation" x="-336.5" y="64"/>
         </tableViewCell>
     </objects>
     <resources>
