@@ -14,6 +14,13 @@ class LSStatus: NSObject {
     var id: Int64 = 0
     var text: String?
     
+    //转发数
+    var reposts_count: Int = 0
+    //评论数
+    var comments_count: Int = 0
+    //点赞数
+    var attitudes_count: Int = 0
+    
     var user: LSUser?
     
     override var description: String {
