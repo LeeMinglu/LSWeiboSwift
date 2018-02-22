@@ -130,7 +130,7 @@
                             <outlet property="retweet" destination="1Iy-Fp-oZl" id="9ud-vh-1R1"/>
                         </connections>
                     </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHM-uO-8wY" userLabel="配图" customClass="LSStatusPicture" customModule="LSWeiboSwift" customModuleProvider="target">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHM-uO-8wY" userLabel="配图" customClass="LSStatusPictureView" customModule="LSWeiboSwift" customModuleProvider="target">
                         <rect key="frame" x="19" y="84.5" width="396" height="200"/>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -175,7 +175,7 @@
                 <outlet property="nameLabel" destination="00M-SF-SFe" id="8eB-0r-Cf3"/>
                 <outlet property="sourceLabel" destination="7fU-ba-svi" id="A97-lX-ws2"/>
                 <outlet property="statusLabel" destination="zvb-kX-poO" id="AHd-Uz-13s"/>
-                <outlet property="statusPicture" destination="ZHM-uO-8wY" id="ZQr-o3-yVJ"/>
+                <outlet property="statusPictureView" destination="ZHM-uO-8wY" id="QEp-RR-pEn"/>
                 <outlet property="timeLabel" destination="3KO-hn-UMy" id="elg-oX-0VI"/>
                 <outlet property="toolBar" destination="vlS-9w-wBg" id="tH3-jy-5jI"/>
                 <outlet property="vipIconView" destination="gYM-Ub-j3S" id="gh0-7J-Wfi"/>

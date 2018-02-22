@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1A148A131F910FB600D35BD8 /* LSOAthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A148A121F910FB600D35BD8 /* LSOAthViewController.swift */; };
-		1A1574B3203AB8A9008D7CB9 /* LSUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1574B2203AB8A9008D7CB9 /* LSUser.swift */; };
-		1A1574B5203AC839008D7CB9 /* LSStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1574B4203AC839008D7CB9 /* LSStatusViewModel.swift */; };
 		1A1574B7203D22FB008D7CB9 /* UIImageView+WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1574B6203D22FB008D7CB9 /* UIImageView+WebImage.swift */; };
 		1A1574B9203DB3DC008D7CB9 /* LSToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1574B8203DB3DC008D7CB9 /* LSToolBar.swift */; };
-		1A1574BD203EB05B008D7CB9 /* LSStatusPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1574BC203EB05B008D7CB9 /* LSStatusPicture.swift */; };
+		1A1574BD203EB05B008D7CB9 /* LSStatusPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1574BC203EB05B008D7CB9 /* LSStatusPictureView.swift */; };
 		1A17E47C1FE2B7390025D5E0 /* LSTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17E47B1FE2B7390025D5E0 /* LSTitleButton.swift */; };
 		1A1E32D31F9AEDA600984D43 /* LSUseraccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E32D21F9AEDA600984D43 /* LSUseraccount.swift */; };
 		1A3769C020395BE9009A2576 /* WeiBoStatusNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A3769BF20395BE9009A2576 /* WeiBoStatusNormalCell.xib */; };
@@ -21,7 +19,12 @@
 		1A3AB6571FE6B2E3003C12C6 /* LSWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AB6561FE6B2E3003C12C6 /* LSWelcomeView.swift */; };
 		1A3AB6591FE6B2FD003C12C6 /* LSNewFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3AB6581FE6B2FD003C12C6 /* LSNewFeature.swift */; };
 		1A4AA6331FE8006B00E5D0DE /* LSWelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4AA6321FE8006B00E5D0DE /* LSWelcomeView.xib */; };
+		1A4D072D203ED441003E9502 /* LSStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D072B203ED441003E9502 /* LSStatusViewModel.swift */; };
+		1A4D072E203ED441003E9502 /* LSStatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4D072C203ED441003E9502 /* LSStatusListViewModel.swift */; };
 		1A4DD4F31EBEC8BA001F97BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */; };
+		1A516FD4203ED22400522916 /* LSUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A516FD2203ED22400522916 /* LSUser.swift */; };
+		1A516FD5203ED22400522916 /* LSStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A516FD3203ED22400522916 /* LSStatus.swift */; };
+		1A516FDC203ED38B00522916 /* LSPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A516FDB203ED38B00522916 /* LSPicture.swift */; };
 		1A5563EF1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5563EE1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift */; };
 		1A7B3D511F4879ED00E0FF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */; };
 		1AB68AF01EBEF8EE00E37B78 /* LSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AEF1EBEF8EE00E37B78 /* LSNavigationController.swift */; };
@@ -53,11 +56,9 @@
 		1AB690201EC12E4D00E37B78 /* UIButton+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB6901F1EC12E4D00E37B78 /* UIButton+CZAddition.m */; };
 		1AB690231EC3576D00E37B78 /* LSDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB690221EC3576D00E37B78 /* LSDemoController.swift */; };
 		1AB9E7221F6399BB0020F9C5 /* LSNetworkManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB9E7211F6399BB0020F9C5 /* LSNetworkManager+Extension.swift */; };
-		1AB9E7241F641E660020F9C5 /* LSStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB9E7231F641E660020F9C5 /* LSStatus.swift */; };
 		1ABC05C61F47D51100445E81 /* LSVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABC05C51F47D51100445E81 /* LSVisitorView.swift */; };
 		1ACAEB971F49D194006AFB01 /* main2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ACAEB961F49D194006AFB01 /* main2.json */; };
 		1AD171861F497E94003A58EA /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AD171851F497E94003A58EA /* main.json */; };
-		1AF89C011F64D10F00EAC2CC /* LSStatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF89C001F64D10F00EAC2CC /* LSStatusListViewModel.swift */; };
 		1AFDEC7F1F8E602000ACBFCD /* LSWeiBoCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFDEC7E1F8E602000ACBFCD /* LSWeiBoCommon.swift */; };
 		B3A0C29174BED67BC7B4D97B /* Pods_LSWeiboSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6837540665F81B6C95449AD8 /* Pods_LSWeiboSwift.framework */; };
 /* End PBXBuildFile section */
@@ -65,11 +66,9 @@
 /* Begin PBXFileReference section */
 		09A1E441EDF6558C424263FD /* Pods-LSWeiboSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSWeiboSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSWeiboSwift/Pods-LSWeiboSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		1A148A121F910FB600D35BD8 /* LSOAthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSOAthViewController.swift; sourceTree = "<group>"; };
-		1A1574B2203AB8A9008D7CB9 /* LSUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSUser.swift; path = LSWeiboSwift/Classes/View/Home/StatusCell/LSUser.swift; sourceTree = SOURCE_ROOT; };
-		1A1574B4203AC839008D7CB9 /* LSStatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSStatusViewModel.swift; path = LSWeiboSwift/Classes/View/Home/StatusCell/LSStatusViewModel.swift; sourceTree = SOURCE_ROOT; };
 		1A1574B6203D22FB008D7CB9 /* UIImageView+WebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebImage.swift"; sourceTree = "<group>"; };
 		1A1574B8203DB3DC008D7CB9 /* LSToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSToolBar.swift; sourceTree = "<group>"; };
-		1A1574BC203EB05B008D7CB9 /* LSStatusPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSStatusPicture.swift; sourceTree = "<group>"; };
+		1A1574BC203EB05B008D7CB9 /* LSStatusPictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSStatusPictureView.swift; sourceTree = "<group>"; };
 		1A17E47B1FE2B7390025D5E0 /* LSTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSTitleButton.swift; sourceTree = "<group>"; };
 		1A1E32D21F9AEDA600984D43 /* LSUseraccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSUseraccount.swift; sourceTree = "<group>"; };
 		1A3769BF20395BE9009A2576 /* WeiBoStatusNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeiBoStatusNormalCell.xib; sourceTree = "<group>"; };
@@ -78,10 +77,15 @@
 		1A3AB6561FE6B2E3003C12C6 /* LSWelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSWelcomeView.swift; sourceTree = "<group>"; };
 		1A3AB6581FE6B2FD003C12C6 /* LSNewFeature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSNewFeature.swift; sourceTree = "<group>"; };
 		1A4AA6321FE8006B00E5D0DE /* LSWelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSWelcomeView.xib; sourceTree = "<group>"; };
+		1A4D072B203ED441003E9502 /* LSStatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSStatusViewModel.swift; sourceTree = "<group>"; };
+		1A4D072C203ED441003E9502 /* LSStatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSStatusListViewModel.swift; sourceTree = "<group>"; };
 		1A4DD4EF1EBEC8BA001F97BD /* LSWeiboSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSWeiboSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A4DD4FE1EBEC8BA001F97BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A516FD2203ED22400522916 /* LSUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSUser.swift; sourceTree = "<group>"; };
+		1A516FD3203ED22400522916 /* LSStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSStatus.swift; sourceTree = "<group>"; };
+		1A516FDB203ED38B00522916 /* LSPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSPicture.swift; sourceTree = "<group>"; };
 		1A5563EE1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		1AB68AEF1EBEF8EE00E37B78 /* LSNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSNavigationController.swift; sourceTree = "<group>"; };
 		1AB68AF11EBEF90700E37B78 /* LSBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSBaseController.swift; sourceTree = "<group>"; };
@@ -130,11 +134,9 @@
 		1AB6901F1EC12E4D00E37B78 /* UIButton+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CZAddition.m"; sourceTree = "<group>"; };
 		1AB690221EC3576D00E37B78 /* LSDemoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSDemoController.swift; sourceTree = "<group>"; };
 		1AB9E7211F6399BB0020F9C5 /* LSNetworkManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LSNetworkManager+Extension.swift"; sourceTree = "<group>"; };
-		1AB9E7231F641E660020F9C5 /* LSStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSStatus.swift; path = LSWeiboSwift/Classes/LSStatus.swift; sourceTree = SOURCE_ROOT; };
 		1ABC05C51F47D51100445E81 /* LSVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSVisitorView.swift; sourceTree = "<group>"; };
 		1ACAEB961F49D194006AFB01 /* main2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main2.json; sourceTree = "<group>"; };
 		1AD171851F497E94003A58EA /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
-		1AF89C001F64D10F00EAC2CC /* LSStatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSStatusListViewModel.swift; sourceTree = SOURCE_ROOT; };
 		1AFDEC7E1F8E602000ACBFCD /* LSWeiBoCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSWeiBoCommon.swift; sourceTree = "<group>"; };
 		6837540665F81B6C95449AD8 /* Pods_LSWeiboSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSWeiboSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36DDD7F3C95F1E71382DF18 /* Pods-LSWeiboSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSWeiboSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSWeiboSwift/Pods-LSWeiboSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -181,7 +183,7 @@
 			children = (
 				1A3769BF20395BE9009A2576 /* WeiBoStatusNormalCell.xib */,
 				1A3769C120395C85009A2576 /* LSStatusCell.swift */,
-				1A1574BC203EB05B008D7CB9 /* LSStatusPicture.swift */,
+				1A1574BC203EB05B008D7CB9 /* LSStatusPictureView.swift */,
 				1A1574B8203DB3DC008D7CB9 /* LSToolBar.swift */,
 			);
 			path = StatusCell;
@@ -206,6 +208,15 @@
 				1A3AB6581FE6B2FD003C12C6 /* LSNewFeature.swift */,
 			);
 			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		1A4D072A203ED441003E9502 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1A4D072B203ED441003E9502 /* LSStatusViewModel.swift */,
+				1A4D072C203ED441003E9502 /* LSStatusListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		1A4DD4E61EBEC8BA001F97BD = {
@@ -238,24 +249,25 @@
 			path = LSWeiboSwift;
 			sourceTree = "<group>";
 		};
+		1A516FD1203ED22400522916 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A516FDB203ED38B00522916 /* LSPicture.swift */,
+				1A516FD2203ED22400522916 /* LSUser.swift */,
+				1A516FD3203ED22400522916 /* LSStatus.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1AB68AE31EBEF7C400E37B78 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1A516FD1203ED22400522916 /* Model */,
 				1AB68AE61EBEF7C400E37B78 /* View */,
-				1AB68AE71EBEF7C400E37B78 /* ViewModel */,
-				1AB68AE41EBEF7C400E37B78 /* Model */,
+				1A4D072A203ED441003E9502 /* ViewModel */,
 				1AB68AE51EBEF7C400E37B78 /* Tools */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		1AB68AE41EBEF7C400E37B78 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				1AB9E7231F641E660020F9C5 /* LSStatus.swift */,
-				1A1574B2203AB8A9008D7CB9 /* LSUser.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		1AB68AE51EBEF7C400E37B78 /* Tools */ = {
@@ -280,15 +292,6 @@
 				1AB68AEC1EBEF86500E37B78 /* Profile */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		1AB68AE71EBEF7C400E37B78 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				1AF89C001F64D10F00EAC2CC /* LSStatusListViewModel.swift */,
-				1A1574B4203AC839008D7CB9 /* LSStatusViewModel.swift */,
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		1AB68AE81EBEF86500E37B78 /* Discover */ = {
@@ -584,36 +587,37 @@
 				1AB690131EC121C300E37B78 /* UIImage+Extension.m in Sources */,
 				1A1574B9203DB3DC008D7CB9 /* LSToolBar.swift in Sources */,
 				1AB68FE31EBF570B00E37B78 /* String+Extension.swift in Sources */,
+				1A516FD5203ED22400522916 /* LSStatus.swift in Sources */,
 				1A3AB6591FE6B2FD003C12C6 /* LSNewFeature.swift in Sources */,
 				1AB690171EC121C300E37B78 /* UIView+JKFrame.m in Sources */,
 				1AB6900A1EC121C300E37B78 /* NSArray+Log.m in Sources */,
-				1AB9E7241F641E660020F9C5 /* LSStatus.swift in Sources */,
+				1A516FD4203ED22400522916 /* LSUser.swift in Sources */,
 				1AB690121EC121C300E37B78 /* UIColor+CZAddition.m in Sources */,
 				1AB68AFC1EBEFA4F00E37B78 /* LSMainController.swift in Sources */,
-				1A1574B5203AC839008D7CB9 /* LSStatusViewModel.swift in Sources */,
 				1AB690101EC121C300E37B78 /* NSString+CZPath.m in Sources */,
 				1A5563EF1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift in Sources */,
 				1A4DD4F31EBEC8BA001F97BD /* AppDelegate.swift in Sources */,
+				1A4D072D203ED441003E9502 /* LSStatusViewModel.swift in Sources */,
 				1ABC05C61F47D51100445E81 /* LSVisitorView.swift in Sources */,
 				1AB690181EC121C300E37B78 /* UIViewController+CZAddition.m in Sources */,
 				1AB6900F1EC121C300E37B78 /* NSString+CZHash.m in Sources */,
 				1A148A131F910FB600D35BD8 /* LSOAthViewController.swift in Sources */,
-				1A1574BD203EB05B008D7CB9 /* LSStatusPicture.swift in Sources */,
+				1A1574BD203EB05B008D7CB9 /* LSStatusPictureView.swift in Sources */,
 				1AB68AF61EBEF97100E37B78 /* LSDiscoverController.swift in Sources */,
 				1A3AB6571FE6B2E3003C12C6 /* LSWelcomeView.swift in Sources */,
 				1AB690141EC121C300E37B78 /* UILabel+CZAddition.m in Sources */,
 				1AB68AF01EBEF8EE00E37B78 /* LSNavigationController.swift in Sources */,
 				1AB690151EC121C300E37B78 /* UIScreen+CZAddition.m in Sources */,
-				1A1574B3203AB8A9008D7CB9 /* LSUser.swift in Sources */,
 				1AB68AF81EBEF98100E37B78 /* LSMessageController.swift in Sources */,
 				1A39E6CC1F5EE8F700B9E7DB /* LSNetworkManager.swift in Sources */,
 				1AB68AF21EBEF90700E37B78 /* LSBaseController.swift in Sources */,
 				1AB9E7221F6399BB0020F9C5 /* LSNetworkManager+Extension.swift in Sources */,
+				1A4D072E203ED441003E9502 /* LSStatusListViewModel.swift in Sources */,
 				1A1574B7203D22FB008D7CB9 /* UIImageView+WebImage.swift in Sources */,
 				1AB690091EC121C300E37B78 /* NSArray+CZAddition.m in Sources */,
-				1AF89C011F64D10F00EAC2CC /* LSStatusListViewModel.swift in Sources */,
 				1A17E47C1FE2B7390025D5E0 /* LSTitleButton.swift in Sources */,
 				1AB68F9F1EBF500B00E37B78 /* FFLabel.swift in Sources */,
+				1A516FDC203ED38B00522916 /* LSPicture.swift in Sources */,
 				1AB690201EC12E4D00E37B78 /* UIButton+CZAddition.m in Sources */,
 				1A3769C220395C85009A2576 /* LSStatusCell.swift in Sources */,
 				1AB68AF41EBEF94F00E37B78 /* LSHomeController.swift in Sources */,

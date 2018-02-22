@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LSStatusPicture: UIView {
+class LSStatusPictureView: UIView {
     @IBOutlet weak var heightCons: NSLayoutConstraint!
 
     

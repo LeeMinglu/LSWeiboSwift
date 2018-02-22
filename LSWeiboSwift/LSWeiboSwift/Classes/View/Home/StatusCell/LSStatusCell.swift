@@ -22,7 +22,7 @@ class LSStatusCell: UITableViewCell {
             toolBar.viewModel = viewModel
             
             //代码设置配图的高度
-            statusPicture.heightCons.constant = 200
+            statusPictureView.heightCons.constant = 200
         }
     }
     
@@ -49,7 +49,7 @@ class LSStatusCell: UITableViewCell {
     
     @IBOutlet weak var toolBar: LSToolBar!
     
-    @IBOutlet weak var statusPicture: LSStatusPicture!
+    @IBOutlet weak var statusPictureView: LSStatusPictureView!
     
 
     override func awakeFromNib() {
