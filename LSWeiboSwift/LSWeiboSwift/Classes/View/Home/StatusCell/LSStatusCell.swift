@@ -20,6 +20,9 @@ class LSStatusCell: UITableViewCell {
             iconView.ls_setImage(urlString: viewModel?.status.user?.profile_image_url, placeholderImage: UIImage(named: "avatar_default_big"), isAvatar: true)
             
             toolBar.viewModel = viewModel
+            
+            //代码设置配图的高度
+            statusPictureView.heightCons.constant = viewModel?.pictureViewSize.height ?? 0
         }
     }
     
@@ -45,6 +48,9 @@ class LSStatusCell: UITableViewCell {
     @IBOutlet weak var statusLabel: UILabel!
     
     @IBOutlet weak var toolBar: LSToolBar!
+    
+    @IBOutlet weak var statusPictureView: LSStatusPictureView!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()

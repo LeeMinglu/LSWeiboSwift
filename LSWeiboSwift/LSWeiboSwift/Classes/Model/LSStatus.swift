@@ -23,8 +23,16 @@ class LSStatus: NSObject {
     
     var user: LSUser?
     
+    
+    var pic_urls: [LSPicture]?
+    
     override var description: String {
         return yy_modelDescription()
     }
+    
+    class func modelContainerPropertyGenericClass() -> [String: AnyClass] {
+        return ["pic_urls": LSPicture.self]
+    }
 
 }
+
