@@ -25,6 +25,9 @@ class LSStatusViewModel: CustomStringConvertible {
     //赞
     var likeString: String?
     
+    //配图视图的大小
+    var pictureViewSize = CGSize()
+    
     init(model: LSStatus) {
         
         self.status = model
@@ -58,10 +61,20 @@ class LSStatusViewModel: CustomStringConvertible {
         retweetString = countString(count: model.reposts_count, DefaultString: "转发")
         comentString = countString(count: model.comments_count, DefaultString: "评论")
         likeString = countString(count: model.attitudes_count, DefaultString: "赞")
+        
+        pictureViewSize = calculatePictureViewSize(count: status.pic_urls?.count)
     }
     
     var description: String {
         return  status.description
+    }
+    
+    //
+    /// 根据图像的数量来计算view的高度
+    
+    private func calculatePictureViewSize(count: Int?) -> CGSize{
+        return CGSize(width: 100, height: 200)
+
     }
     
     //使用数字反馈一个字符串
