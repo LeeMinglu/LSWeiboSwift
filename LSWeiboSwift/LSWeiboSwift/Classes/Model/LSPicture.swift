@@ -8,11 +8,14 @@
 
 import UIKit
 
+/// 微博配图模型
 class LSPicture: NSObject {
     
+    /// 缩略图地址
     var thumbnail_pic: String?
     
-    override var description: String {
+    override var description: String{
         return yy_modelDescription()
     }
 }
+

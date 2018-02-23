@@ -47,7 +47,7 @@ class LSStatusListViewModel {
             
             for dict in list ?? [] {
                 
-                print(dict["pic_urls"])
+               print(dict["pic_urls"]!)
                 //创建微博模型
                 let status = LSStatus()
                 

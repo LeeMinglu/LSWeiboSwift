@@ -18,11 +18,11 @@ class LSStatusViewModel: CustomStringConvertible {
     
     //认证图标
     var vipIcon: UIImage?
-    
+    //转发
     var retweetString: String?
-    
+    //评论
     var comentString: String?
-    
+    //赞
     var likeString: String?
     
     init(model: LSStatus) {
