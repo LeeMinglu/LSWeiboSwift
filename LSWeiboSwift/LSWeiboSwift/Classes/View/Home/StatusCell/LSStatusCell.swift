@@ -23,6 +23,8 @@ class LSStatusCell: UITableViewCell {
             
             //代码设置配图的高度
             statusPictureView.heightCons.constant = viewModel?.pictureViewSize.height ?? 0
+            //设置配图视图的数据
+            statusPictureView.urls = viewModel?.status.pic_urls
         }
     }
     
