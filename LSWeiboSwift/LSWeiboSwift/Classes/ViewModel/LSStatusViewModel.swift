@@ -73,7 +73,22 @@ class LSStatusViewModel: CustomStringConvertible {
     /// 根据图像的数量来计算view的高度
     
     private func calculatePictureViewSize(count: Int?) -> CGSize{
-        return CGSize(width: 100, height: 200)
+        
+        if count == 0 || count == nil {
+            return CGSize()
+        }
+        
+       
+        
+        //图片视图的高度
+        
+        //视图的高度由数量来决定
+        //图片的行数
+        let row = CGFloat((count! - 1) / 3 + 1)
+        
+        let LSStatusPictureViewHeight = LSStatusPictureViewOutterMargin + CGFloat((row - 1)) * LSStatusPictureViewInnerMargin + CGFloat(row) * LSStatusPictureViewItemWidth
+        
+        return CGSize(width: LSStatusPictureViewWidth, height: LSStatusPictureViewHeight)
 
     }
     
