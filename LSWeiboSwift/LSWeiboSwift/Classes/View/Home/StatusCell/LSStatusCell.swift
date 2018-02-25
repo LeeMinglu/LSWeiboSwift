@@ -25,6 +25,18 @@ class LSStatusCell: UITableViewCell {
             statusPictureView.heightCons.constant = viewModel?.pictureViewSize.height ?? 0
             //设置配图视图的数据
             statusPictureView.urls = viewModel?.status.pic_urls
+            //测试配图视图的URL数据
+            if (viewModel?.status.pic_urls?.count ?? 0) > 4 {
+                var picUrls = viewModel!.status.pic_urls!
+                picUrls.removeSubrange((picUrls.startIndex + 4)..<picUrls.endIndex)
+            
+                statusPictureView.urls = picUrls
+            } else {
+                statusPictureView.urls = viewModel?.status.pic_urls
+            }
+            
+            
+            
         }
     }
     

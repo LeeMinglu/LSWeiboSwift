@@ -23,6 +23,10 @@ class LSStatusPictureView: UIView {
                     let iv = subviews[index] as! UIImageView
                     iv.isHidden = false
                     
+                    if index == 1 && urls?.count == 4 {
+                        index += 1
+                    }
+                    
                     iv.ls_setImage(urlString: url.thumbnail_pic, placeholderImage: nil, isAvatar: false)
                     
                     index += 1
@@ -52,7 +56,7 @@ extension LSStatusPictureView {
         let rect = CGRect(x: 0, y: LSStatusPictureViewOutterMargin, width: LSStatusPictureViewItemWidth, height: LSStatusPictureViewItemWidth)
         for i in 0 ..< count * count {
             let imageView = UIImageView()
-            imageView.backgroundColor = UIColor.red
+         //   imageView.backgroundColor = UIColor.red
           
             //设置图像自适应图像大小，以下两行代码都需要设置，你可以自己去掉第二行试试 效果就知道了
             imageView.contentMode = .scaleAspectFill
