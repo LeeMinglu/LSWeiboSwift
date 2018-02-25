@@ -86,9 +86,9 @@ class LSStatusViewModel: CustomStringConvertible {
         //图片的行数
         let row = CGFloat((count! - 1) / 3 + 1)
         
-        let LSStatusPictureViewHeigh = LSStatusPictureViewOutterMargin + (row - 1) * LSStatusPictureViewInnerMargin + row * LSStatusPictureViewItemWidth
+        let LSStatusPictureViewHeight = LSStatusPictureViewOutterMargin + CGFloat((row - 1)) * LSStatusPictureViewInnerMargin + CGFloat(row) * LSStatusPictureViewItemWidth
         
-        return CGSize(width: LSStatusPictureViewWidth, height: LSStatusPictureViewHeigh)
+        return CGSize(width: LSStatusPictureViewWidth, height: LSStatusPictureViewHeight)
 
     }
     
