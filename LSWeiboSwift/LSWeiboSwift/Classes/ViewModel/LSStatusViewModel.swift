@@ -74,7 +74,7 @@ class LSStatusViewModel: CustomStringConvertible {
     
     private func calculatePictureViewSize(count: Int?) -> CGSize{
         
-        if count == 0 {
+        if count == 0 || count == nil {
             return CGSize()
         }
         
