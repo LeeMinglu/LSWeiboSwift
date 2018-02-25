@@ -5,6 +5,2634 @@
       location = "group:LSWeiboSwift.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:LSPicture.swift">
+   </FileRef>
+   <Group
+      location = "group:LSWeiboSwift"
+      name = "LSWeiboSwift">
+      <Group
+         location = "group:Classes"
+         name = "Classes">
+         <Group
+            location = "group:ViewModel"
+            name = "ViewModel">
+            <FileRef
+               location = "group:LSStatusViewModel.swift">
+            </FileRef>
+            <FileRef
+               location = "group:LSStatusListViewModel.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Tools"
+            name = "Tools">
+            <Group
+               location = "group:LSExtension"
+               name = "LSExtension">
+               <FileRef
+                  location = "group:UIImage+Extensions.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:Bundle+Extension.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:String+Extension.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:UIImageView+WebImage.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:UIBarButtonItem+Extension.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:FFLabel"
+               name = "FFLabel">
+               <FileRef
+                  location = "group:FFLabel.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Additions"
+               name = "Additions">
+               <FileRef
+                  location = "group:UIColor+CZAddition.m">
+               </FileRef>
+               <FileRef
+                  location = "group:UIView+CZAddition.m">
+               </FileRef>
+               <FileRef
+                  location = "group:NSObject+CZAddition.h">
+               </FileRef>
+               <FileRef
+                  location = "group:UIButton+CZAddition.h">
+               </FileRef>
+               <FileRef
+                  location = "group:NSString+CZHash.h">
+               </FileRef>
+               <FileRef
+                  location = "group:UIScreen+CZAddition.m">
+               </FileRef>
+               <FileRef
+                  location = "group:UIViewController+CZAddition.h">
+               </FileRef>
+               <FileRef
+                  location = "group:UILabel+CZAddition.m">
+               </FileRef>
+               <FileRef
+                  location = "group:NSObject+CZRuntime.h">
+               </FileRef>
+               <FileRef
+                  location = "group:NSArray+CZAddition.h">
+               </FileRef>
+               <FileRef
+                  location = "group:UIImage+Extension.m">
+               </FileRef>
+               <FileRef
+                  location = "group:NSString+CZBase64.m">
+               </FileRef>
+               <FileRef
+                  location = "group:NSString+CZPath.m">
+               </FileRef>
+               <FileRef
+                  location = "group:NSArray+Log.h">
+               </FileRef>
+               <FileRef
+                  location = "group:NSAttributedString+CZAdditon.h">
+               </FileRef>
+               <FileRef
+                  location = "group:UIView+JKFrame.m">
+               </FileRef>
+               <FileRef
+                  location = "group:UIButton+CZAddition.m">
+               </FileRef>
+               <FileRef
+                  location = "group:NSObject+CZAddition.m">
+               </FileRef>
+               <FileRef
+                  location = "group:UIView+CZAddition.h">
+               </FileRef>
+               <FileRef
+                  location = "group:UIColor+CZAddition.h">
+               </FileRef>
+               <FileRef
+                  location = "group:NSObject+CZRuntime.m">
+               </FileRef>
+               <FileRef
+                  location = "group:UILabel+CZAddition.h">
+               </FileRef>
+               <FileRef
+                  location = "group:UIScreen+CZAddition.h">
+               </FileRef>
+               <FileRef
+                  location = "group:UIViewController+CZAddition.m">
+               </FileRef>
+               <FileRef
+                  location = "group:NSString+CZHash.m">
+               </FileRef>
+               <FileRef
+                  location = "group:NSString+CZBase64.h">
+               </FileRef>
+               <FileRef
+                  location = "group:UIImage+Extension.h">
+               </FileRef>
+               <FileRef
+                  location = "group:NSArray+CZAddition.m">
+               </FileRef>
+               <FileRef
+                  location = "group:CZAdditions.h">
+               </FileRef>
+               <FileRef
+                  location = "group:UIView+JKFrame.h">
+               </FileRef>
+               <FileRef
+                  location = "group:NSAttributedString+CZAdditon.m">
+               </FileRef>
+               <FileRef
+                  location = "group:NSArray+Log.m">
+               </FileRef>
+               <FileRef
+                  location = "group:NSString+CZPath.h">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:NetWork"
+               name = "NetWork">
+               <FileRef
+                  location = "group:LSNetworkManager.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:LSWeiBoCommon.swift">
+               </FileRef>
+               <Group
+                  location = "group:Model"
+                  name = "Model">
+                  <FileRef
+                     location = "group:LSUseraccount.swift">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:LSNetworkManager+Extension.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Resource"
+               name = "Resource">
+               <Group
+                  location = "group:Home"
+                  name = "Home">
+               </Group>
+               <Group
+                  location = "group:Loading"
+                  name = "Loading">
+               </Group>
+               <Group
+                  location = "group:Newfeature"
+                  name = "Newfeature">
+               </Group>
+               <Group
+                  location = "group:Compose"
+                  name = "Compose">
+               </Group>
+               <Group
+                  location = "group:TabBar"
+                  name = "TabBar">
+               </Group>
+               <Group
+                  location = "group:Default"
+                  name = "Default">
+               </Group>
+               <Group
+                  location = "group:NavigationBar"
+                  name = "NavigationBar">
+               </Group>
+               <Group
+                  location = "group:Popover"
+                  name = "Popover">
+               </Group>
+               <Group
+                  location = "group:Visitor"
+                  name = "Visitor">
+               </Group>
+               <Group
+                  location = "group:Avatar"
+                  name = "Avatar">
+               </Group>
+               <Group
+                  location = "group:Unlike"
+                  name = "Unlike">
+               </Group>
+               <Group
+                  location = "group:Icon"
+                  name = "Icon">
+               </Group>
+            </Group>
+         </Group>
+         <Group
+            location = "group:Model"
+            name = "Model">
+            <FileRef
+               location = "group:LSUser.swift">
+            </FileRef>
+            <FileRef
+               location = "group:LSStatus.swift">
+            </FileRef>
+            <FileRef
+               location = "group:LSPicture.swift">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:View"
+            name = "View">
+            <Group
+               location = "group:Home"
+               name = "Home">
+               <Group
+                  location = "group:StatusCell"
+                  name = "StatusCell">
+                  <FileRef
+                     location = "group:WeiBoStatusNormalCell.xib">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LSStatusCell.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LSToolBar.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LSStatusPictureView.swift">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:LSHomeController.swift">
+               </FileRef>
+               <Group
+                  location = "group:TitleButton"
+                  name = "TitleButton">
+                  <FileRef
+                     location = "group:LSTitleButton.swift">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Discover"
+               name = "Discover">
+               <FileRef
+                  location = "group:LSDiscoverController.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:testUI"
+               name = "testUI">
+               <FileRef
+                  location = "group:main2.json">
+               </FileRef>
+               <FileRef
+                  location = "group:LSDemoController.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Message"
+               name = "Message">
+               <FileRef
+                  location = "group:LSMessageController.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Profile"
+               name = "Profile">
+               <FileRef
+                  location = "group:LSProfileController.swift">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Main"
+               name = "Main">
+               <FileRef
+                  location = "group:LSMainController.swift">
+               </FileRef>
+               <Group
+                  location = "group:LSOAthController"
+                  name = "LSOAthController">
+                  <FileRef
+                     location = "group:LSOAthViewController.swift">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:LSBaseController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:main.json">
+               </FileRef>
+               <Group
+                  location = "group:NewFeature"
+                  name = "NewFeature">
+                  <FileRef
+                     location = "group:LSNewFeatureView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LSNewFeatureView.xib">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LSWelcomeView.swift">
+                  </FileRef>
+                  <FileRef
+                     location = "group:LSWelcomeView.xib">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:LSNavigationController.swift">
+               </FileRef>
+               <FileRef
+                  location = "group:main 2.json">
+               </FileRef>
+               <Group
+                  location = "group:VisitorView"
+                  name = "VisitorView">
+                  <FileRef
+                     location = "group:LSVisitorView.swift">
+                  </FileRef>
+               </Group>
+            </Group>
+         </Group>
+      </Group>
+      <Group
+         location = "group:Assets.xcassets"
+         name = "Assets.xcassets">
+         <Group
+            location = "group:AppIcon.appiconset"
+            name = "AppIcon.appiconset">
+            <FileRef
+               location = "group:icon.png">
+            </FileRef>
+            <FileRef
+               location = "group:icon_os7@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:icon@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <FileRef
+               location = "group:icon@3x.png">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Contents.json">
+         </FileRef>
+         <Group
+            location = "group:Resource"
+            name = "Resource">
+            <Group
+               location = "group:Home"
+               name = "Home">
+               <Group
+                  location = "group:timeline_card_middle_background.imageset"
+                  name = "timeline_card_middle_background.imageset">
+                  <FileRef
+                     location = "group:timeline_card_middle_background@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:timeline_icon_retweet.imageset"
+                  name = "timeline_icon_retweet.imageset">
+                  <FileRef
+                     location = "group:timeline_icon_retweet@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:timeline_icon_retweet@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:timeline_card_bottom_line_highlighted.imageset"
+                  name = "timeline_card_bottom_line_highlighted.imageset">
+                  <FileRef
+                     location = "group:timeline_card_bottom_line_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <Group
+                  location = "group:timeline_icon_unlike.imageset"
+                  name = "timeline_icon_unlike.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:timeline_icon_unlike@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:timeline_icon_unlike@3x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:timeline_icon_like.imageset"
+                  name = "timeline_icon_like.imageset">
+                  <FileRef
+                     location = "group:timeline_icon_like@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:timeline_icon_like@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:timeline_card_middle_background_highlighted.imageset"
+                  name = "timeline_card_middle_background_highlighted.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:timeline_card_middle_background_highlighted@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:timeline_card_bottom_background.imageset"
+                  name = "timeline_card_bottom_background.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:timeline_card_bottom_background@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:timeline_icon_comment.imageset"
+                  name = "timeline_icon_comment.imageset">
+                  <FileRef
+                     location = "group:timeline_icon_comment@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:timeline_icon_comment@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Loading"
+               name = "Loading">
+               <Group
+                  location = "group:tableview_loading.imageset"
+                  name = "tableview_loading.imageset">
+                  <FileRef
+                     location = "group:tableview_loading@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:tableview_pull_refresh.imageset"
+                  name = "tableview_pull_refresh.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tableview_pull_refresh@2x.png">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Newfeature"
+               name = "Newfeature">
+               <Group
+                  location = "group:new_feature_1.imageset"
+                  name = "new_feature_1.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:new_feature_1@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:ad_background.imageset"
+                  name = "ad_background.imageset">
+                  <FileRef
+                     location = "group:ad_background-667h@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:ad_background-736h@3x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:new_feature_finish_button_highlighted.imageset"
+                  name = "new_feature_finish_button_highlighted.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:new_feature_finish_button_highlighted@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:new_feature_finish_button.imageset"
+                  name = "new_feature_finish_button.imageset">
+                  <FileRef
+                     location = "group:new_feature_finish_button@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:avatar_default_big.imageset"
+                  name = "avatar_default_big.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:avatar_default_big@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:new_feature_2.imageset"
+                  name = "new_feature_2.imageset">
+                  <FileRef
+                     location = "group:new_feature_2@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:new_feature_3.imageset"
+                  name = "new_feature_3.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:new_feature_3@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:new_feature_share_true.imageset"
+                  name = "new_feature_share_true.imageset">
+                  <FileRef
+                     location = "group:new_feature_share_true@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:new_feature_share_true@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <Group
+                  location = "group:new_feature_share_false.imageset"
+                  name = "new_feature_share_false.imageset">
+                  <FileRef
+                     location = "group:new_feature_share_false@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:new_feature_share_false@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:new_feature_4.imageset"
+                  name = "new_feature_4.imageset">
+                  <FileRef
+                     location = "group:new_feature_4@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Compose"
+               name = "Compose">
+               <Group
+                  location = "group:compose_publicbutton.imageset"
+                  name = "compose_publicbutton.imageset">
+                  <FileRef
+                     location = "group:compose_publicbutton@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_publicbutton@3x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_no_emoticon.imageset"
+                  name = "compose_no_emoticon.imageset">
+                  <FileRef
+                     location = "group:compose_no_emoticon@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_image_longimage.imageset"
+                  name = "compose_image_longimage.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_image_longimage@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_image_longimage@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_photo_choose_background.imageset"
+                  name = "compose_photo_choose_background.imageset">
+                  <FileRef
+                     location = "group:compose_photo_choose_background@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_keyboard_dot_selected.imageset"
+                  name = "compose_keyboard_dot_selected.imageset">
+                  <FileRef
+                     location = "group:compose_keyboard_dot_selected@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_addbutton_background.imageset"
+                  name = "compose_addbutton_background.imageset">
+                  <FileRef
+                     location = "group:compose_addbutton_background.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_photo_video.imageset"
+                  name = "compose_photo_video.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_photo_video@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_photo_video@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_photo_filter_checkbox_checked.imageset"
+                  name = "compose_photo_filter_checkbox_checked.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_photo_filter_checkbox_checked@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_guide_icon_default.imageset"
+                  name = "compose_guide_icon_default.imageset">
+                  <FileRef
+                     location = "group:compose_guide_icon_default@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_pic_add_highlighted.imageset"
+                  name = "compose_pic_add_highlighted.imageset">
+                  <FileRef
+                     location = "group:compose_pic_add_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_pic_add_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_privatebutton_background.imageset"
+                  name = "compose_privatebutton_background.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_privatebutton_background@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:composer_rating_small_icon.imageset"
+                  name = "composer_rating_small_icon.imageset">
+                  <FileRef
+                     location = "group:composer_rating_small_icon@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_emotion_table_left_normal.imageset"
+                  name = "compose_emotion_table_left_normal.imageset">
+                  <FileRef
+                     location = "group:compose_emotion_table_left_normal@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_split.imageset"
+                  name = "compose_split.imageset">
+                  <FileRef
+                     location = "group:compose_split@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_toolbar_picture@3x.png.imageset"
+                  name = "compose_toolbar_picture@3x.png.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_toolbar_picture@3x.png.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_location_icon_delete.imageset"
+                  name = "compose_location_icon_delete.imageset">
+                  <FileRef
+                     location = "group:compose_location_icon_delete@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_location_icon_delete@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_photo_photograph.imageset"
+                  name = "compose_photo_photograph.imageset">
+                  <FileRef
+                     location = "group:compose_photo_photograph@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_photo_photograph@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_group.imageset"
+                  name = "compose_group.imageset">
+                  <FileRef
+                     location = "group:compose_group@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_group@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_locatebutton_succeeded.imageset"
+                  name = "compose_locatebutton_succeeded.imageset">
+                  <FileRef
+                     location = "group:compose_locatebutton_succeeded@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_locatebutton_succeeded@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_pic_bg_add_highlighted.imageset"
+                  name = "compose_pic_bg_add_highlighted.imageset">
+                  <FileRef
+                     location = "group:compose_pic_bg_add_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_pic_bg_add5.5.imageset"
+                  name = "compose_pic_bg_add5.5.imageset">
+                  <FileRef
+                     location = "group:compose_pic_bg_add5.5@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_photo_photograph_highlighted.imageset"
+                  name = "compose_photo_photograph_highlighted.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_photo_photograph_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_photo_photograph_highlighted@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_guide_button_default.imageset"
+                  name = "compose_guide_button_default.imageset">
+                  <FileRef
+                     location = "group:compose_guide_button_default@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_trendbutton_background.imageset"
+                  name = "compose_trendbutton_background.imageset">
+                  <FileRef
+                     location = "group:compose_trendbutton_background@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_trendbutton_background@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_toolbar_background.imageset"
+                  name = "compose_toolbar_background.imageset">
+                  <FileRef
+                     location = "group:compose_toolbar_background@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_pic_big_add_highlighted.imageset"
+                  name = "compose_pic_big_add_highlighted.imageset">
+                  <FileRef
+                     location = "group:compose_pic_big_add_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_pic_big_add_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_emotion_delete.imageset"
+                  name = "compose_emotion_delete.imageset">
+                  <FileRef
+                     location = "group:compose_emotion_delete@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_emotion_delete@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_locatebutton_background_failed_highlighted.imageset"
+                  name = "compose_locatebutton_background_failed_highlighted.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_locatebutton_background_failed_highlighted@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_more_transfer.imageset"
+                  name = "compose_more_transfer.imageset">
+                  <FileRef
+                     location = "group:compose_more_transfer@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_more_transfer@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_photo_preview_default.imageset"
+                  name = "compose_photo_preview_default.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_photo_preview_default@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_photo_preview_default@3x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_guide_icon_close_check.imageset"
+                  name = "compose_guide_icon_close_check.imageset">
+                  <FileRef
+                     location = "group:compose_guide_icon_close_check@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_publicbutton_background.imageset"
+                  name = "compose_publicbutton_background.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_publicbutton_background@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_more_bigweibo.imageset"
+                  name = "compose_more_bigweibo.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_more_bigweibo@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_more_bigweibo@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_pic_add_big.imageset"
+                  name = "compose_pic_add_big.imageset">
+                  <FileRef
+                     location = "group:compose_pic_add_big@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_locatebutton_ready.imageset"
+                  name = "compose_locatebutton_ready.imageset">
+                  <FileRef
+                     location = "group:compose_locatebutton_ready@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_locatebutton_ready@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_photo_original_highlighted.imageset"
+                  name = "compose_photo_original_highlighted.imageset">
+                  <FileRef
+                     location = "group:compose_photo_original_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_photo_original_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_photo_original.imageset"
+                  name = "compose_photo_original.imageset">
+                  <FileRef
+                     location = "group:compose_photo_original@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_photo_original@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_card_delete_normal.imageset"
+                  name = "compose_card_delete_normal.imageset">
+                  <FileRef
+                     location = "group:compose_card_delete_normal@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_more_groupcard.imageset"
+                  name = "compose_more_groupcard.imageset">
+                  <FileRef
+                     location = "group:compose_more_groupcard@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_more_groupcard@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_emotion_table_send_normal.imageset"
+                  name = "compose_emotion_table_send_normal.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_emotion_table_send_normal@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_keyboardbutton_background_highlighted.imageset"
+                  name = "compose_keyboardbutton_background_highlighted.imageset">
+                  <FileRef
+                     location = "group:compose_keyboardbutton_background_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_keyboardbutton_background_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_emoticonbutton_background.imageset"
+                  name = "compose_emoticonbutton_background.imageset">
+                  <FileRef
+                     location = "group:compose_emoticonbutton_background@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_emoticonbutton_background@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_guide_background.imageset"
+                  name = "compose_guide_background.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_guide_background@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_emotion_table_mid_selected.imageset"
+                  name = "compose_emotion_table_mid_selected.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_emotion_table_mid_selected@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_photo_close.imageset"
+                  name = "compose_photo_close.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_photo_close@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_camerabutton_background_unuse.imageset"
+                  name = "compose_camerabutton_background_unuse.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_camerabutton_background_unuse@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_toolbar_video.imageset"
+                  name = "compose_toolbar_video.imageset">
+                  <FileRef
+                     location = "group:compose_toolbar_video@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_image_placeholder.imageset"
+                  name = "compose_image_placeholder.imageset">
+                  <FileRef
+                     location = "group:compose_image_placeholder@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_toolbar_picture_highlighted.imageset"
+                  name = "compose_toolbar_picture_highlighted.imageset">
+                  <FileRef
+                     location = "group:compose_toolbar_picture_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_toolbar_picture_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_photo_background.imageset"
+                  name = "compose_photo_background.imageset">
+                  <FileRef
+                     location = "group:compose_photo_background@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:composer_rating_word_background.imageset"
+                  name = "composer_rating_word_background.imageset">
+                  <FileRef
+                     location = "group:composer_rating_word_background@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:composer_rating_word_background@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_emotion_table_mid_normal.imageset"
+                  name = "compose_emotion_table_mid_normal.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_emotion_table_mid_normal@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_edit_group.imageset"
+                  name = "compose_edit_group.imageset">
+                  <FileRef
+                     location = "group:compose_edit_group@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_edit_group@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_photo_preview_right.imageset"
+                  name = "compose_photo_preview_right.imageset">
+                  <FileRef
+                     location = "group:compose_photo_preview_right@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_photo_preview_right@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_new_group.imageset"
+                  name = "compose_new_group.imageset">
+                  <FileRef
+                     location = "group:compose_new_group@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_new_group@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_pic_background_highlighted.imageset"
+                  name = "compose_pic_background_highlighted.imageset">
+                  <FileRef
+                     location = "group:compose_pic_background_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:composer_rating_icon_highlighted.imageset"
+                  name = "composer_rating_icon_highlighted.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:composer_rating_icon_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:composer_rating_icon_highlighted@3x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_toolbar_picture.imageset"
+                  name = "compose_toolbar_picture.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_toolbar_picture@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_pic_add.imageset"
+                  name = "compose_pic_add.imageset">
+                  <FileRef
+                     location = "group:compose_pic_add@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_pic_add@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_location_delete_button_background.imageset"
+                  name = "compose_location_delete_button_background.imageset">
+                  <FileRef
+                     location = "group:compose_location_delete_button_background@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_location_delete_button_background@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_video_dot.imageset"
+                  name = "compose_video_dot.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_video_dot@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:composer_open.dataset"
+                  name = "composer_open.dataset">
+                  <FileRef
+                     location = "group:composer_open.wav">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_friendcircle.imageset"
+                  name = "compose_friendcircle.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_friendcircle@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_friendcircle@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_pic_bg_add.imageset"
+                  name = "compose_pic_bg_add.imageset">
+                  <FileRef
+                     location = "group:compose_pic_bg_add@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_location_button_background.imageset"
+                  name = "compose_location_button_background.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_location_button_background@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_location_button_background@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_guide_background_photo.imageset"
+                  name = "compose_guide_background_photo.imageset">
+                  <FileRef
+                     location = "group:compose_guide_background_photo@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:composer_rating_icon.imageset"
+                  name = "composer_rating_icon.imageset">
+                  <FileRef
+                     location = "group:composer_rating_icon@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:composer_rating_icon@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_myself.imageset"
+                  name = "compose_myself.imageset">
+                  <FileRef
+                     location = "group:compose_myself@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_myself@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_group_button_background_highlighted.imageset"
+                  name = "compose_group_button_background_highlighted.imageset">
+                  <FileRef
+                     location = "group:compose_group_button_background_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_group_button_background_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_guide_icon_close_default.imageset"
+                  name = "compose_guide_icon_close_default.imageset">
+                  <FileRef
+                     location = "group:compose_guide_icon_close_default@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_emoticonbutton_background_highlighted.imageset"
+                  name = "compose_emoticonbutton_background_highlighted.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_emoticonbutton_background_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_emoticonbutton_background_highlighted@3x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_guide_background_other.imageset"
+                  name = "compose_guide_background_other.imageset">
+                  <FileRef
+                     location = "group:compose_guide_background_other@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_guide_check_box_default.imageset"
+                  name = "compose_guide_check_box_default.imageset">
+                  <FileRef
+                     location = "group:compose_guide_check_box_default@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_guide_check_box_default@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_photo_list_background.imageset"
+                  name = "compose_photo_list_background.imageset">
+                  <FileRef
+                     location = "group:compose_photo_list_background@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <Group
+                  location = "group:compose_more_highlighted.imageset"
+                  name = "compose_more_highlighted.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_more_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_more_highlighted@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_photo_video_highlighted.imageset"
+                  name = "compose_photo_video_highlighted.imageset">
+                  <FileRef
+                     location = "group:compose_photo_video_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_photo_video_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_pic_background.imageset"
+                  name = "compose_pic_background.imageset">
+                  <FileRef
+                     location = "group:compose_pic_background@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_card_delete_highlighted.imageset"
+                  name = "compose_card_delete_highlighted.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_card_delete_highlighted@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:composer_close.dataset"
+                  name = "composer_close.dataset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:composer_close.wav">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:composer_rating_word_background_disable.imageset"
+                  name = "composer_rating_word_background_disable.imageset">
+                  <FileRef
+                     location = "group:composer_rating_word_background_disable@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:composer_rating_word_background_disable@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_guide_check_box_right.imageset"
+                  name = "compose_guide_check_box_right.imageset">
+                  <FileRef
+                     location = "group:compose_guide_check_box_right@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_guide_check_box_right@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:composer_rating_small_icon_half.imageset"
+                  name = "composer_rating_small_icon_half.imageset">
+                  <FileRef
+                     location = "group:composer_rating_small_icon_half@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_camerabutton_background_highlighted.imageset"
+                  name = "compose_camerabutton_background_highlighted.imageset">
+                  <FileRef
+                     location = "group:compose_camerabutton_background_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_locatebutton_failed.imageset"
+                  name = "compose_locatebutton_failed.imageset">
+                  <FileRef
+                     location = "group:compose_locatebutton_failed@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_locatebutton_failed@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_emotion_table_right_normal.imageset"
+                  name = "compose_emotion_table_right_normal.imageset">
+                  <FileRef
+                     location = "group:compose_emotion_table_right_normal@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_group_button_background.imageset"
+                  name = "compose_group_button_background.imageset">
+                  <FileRef
+                     location = "group:compose_group_button_background@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_group_button_background@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_emotion_table_right_selected.imageset"
+                  name = "compose_emotion_table_right_selected.imageset">
+                  <FileRef
+                     location = "group:compose_emotion_table_right_selected@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_emotion_table_left_selected.imageset"
+                  name = "compose_emotion_table_left_selected.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_emotion_table_left_selected@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_pic_big_add.imageset"
+                  name = "compose_pic_big_add.imageset">
+                  <FileRef
+                     location = "group:compose_pic_big_add@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_pic_big_add@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_toolbar_video_highlighted.imageset"
+                  name = "compose_toolbar_video_highlighted.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_toolbar_video_highlighted@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_addbutton_background_highlighted.imageset"
+                  name = "compose_addbutton_background_highlighted.imageset">
+                  <FileRef
+                     location = "group:compose_addbutton_background_highlighted.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_choose_check_default.imageset"
+                  name = "compose_choose_check_default.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_choose_check_default@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_mentionbutton_background_highlighted.imageset"
+                  name = "compose_mentionbutton_background_highlighted.imageset">
+                  <FileRef
+                     location = "group:compose_mentionbutton_background_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_mentionbutton_background_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_guide_button_check.imageset"
+                  name = "compose_guide_button_check.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_guide_button_check@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_app_default.imageset"
+                  name = "compose_app_default.imageset">
+                  <FileRef
+                     location = "group:compose_app_default@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_location_button_background_highlighted.imageset"
+                  name = "compose_location_button_background_highlighted.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_location_button_background_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_location_button_background_highlighted@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_toolbar_poi_bg.imageset"
+                  name = "compose_toolbar_poi_bg.imageset">
+                  <FileRef
+                     location = "group:compose_toolbar_poi_bg@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_emotion_delete_highlighted.imageset"
+                  name = "compose_emotion_delete_highlighted.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_emotion_delete_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_emotion_delete_highlighted@3x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_emotion_table_send_highlighted.imageset"
+                  name = "compose_emotion_table_send_highlighted.imageset">
+                  <FileRef
+                     location = "group:compose_emotion_table_send_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_photo_photograph_background.imageset"
+                  name = "compose_photo_photograph_background.imageset">
+                  <FileRef
+                     location = "group:compose_photo_photograph_background@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_trendbutton_background_highlighted.imageset"
+                  name = "compose_trendbutton_background_highlighted.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_trendbutton_background_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_trendbutton_background_highlighted@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_app_empty.imageset"
+                  name = "compose_app_empty.imageset">
+                  <FileRef
+                     location = "group:compose_app_empty@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_choose_check.imageset"
+                  name = "compose_choose_check.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_choose_check@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_keyboard_dot_normal.imageset"
+                  name = "compose_keyboard_dot_normal.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_keyboard_dot_normal@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_pic_bg_add_highlighted5.5.imageset"
+                  name = "compose_pic_bg_add_highlighted5.5.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_pic_bg_add_highlighted5.5@3x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_mentionbutton_background.imageset"
+                  name = "compose_mentionbutton_background.imageset">
+                  <FileRef
+                     location = "group:compose_mentionbutton_background@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_mentionbutton_background@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_guide_check_box_check.imageset"
+                  name = "compose_guide_check_box_check.imageset">
+                  <FileRef
+                     location = "group:compose_guide_check_box_check@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_photo_list_background_highlighted.imageset"
+                  name = "compose_photo_list_background_highlighted.imageset">
+                  <FileRef
+                     location = "group:compose_photo_list_background_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_slogan.imageset"
+                  name = "compose_slogan.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_slogan@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_slogan@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_locatebutton_background_failed.imageset"
+                  name = "compose_locatebutton_background_failed.imageset">
+                  <FileRef
+                     location = "group:compose_locatebutton_background_failed@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_camerabutton_background.imageset"
+                  name = "compose_camerabutton_background.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_camerabutton_background@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_location_delete_button_background_highlighted.imageset"
+                  name = "compose_location_delete_button_background_highlighted.imageset">
+                  <FileRef
+                     location = "group:compose_location_delete_button_background_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_location_delete_button_background_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:compose_keyboardbutton_background.imageset"
+                  name = "compose_keyboardbutton_background.imageset">
+                  <FileRef
+                     location = "group:compose_keyboardbutton_background@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:compose_keyboardbutton_background@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:TabBar"
+               name = "TabBar">
+               <Group
+                  location = "group:tabbar_message_center.imageset"
+                  name = "tabbar_message_center.imageset">
+                  <FileRef
+                     location = "group:tabbar_message_center@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_message_center@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_message_center.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:tabbar_background.imageset"
+                  name = "tabbar_background.imageset">
+                  <FileRef
+                     location = "group:tabbar_background@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:tabbar_compose_icon_add.imageset"
+                  name = "tabbar_compose_icon_add.imageset">
+                  <FileRef
+                     location = "group:tabbar_compose_icon_add@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_compose_icon_add@3x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:tabbar_compose_button.imageset"
+                  name = "tabbar_compose_button.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_compose_button@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_compose_button@3x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:tabbar_discover.imageset"
+                  name = "tabbar_discover.imageset">
+                  <FileRef
+                     location = "group:tabbar_discover@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_discover@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_discover.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:tabbar_discover_highlighted.imageset"
+                  name = "tabbar_discover_highlighted.imageset">
+                  <FileRef
+                     location = "group:tabbar_discover_highlighted.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_discover_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_discover_highlighted@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:tabbar_message_center_highlighted.imageset"
+                  name = "tabbar_message_center_highlighted.imageset">
+                  <FileRef
+                     location = "group:tabbar_message_center_highlighted.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_message_center_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_message_center_highlighted@3x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:tabbar_home_highlighted.imageset"
+                  name = "tabbar_home_highlighted.imageset">
+                  <FileRef
+                     location = "group:tabbar_home_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_home_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_home_highlighted.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:tabbar_compose_button_highlighted.imageset"
+                  name = "tabbar_compose_button_highlighted.imageset">
+                  <FileRef
+                     location = "group:tabbar_compose_button_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_compose_button_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:tabbar_profile_highlighted.imageset"
+                  name = "tabbar_profile_highlighted.imageset">
+                  <FileRef
+                     location = "group:tabbar_profile_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_profile_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_profile_highlighted.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:tabbar_compose_icon_add_highlighted.imageset"
+                  name = "tabbar_compose_icon_add_highlighted.imageset">
+                  <FileRef
+                     location = "group:tabbar_compose_icon_add_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_compose_icon_add_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <Group
+                  location = "group:tabbar_profile.imageset"
+                  name = "tabbar_profile.imageset">
+                  <FileRef
+                     location = "group:tabbar_profile.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_profile@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_profile@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:tabbar_home.imageset"
+                  name = "tabbar_home.imageset">
+                  <FileRef
+                     location = "group:tabbar_home.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_home@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:tabbar_home@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Default"
+               name = "Default">
+               <Group
+                  location = "group:Default-736h_left.imageset"
+                  name = "Default-736h_left.imageset">
+                  <FileRef
+                     location = "group:Default-736h_left@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:Default-736h_right.imageset"
+                  name = "Default-736h_right.imageset">
+                  <FileRef
+                     location = "group:Default-736h_right@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:Default.imageset"
+                  name = "Default.imageset">
+                  <FileRef
+                     location = "group:Default@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Default@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:NavigationBar"
+               name = "NavigationBar">
+               <Group
+                  location = "group:navigationbar_arrow_up.imageset"
+                  name = "navigationbar_arrow_up.imageset">
+                  <FileRef
+                     location = "group:navigationbar_arrow_up@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:navigationbar_arrow_down.imageset"
+                  name = "navigationbar_arrow_down.imageset">
+                  <FileRef
+                     location = "group:navigationbar_arrow_down@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <Group
+                  location = "group:navigationbar_pop.imageset"
+                  name = "navigationbar_pop.imageset">
+                  <FileRef
+                     location = "group:navigationbar_pop@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:navigationbar_pop@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:navigationbar_pop.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:navigationbar_friendsearch_highlighted.imageset"
+                  name = "navigationbar_friendsearch_highlighted.imageset">
+                  <FileRef
+                     location = "group:navigationbar_friendsearch_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:navigationbar_friendsearch_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:navigationbar_friendsearch_highlighted.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:navigationbar_friendsearch.imageset"
+                  name = "navigationbar_friendsearch.imageset">
+                  <FileRef
+                     location = "group:navigationbar_friendsearch@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:navigationbar_friendsearch.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:navigationbar_friendsearch@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:navigationbar_pop_highlighted.imageset"
+                  name = "navigationbar_pop_highlighted.imageset">
+                  <FileRef
+                     location = "group:navigationbar_pop_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:navigationbar_pop_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:navigationbar_pop_highlighted.png">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Popover"
+               name = "Popover">
+               <Group
+                  location = "group:popover_background.imageset"
+                  name = "popover_background.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:popover_background@2x.png">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <Group
+                  location = "group:popover_background_right.imageset"
+                  name = "popover_background_right.imageset">
+                  <FileRef
+                     location = "group:popover_background_right@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:popover_background_left.imageset"
+                  name = "popover_background_left.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:popover_background_left@2x.png">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Visitor"
+               name = "Visitor">
+               <Group
+                  location = "group:visitordiscover_image_message.imageset"
+                  name = "visitordiscover_image_message.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:visitordiscover_image_message@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:visitordiscover_image_message@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:visitordiscover_feed_mask_smallicon.imageset"
+                  name = "visitordiscover_feed_mask_smallicon.imageset">
+                  <FileRef
+                     location = "group:visitordiscover_feed_mask_smallicon@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <Group
+                  location = "group:visitordiscover_feed_image_house.imageset"
+                  name = "visitordiscover_feed_image_house.imageset">
+                  <FileRef
+                     location = "group:visitordiscover_feed_image_house@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:visitordiscover_feed_image_house@3x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:visitordiscover_feed_image_smallicon.imageset"
+                  name = "visitordiscover_feed_image_smallicon.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:visitordiscover_feed_image_smallicon@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:visitordiscover_feed_image_smallicon@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:common_button_white_disable.imageset"
+                  name = "common_button_white_disable.imageset">
+                  <FileRef
+                     location = "group:common_button_white_disable@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:visitordiscover_image_profile.imageset"
+                  name = "visitordiscover_image_profile.imageset">
+                  <FileRef
+                     location = "group:visitordiscover_image_profile@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:visitordiscover_image_profile@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+            <Group
+               location = "group:Avatar"
+               name = "Avatar">
+               <Group
+                  location = "group:common_icon_membership_level1.imageset"
+                  name = "common_icon_membership_level1.imageset">
+                  <FileRef
+                     location = "group:common_icon_membership_level1@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:common_icon_membership_level1@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:common_icon_membership_level6.imageset"
+                  name = "common_icon_membership_level6.imageset">
+                  <FileRef
+                     location = "group:common_icon_membership_level6@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:common_icon_membership_level6@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:common_icon_membership_level2.imageset"
+                  name = "common_icon_membership_level2.imageset">
+                  <FileRef
+                     location = "group:common_icon_membership_level2@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:common_icon_membership_level2@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:common_icon_membership_level3.imageset"
+                  name = "common_icon_membership_level3.imageset">
+                  <FileRef
+                     location = "group:common_icon_membership_level3@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:common_icon_membership_level3@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <Group
+                  location = "group:common_icon_membership_expired.imageset"
+                  name = "common_icon_membership_expired.imageset">
+                  <FileRef
+                     location = "group:common_icon_membership_expired@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:common_icon_membership_expired@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:avatar_enterprise_vip.imageset"
+                  name = "avatar_enterprise_vip.imageset">
+                  <FileRef
+                     location = "group:avatar_enterprise_vip@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:avatar_enterprise_vip@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:avatar_vip.imageset"
+                  name = "avatar_vip.imageset">
+                  <FileRef
+                     location = "group:avatar_vip@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:avatar_vip@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:avatar_grassroot.imageset"
+                  name = "avatar_grassroot.imageset">
+                  <FileRef
+                     location = "group:avatar_grassroot@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:avatar_grassroot@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:common_icon_membership_level5.imageset"
+                  name = "common_icon_membership_level5.imageset">
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:common_icon_membership_level5@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:common_icon_membership_level5@2x.png">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:common_icon_membership_level4.imageset"
+                  name = "common_icon_membership_level4.imageset">
+                  <FileRef
+                     location = "group:common_icon_membership_level4@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:common_icon_membership_level4@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:common_icon_membership.imageset"
+                  name = "common_icon_membership.imageset">
+                  <FileRef
+                     location = "group:common_icon_membership@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:common_icon_membership@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Unlike"
+               name = "Unlike">
+               <Group
+                  location = "group:preview_like_icon_highlighted.imageset"
+                  name = "preview_like_icon_highlighted.imageset">
+                  <FileRef
+                     location = "group:preview_like_icon_highlighted@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:preview_like_icon_highlighted@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <Group
+                  location = "group:preview_like_icon.imageset"
+                  name = "preview_like_icon.imageset">
+                  <FileRef
+                     location = "group:preview_like_icon@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:preview_like_icon@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+               <Group
+                  location = "group:preview_like_icon_disable.imageset"
+                  name = "preview_like_icon_disable.imageset">
+                  <FileRef
+                     location = "group:preview_like_icon_disable@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:preview_like_icon_disable@3x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+            <Group
+               location = "group:Icon"
+               name = "Icon">
+               <Group
+                  location = "group:icon.imageset"
+                  name = "icon.imageset">
+                  <FileRef
+                     location = "group:icon.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:icon@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+                  <FileRef
+                     location = "group:icon@3x.png">
+                  </FileRef>
+               </Group>
+               <FileRef
+                  location = "group:Contents.json">
+               </FileRef>
+               <Group
+                  location = "group:icon_os7.imageset"
+                  name = "icon_os7.imageset">
+                  <FileRef
+                     location = "group:icon_os7@2x.png">
+                  </FileRef>
+                  <FileRef
+                     location = "group:Contents.json">
+                  </FileRef>
+               </Group>
+            </Group>
+         </Group>
+         <Group
+            location = "group:LaunchImage.launchimage"
+            name = "LaunchImage.launchimage">
+            <FileRef
+               location = "group:launchImage@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:launchImage@3x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Default@2x-1.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:AppDelegate.swift">
+      </FileRef>
+      <FileRef
+         location = "group:Weibo+Bridge.h">
+      </FileRef>
+      <FileRef
+         location = "group:Info.plist">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:LSWeiboSwift.xcworkspace">
+   </FileRef>
+   <FileRef
+      location = "group:Podfile">
+   </FileRef>
+   <FileRef
+      location = "group:Podfile.lock">
+   </FileRef>
+   <FileRef
+      location = "group:UIButton+CZAddition.h">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
