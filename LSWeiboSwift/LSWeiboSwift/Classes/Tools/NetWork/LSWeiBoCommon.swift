@@ -22,3 +22,17 @@ let RedirectURL = "https://www.baidu.com"
 let LSUserShouldeLoginNotification = "LSUserShouldeLoginNotification"
 //用户登陆成功通知
 let LSUSERLoginSuccessNotification = "LSUSERLoginSuccessNotification"
+
+
+//MARK:-----配图视图信息-----
+//外部间距
+let LSStatusPictureViewOutterMargin = CGFloat(12)
+
+//图片的内部间距
+let LSStatusPictureViewInnerMargin = CGFloat(3)
+
+//图片视图的宽度
+let LSStatusPictureViewWidth = UIScreen.main.bounds.width - 2 * LSStatusPictureViewOutterMargin
+
+//图片视图内每个图片的宽度
+let LSStatusPictureViewItemWidth = (LSStatusPictureViewWidth - 2 * LSStatusPictureViewInnerMargin) / 3

@@ -137,7 +137,7 @@
 		1ABC05C51F47D51100445E81 /* LSVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSVisitorView.swift; sourceTree = "<group>"; };
 		1ACAEB961F49D194006AFB01 /* main2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main2.json; sourceTree = "<group>"; };
 		1AD171851F497E94003A58EA /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
-		1AFDEC7E1F8E602000ACBFCD /* LSWeiBoCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSWeiBoCommon.swift; sourceTree = "<group>"; };
+		1AFDEC7E1F8E602000ACBFCD /* LSWeiBoCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSWeiBoCommon.swift; path = Tools/NetWork/LSWeiBoCommon.swift; sourceTree = "<group>"; };
 		6837540665F81B6C95449AD8 /* Pods_LSWeiboSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSWeiboSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36DDD7F3C95F1E71382DF18 /* Pods-LSWeiboSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSWeiboSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSWeiboSwift/Pods-LSWeiboSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,7 +195,6 @@
 				1A1E32D11F9AED8700984D43 /* Model */,
 				1A39E6CB1F5EE8F700B9E7DB /* LSNetworkManager.swift */,
 				1AB9E7211F6399BB0020F9C5 /* LSNetworkManager+Extension.swift */,
-				1AFDEC7E1F8E602000ACBFCD /* LSWeiBoCommon.swift */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -267,6 +266,7 @@
 				1AB68AE61EBEF7C400E37B78 /* View */,
 				1A516FD1203ED22400522916 /* Model */,
 				1AB68AE51EBEF7C400E37B78 /* Tools */,
+				1AFDEC7E1F8E602000ACBFCD /* LSWeiBoCommon.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
