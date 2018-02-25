@@ -13,7 +13,7 @@ class LSStatusPictureView: UIView {
     
     override func awakeFromNib() {
         setupUI()
-        clipsToBounds = true
+        
     }
 
     
@@ -21,7 +21,8 @@ class LSStatusPictureView: UIView {
 
 extension LSStatusPictureView {
     fileprivate func setupUI() {
-       
+       //删除超越边界的部分view
+        clipsToBounds = true
         let count = 3
         
         let rect = CGRect(x: 0, y: LSStatusPictureViewOutterMargin, width: LSStatusPictureViewItemWidth, height: LSStatusPictureViewItemWidth)
