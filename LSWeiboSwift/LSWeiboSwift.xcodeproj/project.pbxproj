@@ -26,6 +26,7 @@
 		1A516FD4203ED22400522916 /* LSUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A516FD2203ED22400522916 /* LSUser.swift */; };
 		1A516FD5203ED22400522916 /* LSStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A516FD3203ED22400522916 /* LSStatus.swift */; };
 		1A5563EF1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5563EE1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift */; };
+		1A73E3C3204A913D00092EC9 /* WeiBoStatusRetweetedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A73E3C2204A913D00092EC9 /* WeiBoStatusRetweetedCell.xib */; };
 		1A7B3D511F4879ED00E0FF34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */; };
 		1AB68AF01EBEF8EE00E37B78 /* LSNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AEF1EBEF8EE00E37B78 /* LSNavigationController.swift */; };
 		1AB68AF21EBEF90700E37B78 /* LSBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB68AF11EBEF90700E37B78 /* LSBaseController.swift */; };
@@ -87,6 +88,7 @@
 		1A516FD2203ED22400522916 /* LSUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSUser.swift; sourceTree = "<group>"; };
 		1A516FD3203ED22400522916 /* LSStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSStatus.swift; sourceTree = "<group>"; };
 		1A5563EE1ECC827B00D0FE3C /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		1A73E3C2204A913D00092EC9 /* WeiBoStatusRetweetedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeiBoStatusRetweetedCell.xib; sourceTree = "<group>"; };
 		1AB68AEF1EBEF8EE00E37B78 /* LSNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSNavigationController.swift; sourceTree = "<group>"; };
 		1AB68AF11EBEF90700E37B78 /* LSBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSBaseController.swift; sourceTree = "<group>"; };
 		1AB68AF31EBEF94F00E37B78 /* LSHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSHomeController.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		1A3769BC20395B76009A2576 /* StatusCell */ = {
 			isa = PBXGroup;
 			children = (
+				1A73E3C2204A913D00092EC9 /* WeiBoStatusRetweetedCell.xib */,
 				1A3769BF20395BE9009A2576 /* WeiBoStatusNormalCell.xib */,
 				1A3769C120395C85009A2576 /* LSStatusCell.swift */,
 				1A1574BC203EB05B008D7CB9 /* LSStatusPictureView.swift */,
@@ -501,6 +504,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A73E3C3204A913D00092EC9 /* WeiBoStatusRetweetedCell.xib in Resources */,
 				1A3769C020395BE9009A2576 /* WeiBoStatusNormalCell.xib in Resources */,
 				1A4AA6331FE8006B00E5D0DE /* LSWelcomeView.xib in Resources */,
 				1AD171861F497E94003A58EA /* main.json in Resources */,
