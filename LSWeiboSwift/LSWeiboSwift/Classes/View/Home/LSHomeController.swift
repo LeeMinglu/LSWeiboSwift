@@ -55,9 +55,14 @@ extension LSHomeController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableview?.dequeueReusableCell(withIdentifier: RetweetedCellID, for: indexPath) as! LSStatusCell
         
         let viewModel = statusViewModel.statusList[indexPath.row]
+        
+        let CellID = (viewModel.status.retweeted_status != nil) ? RetweetedCellID : OriginalCellID 
+        
+        let cell = tableview?.dequeueReusableCell(withIdentifier: CellID, for: indexPath) as! LSStatusCell
+        
+       
         cell.viewModel = viewModel
         
         return cell
