@@ -8,9 +8,12 @@
 
 import UIKit
 
+fileprivate let OriginalCellID = "OriginalCellID"
+fileprivate let RetweetedCellID = "RetweetedCellID"
+
+
 
 class LSHomeController: LSBaseController {
-    fileprivate let cellID = "cellID"
     
     var resultData: [[String: Any]]?
     
@@ -52,7 +55,7 @@ extension LSHomeController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableview?.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! LSStatusCell
+        let cell = tableview?.dequeueReusableCell(withIdentifier: RetweetedCellID, for: indexPath) as! LSStatusCell
         
         let viewModel = statusViewModel.statusList[indexPath.row]
         cell.viewModel = viewModel
@@ -73,7 +76,11 @@ extension LSHomeController {
         // 注册原型 cell
    //     tableview?.register(UITableViewCell.self, forCellReuseIdentifier: cellID)
         
-        tableview?.register(UINib(nibName: "WeiBoStatusNormalCell", bundle: nil), forCellReuseIdentifier: cellID)
+        //注册原创微博ceLLID
+        tableview?.register(UINib(nibName: "WeiBoStatusNormalCell", bundle: nil), forCellReuseIdentifier: OriginalCellID)
+        
+        //注册转发微博CELLID
+        tableview?.register(UINib(nibName: "WeiBoStatusRetweetedCell", bundle: nil), forCellReuseIdentifier: RetweetedCellID)
         
         tableview?.separatorStyle = .none
         tableview?.estimatedRowHeight = 300

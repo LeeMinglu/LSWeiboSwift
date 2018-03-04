@@ -66,12 +66,11 @@
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vlu-gU-pUA" userLabel="被转发微博视图背景按钮">
                         <rect key="frame" x="0.0" y="86" width="494" height="337.5"/>
                         <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
-                        <state key="normal" title="Button"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZH-zL-vYp" userLabel="被转发微博正文">
-                        <rect key="frame" x="26" y="98" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="19" y="98" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vlS-9w-wBg" userLabel="底部工具栏" customClass="LSToolBar" customModule="LSWeiboSwift" customModuleProvider="target">
@@ -142,7 +141,7 @@
                         </connections>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHM-uO-8wY" userLabel="配图" customClass="LSStatusPictureView" customModule="LSWeiboSwift" customModuleProvider="target">
-                        <rect key="frame" x="20" y="131" width="454" height="200"/>
+                        <rect key="frame" x="20" y="127" width="454" height="200"/>
                         <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="200" id="gbI-R2-eVd"/>
@@ -157,18 +156,17 @@
                     <constraint firstAttribute="trailing" secondItem="Vlu-gU-pUA" secondAttribute="trailing" id="1Mh-UN-wcu"/>
                     <constraint firstItem="7fU-ba-svi" firstAttribute="centerY" secondItem="3KO-hn-UMy" secondAttribute="centerY" id="9Ry-or-Cd2"/>
                     <constraint firstItem="vlS-9w-wBg" firstAttribute="leading" secondItem="7oU-2g-bLw" secondAttribute="leading" id="AOw-nI-1eo"/>
-                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="hZH-zL-vYp" secondAttribute="trailing" constant="364" id="By7-kr-Tx6"/>
                     <constraint firstAttribute="trailingMargin" secondItem="ZHM-uO-8wY" secondAttribute="trailing" constant="12" id="CMG-fr-9f2"/>
                     <constraint firstItem="zvb-kX-poO" firstAttribute="leading" secondItem="Zj4-dI-k1d" secondAttribute="leading" id="F8f-LB-uXQ"/>
                     <constraint firstAttribute="bottom" secondItem="vlS-9w-wBg" secondAttribute="bottom" id="FwZ-0g-rSx"/>
                     <constraint firstItem="IKp-oq-i6B" firstAttribute="centerY" secondItem="00M-SF-SFe" secondAttribute="centerY" id="GDz-H4-fj6"/>
-                    <constraint firstItem="Vlu-gU-pUA" firstAttribute="leading" secondItem="hZH-zL-vYp" secondAttribute="trailing" constant="-68" id="H5v-VY-H1W"/>
                     <constraint firstItem="00M-SF-SFe" firstAttribute="top" secondItem="Zj4-dI-k1d" secondAttribute="top" constant="4" id="LLJ-0C-uyT"/>
                     <constraint firstItem="JIV-da-LtX" firstAttribute="leading" secondItem="7oU-2g-bLw" secondAttribute="leading" id="O93-bQ-BRR"/>
                     <constraint firstItem="HIx-us-RcE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ZHM-uO-8wY" secondAttribute="bottom" constant="12" id="Pre-Au-0FI"/>
                     <constraint firstItem="gYM-Ub-j3S" firstAttribute="centerX" secondItem="Zj4-dI-k1d" secondAttribute="trailing" constant="-5" id="Q2a-zW-FUE"/>
                     <constraint firstItem="Vlu-gU-pUA" firstAttribute="leading" secondItem="7oU-2g-bLw" secondAttribute="leading" id="QlN-vY-iN9"/>
                     <constraint firstItem="Zj4-dI-k1d" firstAttribute="top" secondItem="JIV-da-LtX" secondAttribute="bottom" constant="12" id="QtC-nk-fIG"/>
+                    <constraint firstItem="zvb-kX-poO" firstAttribute="leading" secondItem="hZH-zL-vYp" secondAttribute="trailing" constant="-35" id="Swa-f8-fj9"/>
                     <constraint firstItem="ZHM-uO-8wY" firstAttribute="top" secondItem="hZH-zL-vYp" secondAttribute="bottom" constant="12" id="W5g-Dt-L6P"/>
                     <constraint firstItem="hZH-zL-vYp" firstAttribute="top" secondItem="zvb-kX-poO" secondAttribute="bottom" constant="12" id="Y1y-xp-3kQ"/>
                     <constraint firstItem="7fU-ba-svi" firstAttribute="leading" secondItem="3KO-hn-UMy" secondAttribute="trailing" constant="6" id="ZXA-xo-ZvV"/>
@@ -178,6 +176,7 @@
                     <constraint firstItem="Vlu-gU-pUA" firstAttribute="top" secondItem="zvb-kX-poO" secondAttribute="bottom" id="cUc-3F-a98"/>
                     <constraint firstItem="IKp-oq-i6B" firstAttribute="leading" secondItem="00M-SF-SFe" secondAttribute="trailing" constant="3" id="e72-aw-vjX"/>
                     <constraint firstItem="ZHM-uO-8wY" firstAttribute="leading" secondItem="zvb-kX-poO" secondAttribute="leading" id="eZ4-p7-pwQ"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="hZH-zL-vYp" secondAttribute="trailing" constant="12" id="fKV-5U-vVI"/>
                     <constraint firstItem="gYM-Ub-j3S" firstAttribute="centerY" secondItem="Zj4-dI-k1d" secondAttribute="bottom" constant="-5" id="iJC-8t-LfD"/>
                     <constraint firstItem="Zj4-dI-k1d" firstAttribute="leading" secondItem="7oU-2g-bLw" secondAttribute="leadingMargin" constant="12" id="mXI-jP-Nvq"/>
                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zvb-kX-poO" secondAttribute="trailing" constant="12" id="naE-Ul-hf3"/>

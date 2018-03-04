@@ -24,6 +24,10 @@ class LSStatusViewModel: CustomStringConvertible {
     var comentString: String?
     //赞
     var likeString: String?
+    //如果是被转发的微博，一定没有配图
+    var picURLs: [LSPicture]? {
+        return status.retweeted_status?.pic_urls ?? status.pic_urls
+    }
     
     //配图视图的大小
     var pictureViewSize = CGSize()
@@ -62,7 +66,8 @@ class LSStatusViewModel: CustomStringConvertible {
         comentString = countString(count: model.comments_count, DefaultString: "评论")
         likeString = countString(count: model.attitudes_count, DefaultString: "赞")
         
-        pictureViewSize = calculatePictureViewSize(count: status.pic_urls?.count)
+    //    pictureViewSize = calculatePictureViewSize(count: status.pic_urls?.count)
+        pictureViewSize = calculatePictureViewSize(count: picURLs?.count)
     }
     
     var description: String {

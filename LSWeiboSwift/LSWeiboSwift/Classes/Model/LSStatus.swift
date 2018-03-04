@@ -20,10 +20,11 @@ class LSStatus: NSObject {
     var comments_count: Int = 0
     //点赞数
     var attitudes_count: Int = 0
-    
+    //用户参数
     var user: LSUser?
-    
-    
+    //转发微博属性
+    var retweeted_status: LSStatus?
+    //配图数组
     var pic_urls: [LSPicture]?
     
     override var description: String {
