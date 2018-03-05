@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SDWebImage
 
 
 
@@ -83,9 +84,57 @@ class LSStatusListViewModel {
                 self.pullUpErrorTimes += 1
                 completion(isSucess, false)
             } else {
+                
+                self.cachedSinglePicture(list: array)
                 completion(isSucess,true)
             }
             
         })
     }
+    
+    ///缓存本次下载微博中的单张图像
+    
+    fileprivate func cachedSinglePicture(list: [LSStatusViewModel]) {
+        var length = 0
+        //遍历数组，将只有一张图像的进行缓存
+        for vm in list {
+            
+            //判断图像的数量
+            if vm.picURLs?.count != 1 {
+                continue
+            }
+            
+            guard let picString = vm.picURLs?[0].thumbnail_pic,
+                let url = URL(string: picString) else {
+                    continue
+            }
+            
+           print("要缓存的URL是\(url)")
+            
+            //下载图像
+            /*
+             1.downLoad是SD_WEBimage的核心方法
+             2.图像下载完成后会保存在泥沙盒中，文件路径是URL的MD5;
+             3.如果沙盒中已经存在缓存的图像，以后都会从沙盒中加载图像； 
+             4.不发起网络请求，回调方法也会调用
+             
+             */
+            SDWebImageManager.shared().downloadImage(with: url, options: [], progress: nil, completed: { (image , _ , _, _, _) in
+                
+                //将图像转换成二进制数据
+                if let image = image,
+                    let data = UIImagePNGRepresentation(image) {
+                    
+                    //NSData是length属性
+                    length += data.count
+                }
+                
+                
+                print("缓存的图像的长度是\(length)")
+            })
+            
+        }
+    
+    }
+    
 }
