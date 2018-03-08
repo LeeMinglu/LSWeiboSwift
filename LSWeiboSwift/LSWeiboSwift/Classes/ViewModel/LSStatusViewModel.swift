@@ -74,6 +74,19 @@ class LSStatusViewModel: CustomStringConvertible {
         return  status.description
     }
     
+    ///使用单个图像，更新配图视图的大小
+    func updateSingleImageSize(image: UIImage) {
+        var size = image.size
+        
+        size.height += LSStatusPictureViewOutterMargin
+        
+        pictureViewSize = size
+        
+        
+        
+    
+    }
+    
     //
     /// 根据图像的数量来计算view的高度
     

@@ -100,8 +100,8 @@ class LSStatusListViewModel {
         let group = DispatchGroup()
         
         var length = 0
-        //遍历数组，将只有一张图像的进行缓存
         for vm in list {
+        //遍历数组，将只有一张图像的进行缓存
             
             //判断图像的数量
             if vm.picURLs?.count != 1 {
@@ -135,6 +135,9 @@ class LSStatusListViewModel {
                     
                     //NSData是length属性
                     length += data.count
+                    
+                    //图片缓存成功，更新视图
+                    vm.updateSingleImageSize(image: image)
                 }
                 
                 //出组
@@ -148,8 +151,8 @@ class LSStatusListViewModel {
         group.notify(queue: DispatchQueue.main) { 
             print("图像缓存完成，大小为\(length/1024)K")
             
-            finished(true,true)
         }
+        finished(true,true)
     
     }
     
