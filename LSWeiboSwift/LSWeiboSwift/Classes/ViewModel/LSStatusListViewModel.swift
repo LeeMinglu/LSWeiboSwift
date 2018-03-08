@@ -85,8 +85,8 @@ class LSStatusListViewModel {
                 completion(isSucess, false)
             } else {
                 
-                self.cachedSinglePicture(list: array)
-                completion(isSucess,true)
+                self.cachedSinglePicture(list: array, finished: completion)
+                
             }
             
         })
@@ -94,7 +94,7 @@ class LSStatusListViewModel {
     
     ///缓存本次下载微博中的单张图像
     
-    fileprivate func cachedSinglePicture(list: [LSStatusViewModel]) {
+    fileprivate func cachedSinglePicture(list: [LSStatusViewModel], finished: @escaping ( _ isSuccess: Bool, _ shouldRefresh: Bool) ->()) {
         
         //调度组
         let group = DispatchGroup()
@@ -147,6 +147,8 @@ class LSStatusListViewModel {
         //监听调度组的情况
         group.notify(queue: DispatchQueue.main) { 
             print("图像缓存完成，大小为\(length/1024)K")
+            
+            finished(true,true)
         }
     
     }
