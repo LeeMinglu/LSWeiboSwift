@@ -95,6 +95,10 @@ class LSStatusListViewModel {
     ///缓存本次下载微博中的单张图像
     
     fileprivate func cachedSinglePicture(list: [LSStatusViewModel]) {
+        
+        //调度组
+        let group = DispatchGroup()
+        
         var length = 0
         //遍历数组，将只有一张图像的进行缓存
         for vm in list {
@@ -119,6 +123,10 @@ class LSStatusListViewModel {
              4.不发起网络请求，回调方法也会调用
              
              */
+            
+            //入组
+            group.enter()
+            
             SDWebImageManager.shared().downloadImage(with: url, options: [], progress: nil, completed: { (image , _ , _, _, _) in
                 
                 //将图像转换成二进制数据
@@ -129,10 +137,16 @@ class LSStatusListViewModel {
                     length += data.count
                 }
                 
-                
+                //出组
+                group.leave()
                 print("缓存的图像的长度是\(length)")
             })
             
+        }
+        
+        //监听调度组的情况
+        group.notify(queue: DispatchQueue.main) { 
+            print("图像缓存完成，大小为\(length/1024)K")
         }
     
     }
