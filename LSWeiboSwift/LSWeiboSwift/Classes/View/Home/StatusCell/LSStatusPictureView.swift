@@ -11,6 +11,18 @@ import UIKit
 class LSStatusPictureView: UIView {
     @IBOutlet weak var heightCons: NSLayoutConstraint!
     
+    var viewModel: LSStatusViewModel? {
+        didSet {
+            calcViewSize()
+        }
+    }
+    
+    //根据视图模型的大小调整显示内容
+    private func calcViewSize() {
+        
+        heightCons.constant = viewModel?.pictureViewSize.height ?? 0
+    }
+    
     var urls:[LSPicture]? {
         didSet {
             

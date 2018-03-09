@@ -21,8 +21,9 @@ class LSStatusCell: UITableViewCell {
             
             toolBar.viewModel = viewModel
             
+            statusPictureView.viewModel = viewModel
             //代码设置配图的高度
-            statusPictureView.heightCons.constant = viewModel?.pictureViewSize.height ?? 0
+         //   statusPictureView.heightCons.constant = viewModel?.pictureViewSize.height ?? 0
             //设置配图视图的数据(被转发和原创)
        //     statusPictureView.urls = viewModel?.status.pic_urls
             statusPictureView.urls = viewModel?.picURLs
