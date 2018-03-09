@@ -20,6 +20,28 @@ class LSStatusPictureView: UIView {
     //根据视图模型的大小调整显示内容
     private func calcViewSize() {
         
+        //处理单张视图的高度
+        if viewModel?.status.pic_urls?.count == 1 {
+            
+            let viewSize = viewModel?.pictureViewSize ?? CGSize()
+            
+            let v = subviews[0]
+            v.frame = CGRect(x: 0,
+                             y: LSStatusPictureViewOutterMargin,
+                             width: viewSize.width,
+                             height: viewSize.height - LSStatusPictureViewOutterMargin)
+        
+        } else {
+        //处理多张视图
+            let v = subviews[0]
+            v.frame = CGRect(x: 0,
+                             y: LSStatusPictureViewOutterMargin,
+                             width: LSStatusPictureViewItemWidth,
+                             height: LSStatusPictureViewItemWidth)
+            
+        }
+        
+        
         heightCons.constant = viewModel?.pictureViewSize.height ?? 0
     }
     
