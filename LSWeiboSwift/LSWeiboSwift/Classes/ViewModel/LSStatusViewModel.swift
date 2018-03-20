@@ -51,7 +51,9 @@ class LSStatusViewModel: CustomStringConvertible {
         
         //被转发微博的文字 s
          retweetText = "@" + (status.retweeted_status?.user?.screen_name ?? "")
-        print("转发微博的文字为 \(retweetText ?? "")")
+        
+        retweetText = (retweetText!) + (status.retweeted_status?.text ?? "")
+  //      print("转发微博的文字为 \(retweetText ?? "")")
         
     }
     
