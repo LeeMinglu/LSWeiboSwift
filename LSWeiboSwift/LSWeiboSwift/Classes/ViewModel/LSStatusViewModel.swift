@@ -55,6 +55,64 @@ class LSStatusViewModel: CustomStringConvertible {
         retweetText = (retweetText!) + (status.retweeted_status?.text ?? "")
   //      print("转发微博的文字为 \(retweetText ?? "")")
         
+        
+        
+    }
+    
+    //更新单个微博的行高
+    func updateRowHeight() {
+        
+        //微博：分隔视图行高（12）+间距 12+ icon高度34 +间距12——文本高度（需要计算）+图片高度（需要计算）+间距12+toolbar高度35
+        
+        //被转发微博 分隔视图行高（12）+间距 12+ icon高度34 +间距12——文本高度（需要计算）+图片高度（需要计算）+间距12+toolbar高度35 + 文本高度 + 间距
+        
+        let margin: CGFloat = 12
+        let iconHeight: CGFloat = 34
+        let toolBarHeight: CGFloat = 35
+        let originalFont = UIFont.systemFont(ofSize: 15)
+        let retweetFont = UIFont.systemFont(ofSize: 14)
+        
+        var height:CGFloat = 0
+        
+        let textSize = CGSize(width: UIScreen.main.bounds.width, height: CGFloat.greatestFiniteMagnitude)
+        
+        //1.计算顶部的位置
+        height = margin * 2 + iconHeight + margin
+        
+        //2.计算内容的高度
+        if let text = status.text {
+            height += (text as NSString).boundingRect(
+                with: textSize,
+                options: [.usesLineFragmentOrigin],
+                attributes: [NSFontAttributeName: originalFont],
+                context: nil).height
+        }
+        
+        //3.判断是否为转发微博
+        if status.retweeted_status != nil {
+            
+            height += margin * 2
+
+            if let text = retweetText {
+                height += (text as NSString).boundingRect(
+                    with: textSize,
+                    options: [.usesLineFragmentOrigin],
+                    attributes: [NSFontAttributeName: retweetFont],
+                    context: nil).height
+                
+            }
+        }
+        
+        //4.配图视图的高度
+        height += pictureViewSize.height
+        
+        height += margin
+        
+        //5.底部工具栏
+        height += toolBarHeight
+        
+        rowHeight = height
+    
     }
     
     var status: LSStatus
