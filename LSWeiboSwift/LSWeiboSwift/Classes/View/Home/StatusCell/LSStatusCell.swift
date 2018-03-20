@@ -39,6 +39,7 @@ class LSStatusCell: UITableViewCell {
             }
             
             */
+           retweetLabel?.text = viewModel?.retweetText
             
         }
     }
@@ -67,7 +68,8 @@ class LSStatusCell: UITableViewCell {
     @IBOutlet weak var toolBar: LSToolBar!
     
     @IBOutlet weak var statusPictureView: LSStatusPictureView!
-    
+    //被转发微博Label
+    @IBOutlet weak var retweetLabel: UILabel?
 
     override func awakeFromNib() {
         super.awakeFromNib()

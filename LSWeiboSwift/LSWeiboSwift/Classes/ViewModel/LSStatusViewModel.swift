@@ -11,6 +11,50 @@ import Foundation
 
 class LSStatusViewModel: CustomStringConvertible {
     
+    //构造函数
+    init(model: LSStatus) {
+        
+        self.status = model
+        
+        if (model.user?.mbrank)! > 0 || (model.user?.mbrank)! < 7 {
+            
+        }
+        let imageName = "common_icon_membership_level\(model.user?.mbrank ?? 1)"
+        memberIcon = UIImage(named: imageName)
+        
+        //   print("等级名称+\(imageName)")
+        
+        //认证图标 -1:没有认证； 2，3，5:企业认证；  220：草根
+        switch model.user?.verified_type ?? -1 {
+        case 0:
+            vipIcon = UIImage(named: "avatar_vip")
+        case 2,3,5:
+            vipIcon = UIImage(named: "avatar_enterprise_vip")
+            
+        case 0:
+            vipIcon = UIImage(named: "avatar_grassroot")
+            
+        default:
+            break
+        }
+        
+        // MARK: 测试数据代码
+        //    model.reposts_count = Int(arc4random_uniform(100000))
+        
+        
+        retweetString = countString(count: model.reposts_count, DefaultString: "转发")
+        comentString = countString(count: model.comments_count, DefaultString: "评论")
+        likeString = countString(count: model.attitudes_count, DefaultString: "赞")
+        
+        //    pictureViewSize = calculatePictureViewSize(count: status.pic_urls?.count)
+        pictureViewSize = calculatePictureViewSize(count: picURLs?.count)
+        
+        //被转发微博的文字 s
+         retweetText = "@" + (status.retweeted_status?.user?.screen_name ?? "")
+        print("转发微博的文字为 \(retweetText ?? "")")
+        
+    }
+    
     var status: LSStatus
     
     //会员图标
@@ -32,43 +76,11 @@ class LSStatusViewModel: CustomStringConvertible {
     //配图视图的大小
     var pictureViewSize = CGSize()
     
-    init(model: LSStatus) {
-        
-        self.status = model
-        
-        if (model.user?.mbrank)! > 0 || (model.user?.mbrank)! < 7 {
-        
-        }
-        let imageName = "common_icon_membership_level\(model.user?.mbrank ?? 1)"
-        memberIcon = UIImage(named: imageName)
-        
-     //   print("等级名称+\(imageName)")
-        
-        //认证图标 -1:没有认证； 2，3，5:企业认证；  220：草根
-        switch model.user?.verified_type ?? -1 {
-        case 0:
-            vipIcon = UIImage(named: "avatar_vip")
-        case 2,3,5:
-            vipIcon = UIImage(named: "avatar_enterprise_vip")
-
-        case 0:
-            vipIcon = UIImage(named: "avatar_grassroot")
-
-        default:
-            break
-        }
-        
-        // MARK: 测试数据代码
-    //    model.reposts_count = Int(arc4random_uniform(100000))
-        
-        
-        retweetString = countString(count: model.reposts_count, DefaultString: "转发")
-        comentString = countString(count: model.comments_count, DefaultString: "评论")
-        likeString = countString(count: model.attitudes_count, DefaultString: "赞")
-        
-    //    pictureViewSize = calculatePictureViewSize(count: status.pic_urls?.count)
-        pictureViewSize = calculatePictureViewSize(count: picURLs?.count)
-    }
+   
+    
+    var rowHeight: CGFloat = 0
+    
+    var retweetText : String?
     
     var description: String {
         return  status.description
