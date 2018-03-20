@@ -68,6 +68,13 @@ extension LSHomeController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        //根据indexPath 获取视图模型
+        let vm = statusViewModel.statusList[indexPath.row]
+        //返回行高
+        return vm.rowHeight
+    }
+    
 
 }
  //设置界面
@@ -86,6 +93,9 @@ extension LSHomeController {
         
         //注册转发微博CELLID
         tableview?.register(UINib(nibName: "WeiBoStatusRetweetedCell", bundle: nil), forCellReuseIdentifier: RetweetedCellID)
+        
+        //取消自动行高
+     //   tableview?.rowHeight = UITableViewAutomaticDimension
         
         tableview?.separatorStyle = .none
         tableview?.estimatedRowHeight = 300

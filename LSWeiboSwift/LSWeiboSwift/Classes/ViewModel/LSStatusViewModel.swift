@@ -55,6 +55,7 @@ class LSStatusViewModel: CustomStringConvertible {
         retweetText = (retweetText!) + (status.retweeted_status?.text ?? "")
   //      print("转发微博的文字为 \(retweetText ?? "")")
         
+        updateRowHeight()
         
         
     }
@@ -154,8 +155,8 @@ class LSStatusViewModel: CustomStringConvertible {
         
         pictureViewSize = size
         
-        
-        
+        //更新 行高
+        updateRowHeight()
     
     }
     
