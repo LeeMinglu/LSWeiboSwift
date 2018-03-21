@@ -74,6 +74,16 @@ class LSStatusCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        //离屏渲染--异步绘制
+        self.layer.drawsAsynchronously = true
+        
+        //栅格化 异步之后会生成一张独立的图片，cell在滚动的时候滚动的就是这张图片
+        //cell 优化尽量减少图层的数量相当于只有一层 
+        //停止滚动之后可以收到监听
+        self.layer.shouldRasterize = true
+        //使用栅格化必须注意使用分辨率
+        self.layer.rasterizationScale = UIScreen.main.scale
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
