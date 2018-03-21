@@ -151,10 +151,18 @@ class LSStatusViewModel: CustomStringConvertible {
     func updateSingleImageSize(image: UIImage) {
         var size = image.size
         let maxWidth : CGFloat = 500
+        let minWidth: CGFloat = 50
         
+        //过宽图片处理
         if size.width > maxWidth {
             
             size.width = maxWidth
+            size.height = image.size.height * size.width / image.size.width
+        }
+        
+        //过窄图片处理
+        if size.width < minWidth {
+            size.width = minWidth
             size.height = image.size.height * size.width / image.size.width
         }
         
