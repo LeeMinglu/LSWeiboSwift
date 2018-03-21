@@ -93,7 +93,7 @@ extension LSStatusPictureView {
          //   imageView.backgroundColor = UIColor.red
           
             //设置图像自适应图像大小，以下两行代码都需要设置，你可以自己去掉第二行试试 效果就知道了
-            imageView.contentMode = .scaleAspectFill
+            imageView.contentMode = UIViewContentMode.scaleAspectFill
             imageView.clipsToBounds = true
             //行对应于Y
             let row = CGFloat(i / count)

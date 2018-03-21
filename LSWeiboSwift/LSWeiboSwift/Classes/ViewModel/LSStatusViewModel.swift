@@ -150,6 +150,14 @@ class LSStatusViewModel: CustomStringConvertible {
     ///使用单个图像，更新配图视图的大小
     func updateSingleImageSize(image: UIImage) {
         var size = image.size
+        let maxWidth : CGFloat = 500
+        
+        if size.width > maxWidth {
+            
+            size.width = maxWidth
+            size.height = image.size.height * size.width / image.size.width
+        }
+        
         
         size.height += LSStatusPictureViewOutterMargin
         
