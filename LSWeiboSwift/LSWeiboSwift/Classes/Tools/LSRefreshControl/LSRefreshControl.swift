@@ -14,6 +14,8 @@ class LSRefreshControl: UIControl {
     //刷新控件的父视图，下拉刷新控件适用于TableView/CollectionView
     private weak var scrollView: UIScrollView?
     
+    
+    
     init() {
         super.init(frame: CGRect())
         setupUI()
@@ -45,7 +47,19 @@ class LSRefreshControl: UIControl {
     
     //所有的KVO都会调用此方法
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        
+        //tableView的contentInset的top与ContentOffset的y有很大关系
         print(scrollView?.contentOffset)
+        
+        guard  let sv = scrollView else {
+            return
+        }
+
+        
+        let height = -(sv.contentOffset.y + sv.contentInset.top)
+        
+        self.frame = CGRect(x: 0, y: -height, width: sv.bounds.width, height: height)
+        
     }
     
     //开始刷新
