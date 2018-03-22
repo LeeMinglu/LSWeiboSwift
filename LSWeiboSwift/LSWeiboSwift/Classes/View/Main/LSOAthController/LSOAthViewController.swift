@@ -64,7 +64,7 @@ class LSOAthViewController: UIViewController {
     @objc fileprivate func autoStuff() {
         
         let AutoStuffContent = "document.getElementById('userId').value='13522154166';" +
-         "document.getElementById('passwd').value='luoriver';"
+         "document.getElementById('passwd').value='Luoriver8*';"
         
         webView.stringByEvaluatingJavaScript(from: AutoStuffContent)
     
