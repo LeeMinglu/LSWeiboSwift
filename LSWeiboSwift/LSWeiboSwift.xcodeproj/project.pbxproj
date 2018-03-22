@@ -60,6 +60,7 @@
 		1ABC05C61F47D51100445E81 /* LSVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABC05C51F47D51100445E81 /* LSVisitorView.swift */; };
 		1ACAEB971F49D194006AFB01 /* main2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1ACAEB961F49D194006AFB01 /* main2.json */; };
 		1AD171861F497E94003A58EA /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AD171851F497E94003A58EA /* main.json */; };
+		1AEB24BF2063E4A00075B2B5 /* LSRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AEB24BE2063E4A00075B2B5 /* LSRefreshControl.swift */; };
 		1AFDEC7F1F8E602000ACBFCD /* LSWeiBoCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFDEC7E1F8E602000ACBFCD /* LSWeiBoCommon.swift */; };
 		B3A0C29174BED67BC7B4D97B /* Pods_LSWeiboSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6837540665F81B6C95449AD8 /* Pods_LSWeiboSwift.framework */; };
 /* End PBXBuildFile section */
@@ -139,6 +140,7 @@
 		1ABC05C51F47D51100445E81 /* LSVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSVisitorView.swift; sourceTree = "<group>"; };
 		1ACAEB961F49D194006AFB01 /* main2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main2.json; sourceTree = "<group>"; };
 		1AD171851F497E94003A58EA /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		1AEB24BE2063E4A00075B2B5 /* LSRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSRefreshControl.swift; sourceTree = "<group>"; };
 		1AFDEC7E1F8E602000ACBFCD /* LSWeiBoCommon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LSWeiBoCommon.swift; path = Tools/NetWork/LSWeiBoCommon.swift; sourceTree = "<group>"; };
 		6837540665F81B6C95449AD8 /* Pods_LSWeiboSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSWeiboSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E36DDD7F3C95F1E71382DF18 /* Pods-LSWeiboSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSWeiboSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSWeiboSwift/Pods-LSWeiboSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 		1AB68AE51EBEF7C400E37B78 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				1AEB24BD2063E4620075B2B5 /* LSRefreshControl */,
 				1A39E6CA1F5EE8D900B9E7DB /* NetWork */,
 				1AB68FE71EC121C300E37B78 /* Additions */,
 				1AB68FDC1EBF570B00E37B78 /* LSExtension */,
@@ -421,6 +424,14 @@
 				1ABC05C51F47D51100445E81 /* LSVisitorView.swift */,
 			);
 			path = VisitorView;
+			sourceTree = "<group>";
+		};
+		1AEB24BD2063E4620075B2B5 /* LSRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				1AEB24BE2063E4A00075B2B5 /* LSRefreshControl.swift */,
+			);
+			path = LSRefreshControl;
 			sourceTree = "<group>";
 		};
 		7873BBD0D879DDF3AF530B89 /* Pods */ = {
@@ -596,6 +607,7 @@
 				1A3AB6591FE6B2FD003C12C6 /* LSNewFeature.swift in Sources */,
 				1AB690171EC121C300E37B78 /* UIView+JKFrame.m in Sources */,
 				1AB6900A1EC121C300E37B78 /* NSArray+Log.m in Sources */,
+				1AEB24BF2063E4A00075B2B5 /* LSRefreshControl.swift in Sources */,
 				1A516FD4203ED22400522916 /* LSUser.swift in Sources */,
 				1AB690121EC121C300E37B78 /* UIColor+CZAddition.m in Sources */,
 				1AB68AFC1EBEFA4F00E37B78 /* LSMainController.swift in Sources */,
