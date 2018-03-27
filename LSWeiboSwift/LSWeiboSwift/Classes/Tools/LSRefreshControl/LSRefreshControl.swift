@@ -45,11 +45,23 @@ class LSRefreshControl: UIControl {
         
     }
     
+    //本视图从父视图上移除
+    //所有 的KVO监听都是这个思路
+    //所有下拉刷新都是监听父视图的contentOffset
+    override func removeFromSuperview() {
+        superview?.removeObserver(self, forKeyPath: "contentOffset")
+        super.removeFromSuperview()
+    }
+    
     //所有的KVO都会调用此方法
+    //通常只监听某一个对象的几个属性，如果属性太多，方法会很乱
+    //观察者模式，在不需要的时候都需要释放
+        //通知中心，如果不释放什么也没会发生； 
+        //KVO:  如果不释放，会崩溃
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
         //tableView的contentInset的top与ContentOffset的y有很大关系
-        print(scrollView?.contentOffset)
+        print(scrollView!.contentOffset)
         
         guard  let sv = scrollView else {
             return
