@@ -163,7 +163,7 @@ class LSStatusViewModel: CustomStringConvertible {
         //过窄图片处理
         if size.width < minWidth {
             size.width = minWidth
-            size.height = image.size.height * size.width / image.size.width
+            size.height = image.size.height * size.width / image.size.width / 4
         }
         
         

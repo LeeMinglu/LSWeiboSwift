@@ -23,14 +23,18 @@ class LSHomeController: LSBaseController {
    fileprivate lazy var weiboData = [String]()
     override func loaddata() {
         print("开始刷新")
+        
+        //添加beginRefreshing()
+        refreshControl?.beginRefreshing()
+        
         statusViewModel.loadStatus(pullUp: isUpPull) { (isSucess, shouldPullup) in
-        self.refreshControl?.endRefreshing()
-        print("结束刷新")
-        self.isUpPull = false
+            self.refreshControl?.endRefreshing()
+            print("结束刷新")
+            self.isUpPull = false
             
-        if shouldPullup {
-            self.tableview?.reloadData()
-        }
+            if shouldPullup {
+                self.tableview?.reloadData()
+            }
 
         }
             
