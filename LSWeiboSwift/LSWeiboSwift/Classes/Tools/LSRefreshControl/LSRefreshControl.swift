@@ -91,6 +91,9 @@ extension LSRefreshControl {
     
     fileprivate func setupUI() {
         backgroundColor = UIColor.orange
+        
+        
+        addSubview(LSRefrshView.refreshView())
     }
 
 }

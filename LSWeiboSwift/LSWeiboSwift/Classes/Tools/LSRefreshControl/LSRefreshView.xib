@@ -11,8 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LSRefrshView" customModule="刷新控件002" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="178" height="57"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LSRefrshView" customModule="刷新控件002">
+            <rect key="frame" x="0.0" y="0.0" width="178" height="60"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="55739ADC-549D-4FF3-9E9C-78BC921A6785.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="yv3-CT-ggB">
@@ -35,9 +35,9 @@
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="Indicator" destination="Hib-cN-WvO" id="D8e-W3-XOH"/>
-                <outlet property="RefreshLabel" destination="RL5-Fu-isu" id="CdH-AT-xUY"/>
-                <outlet property="iconView" destination="yv3-CT-ggB" id="Pn9-Rb-v7G"/>
+                <outlet property="Indicator" destination="Hib-cN-WvO" id="wbx-ox-b7U"/>
+                <outlet property="RefreshLabel" destination="RL5-Fu-isu" id="PLT-16-lfN"/>
+                <outlet property="iconView" destination="yv3-CT-ggB" id="6b0-GZ-nCm"/>
             </connections>
             <point key="canvasLocation" x="-79" y="-230.5"/>
         </view>

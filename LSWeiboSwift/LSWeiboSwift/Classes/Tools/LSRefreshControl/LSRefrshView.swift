@@ -17,5 +17,15 @@ class LSRefrshView: UIView {
     //指示器
     @IBOutlet weak var Indicator: UIActivityIndicatorView!
     
+    class func refreshView() -> LSRefrshView {
+        let nib = UINib(nibName: "LSRefreshView", bundle: nil)
+        
+        let v = nib.instantiate(withOwner: nil, options: nil)[0] as! LSRefrshView
+        return v
+        
+        
+    
+    }
+    
 
 }
