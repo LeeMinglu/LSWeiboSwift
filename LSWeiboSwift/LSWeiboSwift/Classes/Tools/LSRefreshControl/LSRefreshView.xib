@@ -15,10 +15,6 @@
             <rect key="frame" x="0.0" y="0.0" width="178" height="60"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="55739ADC-549D-4FF3-9E9C-78BC921A6785.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="yv3-CT-ggB">
-                    <rect key="frame" x="1" y="3" width="36" height="54"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                </imageView>
                 <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Hib-cN-WvO">
                     <rect key="frame" x="9" y="19" width="20" height="20"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -26,10 +22,14 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="下拉开始刷新..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RL5-Fu-isu">
                     <rect key="frame" x="45" y="19" width="133" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="55739ADC-549D-4FF3-9E9C-78BC921A6785.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="yv3-CT-ggB">
+                    <rect key="frame" x="1" y="11" width="36" height="37"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
@@ -39,7 +39,7 @@
                 <outlet property="RefreshLabel" destination="RL5-Fu-isu" id="PLT-16-lfN"/>
                 <outlet property="iconView" destination="yv3-CT-ggB" id="6b0-GZ-nCm"/>
             </connections>
-            <point key="canvasLocation" x="-79" y="-230.5"/>
+            <point key="canvasLocation" x="-79" y="-231"/>
         </view>
     </objects>
     <resources>
