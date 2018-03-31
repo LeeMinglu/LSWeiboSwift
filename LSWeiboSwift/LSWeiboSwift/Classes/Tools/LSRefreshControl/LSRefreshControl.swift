@@ -10,6 +10,8 @@ import UIKit
 
 class LSRefreshControl: UIControl {
     
+    private let LSRefreshOffset: CGFloat = 60
+    
     //MARK:
     //刷新控件的父视图，下拉刷新控件适用于TableView/CollectionView
     private weak var scrollView: UIScrollView?
@@ -62,7 +64,7 @@ class LSRefreshControl: UIControl {
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         
         //tableView的contentInset的top与ContentOffset的y有很大关系
-        print(scrollView!.contentOffset)
+    //    print(scrollView!.contentOffset)
         
         guard  let sv = scrollView else {
             return
@@ -70,8 +72,26 @@ class LSRefreshControl: UIControl {
 
         
         let height = -(sv.contentOffset.y + sv.contentInset.top)
+        print("\(height)")
+        if height < 0 {
+            return
+        }
         
         self.frame = CGRect(x: 0, y: -height, width: sv.bounds.width, height: height)
+        
+        //判断临界点
+        
+        if sv.isDragging {
+            if height > LSRefreshOffset {
+                print("放手刷新")
+            } else {
+                print("再使劲")
+            }
+            
+        } else{
+            //放手
+            print("放手")
+        }
         
     }
     
