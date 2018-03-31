@@ -14,6 +14,7 @@ class LSRefreshControl: UIControl {
     //刷新控件的父视图，下拉刷新控件适用于TableView/CollectionView
     private weak var scrollView: UIScrollView?
     
+    lazy var refreshView: LSRefrshView = LSRefrshView.refreshView()
     
     
     init() {
@@ -93,7 +94,52 @@ extension LSRefreshControl {
         backgroundColor = UIColor.orange
         
         
-        addSubview(LSRefrshView.refreshView())
+        addSubview(refreshView)
+        
+        refreshView.translatesAutoresizingMaskIntoConstraints = false
+        
+        refreshView.backgroundColor = superview?.backgroundColor
+        
+        addConstraints([NSLayoutConstraint(
+            item: refreshView,
+            attribute: .centerX,
+            relatedBy: .equal ,
+            toItem: self,
+            attribute: .centerX,
+            multiplier: 1.0,
+            constant: 0)]
+        )
+        
+        addConstraints([NSLayoutConstraint(
+            item: refreshView,
+            attribute: .bottom,
+            relatedBy: .equal ,
+            toItem: self,
+            attribute: .bottom,
+            multiplier: 1.0,
+            constant: 0)]
+        )
+        
+        addConstraints([NSLayoutConstraint(
+            item: refreshView,
+            attribute: .width,
+            relatedBy: .equal ,
+            toItem: nil,
+            attribute: .notAnAttribute,
+            multiplier: 1.0,
+            constant: refreshView.bounds.width)]
+        )
+        
+        addConstraints([NSLayoutConstraint(
+            item: refreshView,
+            attribute: .height,
+            relatedBy: .equal ,
+            toItem: nil,
+            attribute: .notAnAttribute,
+            multiplier: 1.0,
+            constant: refreshView.bounds.height)]
+        )
+
     }
 
 }

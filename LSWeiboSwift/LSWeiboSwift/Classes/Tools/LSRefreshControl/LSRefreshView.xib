@@ -27,7 +27,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="55739ADC-549D-4FF3-9E9C-78BC921A6785.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="yv3-CT-ggB">
-                    <rect key="frame" x="1" y="11" width="36" height="37"/>
+                    <rect key="frame" x="1" y="16" width="36" height="29"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
             </subviews>
