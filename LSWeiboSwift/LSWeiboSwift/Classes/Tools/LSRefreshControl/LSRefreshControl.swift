@@ -8,9 +8,16 @@
 
 import UIKit
 
+//刷新状态的临界点
+private let LSRefreshOffset: CGFloat = 60
+
+enum LSrefreshState {
+    case Normal
+    case Pulling
+    case WillRefresh
+}
+
 class LSRefreshControl: UIControl {
-    
-    private let LSRefreshOffset: CGFloat = 60
     
     //MARK:
     //刷新控件的父视图，下拉刷新控件适用于TableView/CollectionView

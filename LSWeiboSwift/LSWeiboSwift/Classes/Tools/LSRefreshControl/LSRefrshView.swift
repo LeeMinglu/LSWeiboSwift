@@ -9,6 +9,8 @@
 import UIKit
 
 class LSRefrshView: UIView {
+    
+    var refreshState: LSrefreshState = .Normal
 
     //提示标签
     @IBOutlet weak var RefreshLabel: UILabel!
