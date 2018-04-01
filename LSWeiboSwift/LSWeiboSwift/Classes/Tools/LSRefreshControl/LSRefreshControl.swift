@@ -11,6 +11,11 @@ import UIKit
 //刷新状态的临界点
 private let LSRefreshOffset: CGFloat = 60
 
+/// 刷新状态
+///
+/// - Normal 普通状态，什么也不做
+/// -Pulling 超过临界点，如果放手，开始刷新
+/// -WillRefresh 用户超过临界点，并且放手
 enum LSrefreshState {
     case Normal
     case Pulling
@@ -79,7 +84,7 @@ class LSRefreshControl: UIControl {
 
         
         let height = -(sv.contentOffset.y + sv.contentInset.top)
-        print("\(height)")
+      //  print("\(height)")
         if height < 0 {
             return
         }
@@ -89,15 +94,22 @@ class LSRefreshControl: UIControl {
         //判断临界点
         
         if sv.isDragging {
-            if height > LSRefreshOffset {
+            if height > LSRefreshOffset && refreshView.refreshState == .Normal {
                 print("放手刷新")
-            } else {
+                refreshView.refreshState = .Pulling
+            } else if height < LSRefreshOffset && refreshView.refreshState == .Pulling{
+                refreshView.refreshState = .Normal
                 print("再使劲")
             }
             
-        } else{
-            //放手
-            print("放手")
+        } else {
+            if refreshView.refreshState == .Pulling {
+                refreshView.refreshState = .WillRefresh
+                
+                //放手
+                print("放手,准备开始刷新")
+            }
+            
         }
         
     }
