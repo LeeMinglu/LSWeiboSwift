@@ -15,9 +15,16 @@ class LSRefrshView: UIView {
             switch refreshState {
             case .Normal:
                 RefreshLabel.text = "继续使劲拉"
-                
+                UIView.animate(withDuration: 0.25, animations: { 
+                    self.iconView.transform = CGAffineTransform.identity
+                })
             case .Pulling:
                 RefreshLabel.text = "放手就刷新"
+                
+                UIView.animate(withDuration: 0.25, animations: {
+                    
+                    self.iconView.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi - 0.0001))
+                })
                 
             case .WillRefresh:
                 RefreshLabel.text = "正在刷新"
