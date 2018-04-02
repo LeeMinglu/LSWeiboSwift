@@ -10,7 +10,21 @@ import UIKit
 
 class LSRefrshView: UIView {
     
-    var refreshState: LSrefreshState = .Normal
+    var refreshState: LSrefreshState = .Normal {
+        didSet {
+            switch refreshState {
+            case .Normal:
+                RefreshLabel.text = "继续使劲拉"
+                
+            case .Pulling:
+                RefreshLabel.text = "放手就刷新"
+                
+            case .WillRefresh:
+                RefreshLabel.text = "正在刷新"
+                
+            }
+        }
+    }
 
     //提示标签
     @IBOutlet weak var RefreshLabel: UILabel!
