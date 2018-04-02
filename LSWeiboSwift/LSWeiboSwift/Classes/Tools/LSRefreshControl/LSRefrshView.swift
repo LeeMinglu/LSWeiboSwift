@@ -29,6 +29,13 @@ class LSRefrshView: UIView {
             case .WillRefresh:
                 RefreshLabel.text = "正在刷新"
                 
+                //隐藏提示图标
+                iconView.isHidden = true
+                //显示刷新图标
+                Indicator.startAnimating()
+               
+                
+                
             }
         }
     }
