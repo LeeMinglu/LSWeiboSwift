@@ -12,6 +12,8 @@
 		1A1574B9203DB3DC008D7CB9 /* LSToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1574B8203DB3DC008D7CB9 /* LSToolBar.swift */; };
 		1A1574BD203EB05B008D7CB9 /* LSStatusPictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1574BC203EB05B008D7CB9 /* LSStatusPictureView.swift */; };
 		1A17E47C1FE2B7390025D5E0 /* LSTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A17E47B1FE2B7390025D5E0 /* LSTitleButton.swift */; };
+		1A1A2E0B207A581800D9ED15 /* LSRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A2E09207A581800D9ED15 /* LSRefreshView.xib */; };
+		1A1A2E0C207A581800D9ED15 /* LSRefrshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A2E0A207A581800D9ED15 /* LSRefrshView.swift */; };
 		1A1E32D31F9AEDA600984D43 /* LSUseraccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E32D21F9AEDA600984D43 /* LSUseraccount.swift */; };
 		1A3769C020395BE9009A2576 /* WeiBoStatusNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A3769BF20395BE9009A2576 /* WeiBoStatusNormalCell.xib */; };
 		1A3769C220395C85009A2576 /* LSStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3769C120395C85009A2576 /* LSStatusCell.swift */; };
@@ -72,6 +74,8 @@
 		1A1574B8203DB3DC008D7CB9 /* LSToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSToolBar.swift; sourceTree = "<group>"; };
 		1A1574BC203EB05B008D7CB9 /* LSStatusPictureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSStatusPictureView.swift; sourceTree = "<group>"; };
 		1A17E47B1FE2B7390025D5E0 /* LSTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSTitleButton.swift; sourceTree = "<group>"; };
+		1A1A2E09207A581800D9ED15 /* LSRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LSRefreshView.xib; sourceTree = "<group>"; };
+		1A1A2E0A207A581800D9ED15 /* LSRefrshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSRefrshView.swift; sourceTree = "<group>"; };
 		1A1E32D21F9AEDA600984D43 /* LSUseraccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSUseraccount.swift; sourceTree = "<group>"; };
 		1A3769BF20395BE9009A2576 /* WeiBoStatusNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeiBoStatusNormalCell.xib; sourceTree = "<group>"; };
 		1A3769C120395C85009A2576 /* LSStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSStatusCell.swift; sourceTree = "<group>"; };
@@ -429,6 +433,8 @@
 		1AEB24BD2063E4620075B2B5 /* LSRefreshControl */ = {
 			isa = PBXGroup;
 			children = (
+				1A1A2E09207A581800D9ED15 /* LSRefreshView.xib */,
+				1A1A2E0A207A581800D9ED15 /* LSRefrshView.swift */,
 				1AEB24BE2063E4A00075B2B5 /* LSRefreshControl.swift */,
 			);
 			path = LSRefreshControl;
@@ -518,6 +524,7 @@
 				1A73E3C3204A913D00092EC9 /* WeiBoStatusRetweetedCell.xib in Resources */,
 				1A3769C020395BE9009A2576 /* WeiBoStatusNormalCell.xib in Resources */,
 				1A4AA6331FE8006B00E5D0DE /* LSWelcomeView.xib in Resources */,
+				1A1A2E0B207A581800D9ED15 /* LSRefreshView.xib in Resources */,
 				1AD171861F497E94003A58EA /* main.json in Resources */,
 				1ACAEB971F49D194006AFB01 /* main2.json in Resources */,
 				1A7B3D511F4879ED00E0FF34 /* Assets.xcassets in Resources */,
@@ -618,6 +625,7 @@
 				1ABC05C61F47D51100445E81 /* LSVisitorView.swift in Sources */,
 				1AB690181EC121C300E37B78 /* UIViewController+CZAddition.m in Sources */,
 				1AB6900F1EC121C300E37B78 /* NSString+CZHash.m in Sources */,
+				1A1A2E0C207A581800D9ED15 /* LSRefrshView.swift in Sources */,
 				1A148A131F910FB600D35BD8 /* LSOAthViewController.swift in Sources */,
 				1A1574BD203EB05B008D7CB9 /* LSStatusPictureView.swift in Sources */,
 				1AB68AF61EBEF97100E37B78 /* LSDiscoverController.swift in Sources */,

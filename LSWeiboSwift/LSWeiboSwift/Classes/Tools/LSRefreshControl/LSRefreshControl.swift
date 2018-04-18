@@ -108,6 +108,11 @@ class LSRefreshControl: UIControl {
                 
                 //放手
                 print("放手,准备开始刷新")
+                
+                var inset = sv.contentInset
+                inset.top += LSRefreshOffset
+                
+                sv.contentInset = inset
             }
             
         }
