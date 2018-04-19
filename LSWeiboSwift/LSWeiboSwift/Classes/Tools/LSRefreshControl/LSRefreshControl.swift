@@ -134,7 +134,7 @@ class LSRefreshControl: UIControl {
 
 extension LSRefreshControl {
     
-    fileprivate func setupUI() {
+     func setupUI() {
         backgroundColor = UIColor.orange
         
         
