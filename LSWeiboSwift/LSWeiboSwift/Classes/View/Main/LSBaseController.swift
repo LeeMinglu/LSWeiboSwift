@@ -15,7 +15,7 @@ class LSBaseController: UIViewController {
     
     var tableview: UITableView?
     
-    var refreshControl: LSRefreshControl?
+    var refreshControl: UIRefreshControl?
     
 //    //登陆状态
 //    let Logon: Bool = true
@@ -120,7 +120,7 @@ extension LSBaseController {
         tableview?.delegate = self
         tableview?.dataSource = self
         
-        refreshControl = LSRefreshControl()
+        refreshControl = UIRefreshControl()
         refreshControl?.addTarget(self, action: #selector(loaddata), for: .valueChanged)
         tableview?.addSubview(refreshControl!)
         

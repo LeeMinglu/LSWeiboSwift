@@ -469,7 +469,6 @@
 				1A4DD4EC1EBEC8BA001F97BD /* Frameworks */,
 				1A4DD4ED1EBEC8BA001F97BD /* Resources */,
 				BBFFC72428682F858C672DB6 /* [CP] Embed Pods Frameworks */,
-				671DB88414C1CE9A99B2F935 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -534,21 +533,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		671DB88414C1CE9A99B2F935 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LSWeiboSwift/Pods-LSWeiboSwift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		72B8294DA17968310FC0B5D4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

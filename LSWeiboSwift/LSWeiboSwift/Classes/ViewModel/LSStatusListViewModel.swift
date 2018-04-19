@@ -126,7 +126,31 @@ class LSStatusListViewModel {
             
             //入组
             group.enter()
+           
+        
+        //监听调度组的情况
+        group.notify(queue: DispatchQueue.main) {
+            print("图像缓存完成，大小为\(length/1024)K")
+            }
             
+            SDWebImageManager.shared().loadImage(with: url, options: [], progress: nil) { (image, _, _, _, _, _) in
+                //将图像转换成二进制数据
+                if let image = image,
+                    let data = UIImagePNGRepresentation(image) {
+                    
+                    //NSData是length属性
+                    length += data.count
+                    
+                    //图片缓存成功，更新视图
+                    vm.updateSingleImageSize(image: image)
+                }
+                
+                //出组
+                group.leave()
+                print("缓存的图像的长度是\(length)")
+            }
+            
+        /*
             SDWebImageManager.shared().downloadImage(with: url, options: [], progress: nil, completed: { (image , _ , _, _, _) in
                 
                 //将图像转换成二进制数据
@@ -144,9 +168,9 @@ class LSStatusListViewModel {
                 group.leave()
                 print("缓存的图像的长度是\(length)")
             })
-            
+           */
         }
-        
+ 
         //监听调度组的情况
         group.notify(queue: DispatchQueue.main) { 
             print("图像缓存完成，大小为\(length/1024)K")

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17D102" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -26,7 +26,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="55739ADC-549D-4FF3-9E9C-78BC921A6785.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="yv3-CT-ggB">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="common_icon_membership_expired" translatesAutoresizingMaskIntoConstraints="NO" id="yv3-CT-ggB">
                     <rect key="frame" x="1" y="16" width="36" height="29"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
@@ -35,14 +35,14 @@
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="Indicator" destination="Hib-cN-WvO" id="wbx-ox-b7U"/>
-                <outlet property="RefreshLabel" destination="RL5-Fu-isu" id="PLT-16-lfN"/>
-                <outlet property="iconView" destination="yv3-CT-ggB" id="6b0-GZ-nCm"/>
+                <outlet property="Indicator" destination="Hib-cN-WvO" id="rDn-4L-oW6"/>
+                <outlet property="RefreshLabel" destination="RL5-Fu-isu" id="Nj9-1l-aVu"/>
+                <outlet property="iconView" destination="yv3-CT-ggB" id="094-16-pvo"/>
             </connections>
             <point key="canvasLocation" x="-79" y="-231"/>
         </view>
     </objects>
     <resources>
-        <image name="55739ADC-549D-4FF3-9E9C-78BC921A6785.jpeg" width="36" height="54"/>
+        <image name="common_icon_membership_expired" width="14" height="14"/>
     </resources>
 </document>
