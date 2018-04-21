@@ -13,8 +13,8 @@ class LSMainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.orange
-
+        setupViewControllers()
+//        view.backgroundColor = UIColor.blue
         // Do any additional setup after loading the view.
     }
 
@@ -22,16 +22,48 @@ class LSMainViewController: UITabBarController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+}
+
+extension LSMainViewController {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setupViewControllers() {
+        let array = [
+            ["clsName": "LSHomeViewController", "title" : "首页", "imageName": "tabbar_home"]
+            
+        ]
+        
+        var VCArray = [UIViewController]()
+        
+        for dict in array {
+            
+            let vc = dictToController(dict: dict)
+            VCArray.append(vc)
+        }
+        
+        viewControllers = VCArray
+        
+        
     }
-    */
-
+   
+    private func dictToController(dict: [String: String]) -> UIViewController {
+        
+        guard let clsName = dict["clsName"],
+        let title = dict["title"],
+        let imageName = dict["imageName"],
+//        let nameSpace = Bundle.main.infoDictionary?["CFBundleName"] as? String ?? ""
+        let cls = NSClassFromString(Bundle.main.nameSpace + "." + clsName) as? UIViewController.Type
+        else {
+        
+                return UIViewController.init()
+        }
+        
+        let vc = cls.init()
+        vc.title = title
+        vc.tabBarItem.image = UIImage(named: imageName)
+        let nav = LSNavigationViewController(rootViewController: vc)
+//        addChildViewController(nav)
+        return nav
+    }
+    
 }
