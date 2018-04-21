@@ -1,14 +1,14 @@
 //
-//  LSMineViewController.swift
+//  LSMessageViewController.swift
 //  LSWeiboSwift
 //
-//  Created by 李明禄 on 2018/4/19.
+//  Created by 李明禄 on 2018/4/21.
 //  Copyright © 2018年 SocererGroup. All rights reserved.
 //
 
 import UIKit
 
-class LSMineViewController: LSBaseViewController {
+class LSMessageViewController: LSBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -29,7 +29,12 @@ extension LSMainViewController {
     
     func setupViewControllers() {
         let array = [
-            ["clsName": "LSHomeViewController", "title" : "首页", "imageName": "tabbar_home"]
+            ["clsName": "LSHomeViewController", "title" : "首页", "imageName": "home"],
+            ["clsName": "LSDiscoverViewController", "title" : "发现", "imageName": "discover"],
+//            [],
+           ["clsName": "LSMessageViewController", "title" : "消息", "imageName": "message_center"],
+            ["clsName": "LSProfileViewController", "title" : "我", "imageName": "profile"],
+           
             
         ]
         
@@ -55,14 +60,15 @@ extension LSMainViewController {
         let cls = NSClassFromString(Bundle.main.nameSpace + "." + clsName) as? UIViewController.Type
         else {
         
-                return UIViewController.init()
+                return UIViewController()
         }
         
         let vc = cls.init()
         vc.title = title
-        vc.tabBarItem.image = UIImage(named: imageName)
+
+        vc.tabBarItem.image = UIImage(named: "tabbar_" + imageName)
+        vc.tabBarItem.selectedImage = UIImage(named: "tabbar_" + imageName + "_highlighted")
         let nav = LSNavigationViewController(rootViewController: vc)
-//        addChildViewController(nav)
         return nav
     }
     
