@@ -9,14 +9,19 @@
 import UIKit
 
 class LSMainViewController: UITabBarController {
-
+    
+    lazy var compose: UIButton = UIButton.cz_imageButton("tabbar_compose_icon_add", backgroundImageName: "tabbar_compose_button")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupViewControllers()
+        setupCompose()
 //        view.backgroundColor = UIColor.blue
         // Do any additional setup after loading the view.
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -27,15 +32,41 @@ class LSMainViewController: UITabBarController {
 
 extension LSMainViewController {
     
-    func setupViewControllers() {
+    /// 设置编辑按钮逻辑
+    fileprivate func setupCompose() {
+        let width = UIScreen.main.bounds.width / CGFloat(tabBar.subviews.count)
+        let height = tabBar.bounds.height
+        let x = width * 2
+//      compose.frame = CGRect(x: x, y: 0, width: width, height: height)
+        compose.frame = tabBar.bounds.insetBy(dx: x, dy: 0)
+        compose.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), for: .highlighted)
+        
+        self.tabBar.addSubview(compose)
+        
+        compose.addTarget(self, action: #selector(clickCompose), for: .touchUpInside)
+        
+    }
+    
+    @objc private func clickCompose() {
+        print("click compose")
+        
+    }
+    
+}
+
+//设置控制器逻辑
+extension LSMainViewController {
+    
+    /// 设置控制器
+    fileprivate func setupViewControllers() {
         let array = [
+            
             ["clsName": "LSHomeViewController", "title" : "首页", "imageName": "home"],
             ["clsName": "LSDiscoverViewController", "title" : "发现", "imageName": "discover"],
-//            [],
-           ["clsName": "LSMessageViewController", "title" : "消息", "imageName": "message_center"],
+            ["clsName": ""],
+            ["clsName": "LSMessageViewController", "title" : "消息", "imageName": "message_center"],
             ["clsName": "LSProfileViewController", "title" : "我", "imageName": "profile"],
            
-            
         ]
         
         var VCArray = [UIViewController]()
@@ -44,11 +75,11 @@ extension LSMainViewController {
             
             let vc = dictToController(dict: dict)
             VCArray.append(vc)
+            
         }
         
         viewControllers = VCArray
-        
-        
+    
     }
    
     private func dictToController(dict: [String: String]) -> UIViewController {
