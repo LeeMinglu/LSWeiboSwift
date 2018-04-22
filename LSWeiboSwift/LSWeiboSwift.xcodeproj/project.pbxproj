@@ -83,6 +83,7 @@
 		1A550E03208B6E0600F2E073 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		1A550E04208B6E0600F2E073 /* NSString+CZPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
 		1A550E16208B735100F2E073 /* LSMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMessageViewController.swift; sourceTree = "<group>"; };
+		1A60B5B9208C2E96007A0563 /* WeiBo+Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeiBo+Bridge.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +121,7 @@
 				1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */,
 				1A4DD4FB1EBEC8BA001F97BD /* LaunchScreen.storyboard */,
 				1A4DD4FE1EBEC8BA001F97BD /* Info.plist */,
+				1A60B5B9208C2E96007A0563 /* WeiBo+Bridge.h */,
 			);
 			path = LSWeiboSwift;
 			sourceTree = "<group>";
@@ -489,7 +491,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SocererGroup.LSWeiboSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LSWeiboSwift/Classes/Tools/Additions/CZAdditions.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LSWeiboSwift/WeiBo+Bridge.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -506,7 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SocererGroup.LSWeiboSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LSWeiboSwift/Classes/Tools/Additions/CZAdditions.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LSWeiboSwift/WeiBo+Bridge.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
