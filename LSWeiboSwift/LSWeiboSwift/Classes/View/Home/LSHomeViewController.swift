@@ -12,25 +12,25 @@ class LSHomeViewController: LSBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.cz_random()
-
+        
+        setupUI()
         // Do any additional setup after loading the view.
     }
+    
+    /// click friend Method
+    @objc func clickFriend() {
+        
+        print("click friend")
+        
+        let demoVC = LSDemoViewController()
+        navigationController?.pushViewController(demoVC, animated: true)
+    }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension LSHomeViewController {
+    
+    override func setupUI() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "friend", style: .plain, target: self, action: #selector(clickFriend))
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

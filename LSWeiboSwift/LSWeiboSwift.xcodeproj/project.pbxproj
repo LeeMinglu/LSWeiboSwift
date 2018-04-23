@@ -34,6 +34,7 @@
 		1A550E13208B6E0600F2E073 /* NSAttributedString+CZAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A550E02208B6E0600F2E073 /* NSAttributedString+CZAdditon.m */; };
 		1A550E14208B6E0600F2E073 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A550E03208B6E0600F2E073 /* NSArray+Log.m */; };
 		1A550E17208B735100F2E073 /* LSMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A550E16208B735100F2E073 /* LSMessageViewController.swift */; };
+		1A60B5BB208CBA4C007A0563 /* LSDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A60B5BA208CBA4C007A0563 /* LSDemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		1A550E04208B6E0600F2E073 /* NSString+CZPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CZPath.h"; sourceTree = "<group>"; };
 		1A550E16208B735100F2E073 /* LSMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMessageViewController.swift; sourceTree = "<group>"; };
 		1A60B5B9208C2E96007A0563 /* WeiBo+Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeiBo+Bridge.h"; sourceTree = "<group>"; };
+		1A60B5BA208CBA4C007A0563 /* LSDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				1A550B452088CCFF00F2E073 /* LSMainViewController.swift */,
 				1A550B472088CD1E00F2E073 /* LSBaseViewController.swift */,
 				1A550B52208AA16F00F2E073 /* LSNavigationViewController.swift */,
+				1A60B5BA208CBA4C007A0563 /* LSDemoViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				1A550E14208B6E0600F2E073 /* NSArray+Log.m in Sources */,
 				1A550E13208B6E0600F2E073 /* NSAttributedString+CZAdditon.m in Sources */,
 				1A550E10208B6E0600F2E073 /* UIViewController+CZAddition.m in Sources */,
+				1A60B5BB208CBA4C007A0563 /* LSDemoViewController.swift in Sources */,
 				1A550E17208B735100F2E073 /* LSMessageViewController.swift in Sources */,
 				1A550E07208B6E0600F2E073 /* UIScreen+CZAddition.m in Sources */,
 				1A550B4E2088CDBF00F2E073 /* LSProfileViewController.swift in Sources */,
