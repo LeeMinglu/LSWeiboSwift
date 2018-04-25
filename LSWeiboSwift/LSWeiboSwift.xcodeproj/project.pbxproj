@@ -35,6 +35,7 @@
 		1A550E14208B6E0600F2E073 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A550E03208B6E0600F2E073 /* NSArray+Log.m */; };
 		1A550E17208B735100F2E073 /* LSMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A550E16208B735100F2E073 /* LSMessageViewController.swift */; };
 		1A60B5BB208CBA4C007A0563 /* LSDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A60B5BA208CBA4C007A0563 /* LSDemoViewController.swift */; };
+		1A60B5BD2090BD14007A0563 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A60B5BC2090BD14007A0563 /* UIBarButtonItem+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		1A550E16208B735100F2E073 /* LSMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSMessageViewController.swift; sourceTree = "<group>"; };
 		1A60B5B9208C2E96007A0563 /* WeiBo+Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeiBo+Bridge.h"; sourceTree = "<group>"; };
 		1A60B5BA208CBA4C007A0563 /* LSDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDemoViewController.swift; sourceTree = "<group>"; };
+		1A60B5BC2090BD14007A0563 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				1A550B92208AF82700F2E073 /* Bunde+Extention.swift */,
+				1A60B5BC2090BD14007A0563 /* UIBarButtonItem+Extension.swift */,
 			);
 			path = EXTENSION;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				1A550E0F208B6E0600F2E073 /* NSObject+CZRuntime.m in Sources */,
 				1A550B482088CD1E00F2E073 /* LSBaseViewController.swift in Sources */,
 				1A550E0D208B6E0600F2E073 /* UIButton+CZAddition.m in Sources */,
+				1A60B5BD2090BD14007A0563 /* UIBarButtonItem+Extension.swift in Sources */,
 				1A550E11208B6E0600F2E073 /* NSString+CZHash.m in Sources */,
 				1A550B462088CCFF00F2E073 /* LSMainViewController.swift in Sources */,
 				1A550E08208B6E0600F2E073 /* UILabel+CZAddition.m in Sources */,

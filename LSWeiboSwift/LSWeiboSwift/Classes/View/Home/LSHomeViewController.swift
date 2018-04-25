@@ -30,7 +30,9 @@ class LSHomeViewController: LSBaseViewController {
 extension LSHomeViewController {
     
     override func setupUI() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "friend", style: .plain, target: self, action: #selector(clickFriend))
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "好友", fontSize: 15, normalColor: .black, highlightedColor: .orange, target: self, action: #selector(clickFriend), contronEvents: .touchUpInside)
+        
     }
     
 }
