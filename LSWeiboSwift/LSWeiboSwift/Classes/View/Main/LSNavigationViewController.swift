@@ -9,6 +9,14 @@
 import UIKit
 
 class LSNavigationViewController: UINavigationController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.navigationBar.isHidden = true
+//navigationBar.bounds (0.0, 0.0, 375.0, 44.0)
+       // print(self.navigationBar.bounds)
+    }
 
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if childViewControllers.count > 0 {
