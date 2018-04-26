@@ -34,13 +34,20 @@ class LSBaseViewController: UIViewController {
 
  extension LSBaseViewController {
 
-   func setupUI() {
+    func setupUI() {
+       
+        setupNavBar()
         
+    }
+    
+    
+    /// setup NavigationController
+    private func setupNavBar() {
         self.view.addSubview(navBar)
+        
         navBar.backgroundColor = UIColor.orange
         navBar.items = [navItem]
-        //        view.backgroundColor = UIColor.cz_random()
-        
+    
     }
     
 }

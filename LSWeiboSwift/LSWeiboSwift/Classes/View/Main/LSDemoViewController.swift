@@ -12,7 +12,7 @@ class LSDemoViewController: LSBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        view.backgroundColor = UIColor.cz_random()
         setupUI()
 
         // Do any additional setup after loading the view.
@@ -28,7 +28,11 @@ class LSDemoViewController: LSBaseViewController {
 extension LSDemoViewController {
     
     override func setupUI() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "next", style: .plain, target: self, action: #selector(clickNext))
+         super.setupUI()
+        navItem.rightBarButtonItem = UIBarButtonItem(title: "next", style: .plain, target: self, action: #selector(clickNext))
+        
     }
+    
+    
     
 }
