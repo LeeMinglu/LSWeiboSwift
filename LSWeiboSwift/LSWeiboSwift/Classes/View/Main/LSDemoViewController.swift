@@ -29,7 +29,7 @@ extension LSDemoViewController {
     
     override func setupUI() {
          super.setupUI()
-        navItem.rightBarButtonItem = UIBarButtonItem(title: "next", style: .plain, target: self, action: #selector(clickNext))
+        navItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", normalColor: .black, highlightedColor: .orange, target: nil, action: #selector(clickNext), contronEvents: .touchUpInside)
         
     }
     

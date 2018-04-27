@@ -23,14 +23,14 @@ class LSNavigationViewController: UINavigationController {
             viewController.hidesBottomBarWhenPushed = true
             if let vc = (viewController as? LSBaseViewController) {
                 
-                var title = "返回"
+                var title =   "返回"
                 print(" navigations的控制器为:  + \(childViewControllers)")
                 
                 if childViewControllers.count == 1 {
                     title = childViewControllers.first?.title ?? "返回"
                 }
                 
-                vc.navItem.leftBarButtonItem = UIBarButtonItem.init(title: "返回", normalColor: .black, highlightedColor: .orange, target: nil, action: #selector(backVC), contronEvents: .touchUpInside)
+                vc.navItem.leftBarButtonItem = UIBarButtonItem.init(title: title, normalColor: .black, highlightedColor: .orange, target: nil, action: #selector(backVC), contronEvents: .touchUpInside)
                 
             }
            

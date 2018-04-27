@@ -10,14 +10,13 @@ import UIKit
 
 class LSBaseViewController: UIViewController {
     
-    let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 64))
+    let navBar = UINavigationBar(frame: CGRect(x: 0, y: 20, width: UIScreen.main.bounds.width, height: 44))
 
     lazy var navItem = UINavigationItem()
     
     override var title: String? {
         didSet {
             navItem.title = title
-            
         }
         
     }
@@ -35,7 +34,7 @@ class LSBaseViewController: UIViewController {
  extension LSBaseViewController {
 
     func setupUI() {
-       
+       self.view.backgroundColor = UIColor.cz_color(withHex: 0xf6f6f6)
         setupNavBar()
         
     }
@@ -44,9 +43,10 @@ class LSBaseViewController: UIViewController {
     /// setup NavigationController
     private func setupNavBar() {
         self.view.addSubview(navBar)
-        
-        navBar.backgroundColor = UIColor.orange
+
         navBar.items = [navItem]
+        navBar.tintColor = UIColor.cz_color(withHex: 0xf6f6f6)
+        navBar.backgroundColor = UIColor.lightGray
     
     }
     
