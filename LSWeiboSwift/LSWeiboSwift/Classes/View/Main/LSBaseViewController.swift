@@ -8,7 +8,9 @@
 
 import UIKit
 
-class LSBaseViewController: UIViewController {
+class LSBaseViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    var tableview :UITableView?
     
     let navBar = UINavigationBar(frame: CGRect(x: 0, y: 20, width: UIScreen.main.bounds.width, height: 44))
 
@@ -25,6 +27,8 @@ class LSBaseViewController: UIViewController {
         super.viewDidLoad()
         
         setupUI()
+        setupTableView()
+        
 
         // Do any additional setup after loading the view.
     }
@@ -48,6 +52,33 @@ class LSBaseViewController: UIViewController {
         navBar.tintColor = UIColor.cz_color(withHex: 0xf6f6f6)
         navBar.backgroundColor = UIColor.lightGray
     
+    }
+    
+}
+
+extension  LSBaseViewController {
+    
+    func setupTableView() {
+        
+        tableview = UITableView(frame: self.view.bounds, style: .plain)
+        
+        tableview?.contentInset = UIEdgeInsetsMake(navBar.bounds.height, 0, tabBarController?.tabBar.bounds.height ?? 49, 0)
+        
+        tableview?.delegate = self
+        tableview?.dataSource = self
+        
+        self.view.insertSubview(tableview!, belowSubview: navBar)
+    }
+}
+
+extension LSBaseViewController {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
     }
     
 }
