@@ -17,6 +17,10 @@ class LSHomeViewController: LSBaseViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func loadData() {
+        print("loaddata")
+    }
+    
     /// click friend Method
     @objc func clickFriend() {
         

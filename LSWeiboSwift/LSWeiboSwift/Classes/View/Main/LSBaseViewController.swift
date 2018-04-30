@@ -22,11 +22,14 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
         }
         
     }
+    
+    func loadData() {}
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupUI()
+        loadData()
         setupTableView()
         
 
