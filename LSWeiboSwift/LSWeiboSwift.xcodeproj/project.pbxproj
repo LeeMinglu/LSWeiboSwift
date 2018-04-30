@@ -160,11 +160,11 @@
 		1A550B3D2088CBFA00F2E073 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1A550B402088CBFA00F2E073 /* Main */,
 				1A550B3E2088CBFA00F2E073 /* Home */,
 				1A550B442088CC8000F2E073 /* Discover */,
 				1A550E15208B731800F2E073 /* Message */,
 				1A550B422088CC8000F2E073 /* Profile */,
-				1A550B402088CBFA00F2E073 /* Main */,
 			);
 			path = View;
 			sourceTree = "<group>";

@@ -26,10 +26,20 @@ class LSHomeViewController: LSBaseViewController {
     override func loadData() {
         super.loadData()
         
-        for i in 1...20 {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            for i in 1...20 {
+                
+                self.weiBoData.insert(i.description, at: 0)
+     
+            }
             
-            weiBoData.insert(i.description, at: 0)
+            self.downRefreshControl?.endRefreshing()
+            self.tableview?.reloadData()
+            
+            
         }
+        
+        
     }
     
     /// click friend Method

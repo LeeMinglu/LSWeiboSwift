@@ -16,6 +16,8 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
 
     lazy var navItem = UINavigationItem()
     
+    var downRefreshControl: UIRefreshControl?
+    
     override var title: String? {
         didSet {
             navItem.title = title
@@ -28,9 +30,13 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupUI()
-        loadData()
+        if #available(iOS 11.0, *) {
+            setupUI()
+        } else {
+            // Fallback on earlier versions
+        }
         setupTableView()
+        loadData()
         
 
         // Do any additional setup after loading the view.
@@ -41,11 +47,9 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
  extension LSBaseViewController {
 
     func setupUI() {
-       self.view.backgroundColor = UIColor.cz_color(withHex: 0xf6f6f6)
+        self.view.backgroundColor = UIColor.cz_color(withHex: 0xf6f6f6)
+        
         setupNavBar()
-        
-        
-        
         automaticallyAdjustsScrollViewInsets = false
         
     }
@@ -75,7 +79,16 @@ extension  LSBaseViewController {
         tableview?.delegate = self
         tableview?.dataSource = self
         
+        downRefreshControl = UIRefreshControl()
+        
+        tableview?.addSubview(downRefreshControl!)
+        
+        downRefreshControl?.addTarget(self, action: #selector(loadData), for: .valueChanged)
+        
+        
+        
         self.view.insertSubview(tableview!, belowSubview: navBar)
+        
     }
 }
 
