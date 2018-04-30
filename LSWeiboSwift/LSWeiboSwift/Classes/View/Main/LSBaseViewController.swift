@@ -26,7 +26,9 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
         
     }
     
-    @objc func loadData() {}
+    @objc func loadData() {
+        self.downRefreshControl?.endRefreshing()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
