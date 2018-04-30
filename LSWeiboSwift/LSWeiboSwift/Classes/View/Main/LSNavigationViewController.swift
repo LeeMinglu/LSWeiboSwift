@@ -14,8 +14,10 @@ class LSNavigationViewController: UINavigationController {
         super.viewDidLoad()
         
         self.navigationBar.isHidden = true
-//navigationBar.bounds (0.0, 0.0, 375.0, 44.0)
-       // print(self.navigationBar.bounds)
+        //navigationBar.bounds (0.0, 0.0, 375.0, 44.0)
+        // print(self.navigationBar.bounds)
+        
+        
     }
 
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {

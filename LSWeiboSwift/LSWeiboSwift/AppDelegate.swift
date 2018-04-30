@@ -23,11 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.makeKeyAndVisible()
         
-        UIApplication.shared.setStatusBarHidden(true, with: .none)
-        
-        
-        
-        
+
         return true
     }
 

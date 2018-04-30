@@ -12,7 +12,7 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
     
     var tableview :UITableView?
     
-    let navBar = UINavigationBar(frame: CGRect(x: 0, y: 20, width: UIScreen.main.bounds.width, height: 44))
+    let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 64))
 
     lazy var navItem = UINavigationItem()
     
@@ -44,6 +44,10 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
        self.view.backgroundColor = UIColor.cz_color(withHex: 0xf6f6f6)
         setupNavBar()
         
+        
+        
+        automaticallyAdjustsScrollViewInsets = false
+        
     }
     
     
@@ -54,6 +58,7 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
         navBar.items = [navItem]
         navBar.tintColor = UIColor.cz_color(withHex: 0xf6f6f6)
         navBar.backgroundColor = UIColor.lightGray
+        navBar.layer.frame = CGRect(origin: CGPoint(x: 0, y: 20), size: CGSize(width: UIScreen.cz_screenWidth(), height: 44))
     
     }
     
@@ -65,7 +70,7 @@ extension  LSBaseViewController {
         
         tableview = UITableView(frame: self.view.bounds, style: .plain)
         
-        tableview?.contentInset = UIEdgeInsetsMake(navBar.bounds.height, 0, tabBarController?.tabBar.bounds.height ?? 49, 0)
+        tableview?.contentInset = UIEdgeInsetsMake(navBar.bounds.height, 0, tabBarController?.tabBar.bounds.height ?? 0, 0)
         
         tableview?.delegate = self
         tableview?.dataSource = self
