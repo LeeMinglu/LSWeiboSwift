@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension UIBarButtonItem {
+@objc extension UIBarButtonItem {
     
     convenience init(title: String!,fontSize: CGFloat = 15, normalColor: UIColor!, highlightedColor: UIColor!,target: Any?, action: Selector, contronEvents: UIControlEvents) {
         let button = UIButton.cz_textButton(title, fontSize: fontSize, normalColor: normalColor, highlightedColor: highlightedColor)

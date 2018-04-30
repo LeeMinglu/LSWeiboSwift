@@ -310,6 +310,7 @@
 					1A4DD4EE1EBEC8BA001F97BD = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = T9A27F8Q5D;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -500,7 +501,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SocererGroup.LSWeiboSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LSWeiboSwift/WeiBo+Bridge.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -517,7 +519,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SocererGroup.LSWeiboSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LSWeiboSwift/WeiBo+Bridge.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

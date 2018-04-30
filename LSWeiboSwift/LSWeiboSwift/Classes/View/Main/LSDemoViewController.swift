@@ -25,9 +25,9 @@ class LSDemoViewController: LSBaseViewController {
     }
 }
 
-extension LSDemoViewController {
+ extension LSDemoViewController {
     
-    override func setupUI() {
+   override func setupUI() {
          super.setupUI()
         navItem.rightBarButtonItem = UIBarButtonItem(title: "下一个", normalColor: .black, highlightedColor: .orange, target: nil, action: #selector(clickNext), contronEvents: .touchUpInside)
         

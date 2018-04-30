@@ -96,8 +96,8 @@ extension LSMainViewController {
         
         let vc = cls.init()
         vc.title = title
-        vc.tabBarItem.setTitleTextAttributes([NSAttachmentAttributeName: UIFont.systemFont(ofSize: 15)], for: .normal)
-        vc.tabBarItem.setTitleTextAttributes([NSForegroundColorAttributeName: UIColor.orange], for: .highlighted)
+        vc.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.attachment: UIFont.systemFont(ofSize: 15)], for: .normal)
+        vc.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.orange], for: .highlighted)
 //        vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName: UIFont.systemFont(ofSize: 15)], for: UIControlState(rawValue: 0))
 
 

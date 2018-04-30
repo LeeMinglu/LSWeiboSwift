@@ -54,7 +54,7 @@ class LSHomeViewController: LSBaseViewController {
 
 extension LSHomeViewController {
     
-    override func setupUI() {
+   override func setupUI() {
         super.setupUI()
         
         navItem.leftBarButtonItem = UIBarButtonItem.init(title: "好友", fontSize: 15, normalColor: .black, highlightedColor: .orange, target: self, action: #selector(clickFriend), contronEvents: .touchUpInside)
