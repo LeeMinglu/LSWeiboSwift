@@ -13,7 +13,8 @@ class LSVisitorView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.backgroundColor = UIColor.blue
+       setupUI()
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -21,4 +22,12 @@ class LSVisitorView: UIView {
     }
     
  
+}
+
+extension LSVisitorView {
+    
+    func setupUI() {
+        
+         self.backgroundColor = UIColor.blue
+    }
 }
