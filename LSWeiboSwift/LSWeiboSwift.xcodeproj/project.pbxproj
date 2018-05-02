@@ -36,6 +36,7 @@
 		1A550E17208B735100F2E073 /* LSMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A550E16208B735100F2E073 /* LSMessageViewController.swift */; };
 		1A60B5BB208CBA4C007A0563 /* LSDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A60B5BA208CBA4C007A0563 /* LSDemoViewController.swift */; };
 		1A60B5BD2090BD14007A0563 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A60B5BC2090BD14007A0563 /* UIBarButtonItem+Extension.swift */; };
+		1AB9D9852097523F003C9ABF /* LSVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB9D9842097523F003C9ABF /* LSVisitorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		1A60B5B9208C2E96007A0563 /* WeiBo+Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeiBo+Bridge.h"; sourceTree = "<group>"; };
 		1A60B5BA208CBA4C007A0563 /* LSDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDemoViewController.swift; sourceTree = "<group>"; };
 		1A60B5BC2090BD14007A0563 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		1AB9D9842097523F003C9ABF /* LSVisitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSVisitorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		1A550B3D2088CBFA00F2E073 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1AB9D9832097521F003C9ABF /* VisitorView */,
 				1A550B402088CBFA00F2E073 /* Main */,
 				1A550B3E2088CBFA00F2E073 /* Home */,
 				1A550B442088CC8000F2E073 /* Discover */,
@@ -276,6 +279,14 @@
 			path = Message;
 			sourceTree = "<group>";
 		};
+		1AB9D9832097521F003C9ABF /* VisitorView */ = {
+			isa = PBXGroup;
+			children = (
+				1AB9D9842097523F003C9ABF /* LSVisitorView.swift */,
+			);
+			path = VisitorView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AB9D9852097523F003C9ABF /* LSVisitorView.swift in Sources */,
 				1A550E12208B6E0600F2E073 /* NSArray+CZAddition.m in Sources */,
 				1A550E06208B6E0600F2E073 /* UIView+CZAddition.m in Sources */,
 				1A550E09208B6E0600F2E073 /* UIImage+Extension.m in Sources */,
@@ -501,7 +513,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SocererGroup.LSWeiboSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LSWeiboSwift/WeiBo+Bridge.h";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -519,7 +531,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SocererGroup.LSWeiboSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/LSWeiboSwift/WeiBo+Bridge.h";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

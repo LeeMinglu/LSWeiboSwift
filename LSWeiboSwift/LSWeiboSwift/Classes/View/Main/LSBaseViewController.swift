@@ -13,6 +13,8 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
     var tableview :UITableView?
     var isPullUp: Bool = false
     
+    var logon : Bool = false
+    
     let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 64))
 
     lazy var navItem = UINavigationItem()
@@ -49,10 +51,13 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
 
  extension LSBaseViewController {
 
-    func setupUI() {
+  @objc  func setupUI() {
         self.view.backgroundColor = UIColor.cz_color(withHex: 0xf6f6f6)
         
         setupNavBar()
+        
+        logon ? setupTableView() : setupVisitorView()
+        
         automaticallyAdjustsScrollViewInsets = false
         
     }
@@ -77,7 +82,7 @@ extension  LSBaseViewController {
         
         tableview = UITableView(frame: self.view.bounds, style: .plain)
         
-        tableview?.contentInset = UIEdgeInsetsMake(navBar.bounds.height, 0, tabBarController?.tabBar.bounds.height ?? 0, 0)
+        tableview?.contentInset = UIEdgeInsetsMake(navBar.bounds.height, 0, tabBarController?.tabBar.bounds.height ?? 49, 0)
         
         tableview?.delegate = self
         tableview?.dataSource = self
@@ -88,11 +93,22 @@ extension  LSBaseViewController {
         
         downRefreshControl?.addTarget(self, action: #selector(loadData), for: .valueChanged)
         
-        
-        
+       
         self.view.insertSubview(tableview!, belowSubview: navBar)
         
+        
     }
+}
+
+extension LSBaseViewController {
+    
+    func setupVisitorView() {
+        
+        let visitorView = LSVisitorView(frame: self.view.bounds)
+        self.view.insertSubview(visitorView, belowSubview: navBar)
+        
+    }
+    
 }
 
 extension LSBaseViewController {
