@@ -15,7 +15,7 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
     
     var logon : Bool = true
     
-    let navBar = UINavigationBar(frame: CGRect(x: 0, y: UIApplication.shared.statusBarFrame.height, width: UIScreen.main.bounds.width, height:  0))
+    let navBar = UINavigationBar(frame: CGRect.init(x: 0, y: 30, width: UIScreen.main.bounds.width, height: 44))
     
 
     lazy var navItem = UINavigationItem()
@@ -49,8 +49,8 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
  extension LSBaseViewController {
 
   @objc  func setupUI() {
-        self.view.backgroundColor = UIColor.cz_color(withHex: 0xf6f6f6)
-        
+//        self.view.backgroundColor = UIColor.cz_color(withHex: 0xf6f6f6)
+    
         setupNavBar()
         
         logon ? setupTableView() : setupVisitorView()
@@ -62,11 +62,27 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
     
     /// setup NavigationController
     private func setupNavBar() {
+        
+        
         self.view.addSubview(navBar)
+         setStatusBarColor()
 
         navBar.items = [navItem]
         navBar.tintColor = UIColor.cz_color(withHex: 0xf6f6f6)
+        
+       
     
+    }
+    
+    func setStatusBarColor() {
+        
+        let v = UIView(frame: CGRect(x: 0, y: -UIApplication.shared.statusBarFrame.height, width: UIScreen.main.bounds.width, height: UIApplication.shared.statusBarFrame.height))
+        
+        v.backgroundColor = UIColor.cz_color(withHex: 0xf6f6f6)
+        
+        navBar.addSubview(v)
+        
+        
     }
     
 }
