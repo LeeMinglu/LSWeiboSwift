@@ -13,9 +13,10 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
     var tableview :UITableView?
     var isPullUp: Bool = false
     
-    var logon : Bool = false
+    var logon : Bool = true
     
-    let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 64))
+    let navBar = UINavigationBar(frame: CGRect(x: 0, y: UIApplication.shared.statusBarFrame.height, width: UIScreen.main.bounds.width, height:  0))
+    
 
     lazy var navItem = UINavigationItem()
     
@@ -35,11 +36,7 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if #available(iOS 11.0, *) {
-            setupUI()
-        } else {
-            // Fallback on earlier versions
-        }
+        setupUI()
         setupTableView()
         loadData()
         
@@ -69,8 +66,6 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
 
         navBar.items = [navItem]
         navBar.tintColor = UIColor.cz_color(withHex: 0xf6f6f6)
-        navBar.backgroundColor = UIColor.lightGray
-        navBar.layer.frame = CGRect(origin: CGPoint(x: 0, y: 20), size: CGSize(width: UIScreen.cz_screenWidth(), height: 44))
     
     }
     
