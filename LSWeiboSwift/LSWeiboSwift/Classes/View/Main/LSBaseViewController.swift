@@ -13,7 +13,7 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
     var tableview :UITableView?
     var isPullUp: Bool = false
     
-    var logon : Bool = true
+    var logon : Bool = false
     
     let navBar = UINavigationBar(frame: CGRect.init(x: 0, y: 30, width: UIScreen.main.bounds.width, height: 44))
     
