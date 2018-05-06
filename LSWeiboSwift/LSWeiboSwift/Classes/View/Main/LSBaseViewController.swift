@@ -9,7 +9,7 @@
 import UIKit
 
 class LSBaseViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+    var visitorInfo: [String: String]?
     var tableview :UITableView?
     var isPullUp: Bool = false
     
@@ -37,7 +37,6 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
         
         setupUI()
-        setupTableView()
         loadData()
         
 
@@ -117,6 +116,7 @@ extension LSBaseViewController {
         
         let visitorView = LSVisitorView(frame: self.view.bounds)
         self.view.insertSubview(visitorView, belowSubview: navBar)
+        visitorView.visitorInfo = visitorInfo
         
     }
     

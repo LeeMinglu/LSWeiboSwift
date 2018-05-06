@@ -10,6 +10,22 @@ import UIKit
 
 class LSVisitorView: UIView {
     
+    var visitorInfo: [String: String]? {
+        didSet {
+            guard let message = visitorInfo?["message"],
+                let imageName = visitorInfo?["imageName"] else {return}
+            
+            if imageName == "" {
+                return
+            }
+            
+            tipeLabel.text = message
+            print(message)
+            iconView.image = UIImage(named: imageName)
+            
+        }
+    }
+    
     lazy var iconView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_smallicon"))
     lazy var maskIconView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_mask_smallicon"))
     lazy var houseView: UIImageView = UIImageView(image: UIImage(named: "visitordiscover_feed_image_house"))

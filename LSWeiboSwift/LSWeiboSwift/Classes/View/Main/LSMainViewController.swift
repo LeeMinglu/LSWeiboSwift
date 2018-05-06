@@ -60,13 +60,19 @@ extension LSMainViewController {
     /// 设置控制器
     fileprivate func setupViewControllers() {
         let array = [
-            
+            /**
             ["clsName": "LSHomeViewController", "title" : "首页", "imageName": "home"],
             ["clsName": "LSDiscoverViewController", "title" : "发现", "imageName": "discover"],
             ["clsName": ""],
             ["clsName": "LSMessageViewController", "title" : "消息", "imageName": "message_center"],
             ["clsName": "LSProfileViewController", "title" : "我", "imageName": "profile"],
-           
+           */
+            
+            ["clsName": "LSHomeViewController", "title" : "首页", "imageName": "home", "visitorInfo":["imageName": "","message": "关注一些人,回到这里看看有什么惊喜"]],
+            ["clsName": "LSDiscoverViewController", "title" : "发现", "imageName": "discover", "visitorInfo":["imageName": "visitordiscover_image_message","message": "登录后，最新、最热微博尽在掌握，不再会与实事潮流擦肩而过"]],
+            ["clsName": ""],
+            ["clsName": "LSMessageViewController", "title" : "消息", "imageName": "message_center", "visitorInfo":["imageName": "visitordiscover_image_message","message": "登录后，别人评论你的微博，发给你的消息，都会在这里收到通知"]],
+            ["clsName": "LSProfileViewController", "title" : "我", "imageName": "profile", "visitorInfo":["imageName": "visitordiscover_image_profile","message": "登录后，你的微博、相册、个人资料会显示在这里，展示给别人"]]
         ]
         
         var VCArray = [UIViewController]()
@@ -82,13 +88,14 @@ extension LSMainViewController {
     
     }
    
-    private func dictToController(dict: [String: String]) -> UIViewController {
+    private func dictToController(dict: [String: Any]) -> UIViewController {
         
-        guard let clsName = dict["clsName"],
-        let title = dict["title"],
-        let imageName = dict["imageName"],
+        guard let clsName = dict["clsName"] as? String,
+        let title = dict["title"] as? String,
+        let imageName = dict["imageName"] as? String,
+        let visitorInfo = dict["visitorInfo"] as? [String: String],
 //        let nameSpace = Bundle.main.infoDictionary?["CFBundleName"] as? String ?? ""
-        let cls = NSClassFromString(Bundle.main.nameSpace + "." + clsName) as? UIViewController.Type
+        let cls = NSClassFromString(Bundle.main.nameSpace + "." + clsName) as? LSBaseViewController.Type
         else {
         
                 return UIViewController()
@@ -96,6 +103,7 @@ extension LSMainViewController {
         
         let vc = cls.init()
         vc.title = title
+        vc.visitorInfo = visitorInfo
         vc.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.attachment: UIFont.systemFont(ofSize: 15)], for: .normal)
         vc.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.orange], for: .highlighted)
 //        vc.tabBarItem.setTitleTextAttributes([NSFontAttributeName: UIFont.systemFont(ofSize: 15)], for: UIControlState(rawValue: 0))
