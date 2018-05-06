@@ -16,6 +16,7 @@ class LSVisitorView: UIView {
                 let imageName = visitorInfo?["imageName"] else {return}
             
             if imageName == "" {
+                setAnimate()
                 return
             }
             
@@ -48,6 +49,20 @@ class LSVisitorView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setAnimate() {
+        
+        let animate = CABasicAnimation(keyPath: "transform.rotation")
+        
+        animate.toValue = Double.pi
+        animate.repeatCount = MAXFLOAT
+        animate.duration = 20
+        //此代码解决切换控制器时不旋转的问题。
+        animate.isRemovedOnCompletion = false
+
+        iconView.layer.add(animate, forKey: nil)
+        
     }
     
  
