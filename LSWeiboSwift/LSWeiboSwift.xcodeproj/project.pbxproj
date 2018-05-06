@@ -37,6 +37,7 @@
 		1A60B5BB208CBA4C007A0563 /* LSDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A60B5BA208CBA4C007A0563 /* LSDemoViewController.swift */; };
 		1A60B5BD2090BD14007A0563 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A60B5BC2090BD14007A0563 /* UIBarButtonItem+Extension.swift */; };
 		1A66CE57209F3AA4005D44F5 /* LSVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A66CE56209F3AA4005D44F5 /* LSVisitorView.swift */; };
+		1A66CE59209F51D3005D44F5 /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A66CE58209F51D3005D44F5 /* main.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,7 @@
 		1A60B5BA208CBA4C007A0563 /* LSDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSDemoViewController.swift; sourceTree = "<group>"; };
 		1A60B5BC2090BD14007A0563 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 		1A66CE56209F3AA4005D44F5 /* LSVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSVisitorView.swift; sourceTree = "<group>"; };
+		1A66CE58209F51D3005D44F5 /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +192,7 @@
 		1A550B402088CBFA00F2E073 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				1A66CE58209F51D3005D44F5 /* main.json */,
 				1A66CE55209F3AA4005D44F5 /* VisitorView */,
 				1A550B452088CCFF00F2E073 /* LSMainViewController.swift */,
 				1A550B472088CD1E00F2E073 /* LSBaseViewController.swift */,
@@ -349,6 +352,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A66CE59209F51D3005D44F5 /* main.json in Resources */,
 				1A4DD4FD1EBEC8BA001F97BD /* LaunchScreen.storyboard in Resources */,
 				1A4DD4FA1EBEC8BA001F97BD /* Assets.xcassets in Resources */,
 			);
