@@ -23,6 +23,9 @@ class LSVisitorView: UIView {
             print(message)
             iconView.image = UIImage(named: imageName)
             
+            houseView.isHidden = true
+            maskIconView.isHidden = true
+            
         }
     }
     
@@ -67,6 +70,7 @@ extension LSVisitorView {
         self.addSubview(tipeLabel)
         self.addSubview(LogonBtn)
         self.addSubview(registerBtn)
+        
     }
     
     func setLayout() {
