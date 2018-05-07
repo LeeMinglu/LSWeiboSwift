@@ -79,14 +79,43 @@ extension LSMainViewController {
         
         (array as NSArray).write(toFile: "/Users/luoriver/Desktop/lll.plist", atomically: true)
         */
+        /**
+         let docDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+         let jsonPath = (docDir as NSString).appendingPathComponent("main2.json")
+         
+         var data = NSData(contentsOfFile: jsonPath)
+         //        print(data ?? "没有数据")
+         
+         print(docDir)
+         
+         if data == nil {
+         let path = Bundle.main.path(forResource: "main.json", ofType: nil)
+         data = NSData.init(contentsOfFile: path!)
+         }
+         
+         guard let array  = try? JSONSerialization.jsonObject(with: data! as Data, options: []) as? [[String: AnyObject]]
+         else {
+         return
+         }
+
+         
+         */
+       let DocDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
         
-        guard let path = Bundle.main.path(forResource: "main.json", ofType: nil),
-            let data = NSData.init(contentsOfFile: path),
-            let array = try? JSONSerialization.jsonObject(with: data as Data, options: []) as? [Dictionary<String, Any>] else {
+        let path = (DocDir as NSString).appending("main 2.json")
+        
+        var data = NSData(contentsOfFile: path)
+        
+        if data == nil {
+            let path = Bundle.main.path(forResource: "main.json", ofType: nil)
+            
+            data = NSData(contentsOfFile: path!)
+        }
+        
+        guard let array = try? JSONSerialization.jsonObject(with: data! as Data, options: []) as? [[String: AnyObject]] else {
             
             return
         }
-        
         
         
         var VCArray = [UIViewController]()
@@ -102,7 +131,7 @@ extension LSMainViewController {
     
     }
    
-    private func dictToController(dict: [String: Any]) -> UIViewController {
+    private func dictToController(dict: [String: AnyObject]) -> UIViewController {
         
         guard let clsName = dict["clsName"] as? String,
         let title = dict["title"] as? String,
