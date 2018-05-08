@@ -39,7 +39,7 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
         setupUI()
         loadData()
         
-
+        
         // Do any additional setup after loading the view.
     }
 
@@ -88,7 +88,7 @@ class LSBaseViewController: UIViewController, UITableViewDataSource, UITableView
 
 extension  LSBaseViewController {
     
-    func setupTableView() {
+    fileprivate func setupTableView() {
         
         tableview = UITableView(frame: self.view.bounds, style: .plain)
         
@@ -112,11 +112,15 @@ extension  LSBaseViewController {
 
 extension LSBaseViewController {
     
-    func setupVisitorView() {
+    fileprivate func setupVisitorView() {
         
         let visitorView = LSVisitorView(frame: self.view.bounds)
         self.view.insertSubview(visitorView, belowSubview: navBar)
         visitorView.visitorInfo = visitorInfo
+        
+        visitorView.LogonBtn.addTarget(self, action: #selector(clickLogonEvent), for: .touchUpInside)
+        
+        visitorView.registerBtn.addTarget(self, action: #selector(clickRegisterEvent), for: .touchUpInside)
         
     }
     
@@ -153,4 +157,21 @@ extension LSBaseViewController {
     }
     
     
+}
+
+
+extension LSBaseViewController {
+    
+    @objc func clickLogonEvent() {
+       
+        print("点击了登陆按钮")
+        
+    }
+    
+    @objc func clickRegisterEvent() {
+         print("点击了注册按钮")
+        
+    }
+    
+
 }

@@ -56,8 +56,17 @@ extension LSHomeViewController {
     
    override func setupUI() {
         super.setupUI()
+    
+        if !logon {
         
-        navItem.leftBarButtonItem = UIBarButtonItem.init(title: "好友", fontSize: 15, normalColor: .black, highlightedColor: .orange, target: self, action: #selector(clickFriend), contronEvents: .touchUpInside)
+            navItem.leftBarButtonItem = UIBarButtonItem.init(title: "注册", fontSize: 15, normalColor: .black,  highlightedColor: .orange, target: self, action: #selector(clickRegisterEvent), contronEvents: .touchUpInside)
+        
+        } else {
+            
+            navItem.leftBarButtonItem = UIBarButtonItem.init(title: "好友", fontSize: 15, normalColor: .black, highlightedColor: .orange, target: self, action: #selector(clickFriend), contronEvents: .touchUpInside)
+    }
+        
+    
         
         self.tableview?.register(UITableViewCell.self, forCellReuseIdentifier: CELLID)
         
