@@ -16,7 +16,6 @@
 		1A550B4E2088CDBF00F2E073 /* LSProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A550B4D2088CDBF00F2E073 /* LSProfileViewController.swift */; };
 		1A550B502088CDC600F2E073 /* LSHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A550B4F2088CDC600F2E073 /* LSHomeViewController.swift */; };
 		1A550B53208AA16F00F2E073 /* LSNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A550B52208AA16F00F2E073 /* LSNavigationViewController.swift */; };
-		1A550B93208AF82700F2E073 /* Bunde+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A550B92208AF82700F2E073 /* Bunde+Extention.swift */; };
 		1A550E05208B6E0600F2E073 /* UIColor+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A550DE4208B6E0600F2E073 /* UIColor+CZAddition.m */; };
 		1A550E06208B6E0600F2E073 /* UIView+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A550DE5208B6E0600F2E073 /* UIView+CZAddition.m */; };
 		1A550E07208B6E0600F2E073 /* UIScreen+CZAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A550DE9208B6E0600F2E073 /* UIScreen+CZAddition.m */; };
@@ -39,6 +38,8 @@
 		1A66CE57209F3AA4005D44F5 /* LSVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A66CE56209F3AA4005D44F5 /* LSVisitorView.swift */; };
 		1A66CE59209F51D3005D44F5 /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A66CE58209F51D3005D44F5 /* main.json */; };
 		1A66CE5B20A0152B005D44F5 /* main 2.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A66CE5A20A0152A005D44F5 /* main 2.json */; };
+		1ABF6EC320A34441007963B1 /* LSNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABF6EC220A34441007963B1 /* LSNetworkManager.swift */; };
+		1ABF6EC720A347DF007963B1 /* Bunde+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABF6EC620A347DF007963B1 /* Bunde+Extention.swift */; };
 		DEFD21AE4822ED881CE9DCC5 /* Pods_LSWeiboSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E94DEB2C6A39702D5783DC6 /* Pods_LSWeiboSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +55,6 @@
 		1A550B4D2088CDBF00F2E073 /* LSProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSProfileViewController.swift; sourceTree = "<group>"; };
 		1A550B4F2088CDC600F2E073 /* LSHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSHomeViewController.swift; sourceTree = "<group>"; };
 		1A550B52208AA16F00F2E073 /* LSNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSNavigationViewController.swift; sourceTree = "<group>"; };
-		1A550B92208AF82700F2E073 /* Bunde+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Bunde+Extention.swift"; path = "LSWeiboSwift/Classes/Tools/Bunde+Extention.swift"; sourceTree = SOURCE_ROOT; };
 		1A550DE4208B6E0600F2E073 /* UIColor+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CZAddition.m"; sourceTree = "<group>"; };
 		1A550DE5208B6E0600F2E073 /* UIView+CZAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CZAddition.m"; sourceTree = "<group>"; };
 		1A550DE6208B6E0600F2E073 /* NSObject+CZAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZAddition.h"; sourceTree = "<group>"; };
@@ -95,6 +95,8 @@
 		1A66CE56209F3AA4005D44F5 /* LSVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSVisitorView.swift; sourceTree = "<group>"; };
 		1A66CE58209F51D3005D44F5 /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		1A66CE5A20A0152A005D44F5 /* main 2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "main 2.json"; sourceTree = "<group>"; };
+		1ABF6EC220A34441007963B1 /* LSNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSNetworkManager.swift; sourceTree = "<group>"; };
+		1ABF6EC620A347DF007963B1 /* Bunde+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bunde+Extention.swift"; sourceTree = "<group>"; };
 		2E94DEB2C6A39702D5783DC6 /* Pods_LSWeiboSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSWeiboSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6095F61902E8B1ADE36112B1 /* Pods-LSWeiboSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSWeiboSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-LSWeiboSwift/Pods-LSWeiboSwift.release.xcconfig"; sourceTree = "<group>"; };
 		DAAC67D201451F53CB0738BF /* Pods-LSWeiboSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSWeiboSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LSWeiboSwift/Pods-LSWeiboSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		1A550B2D2088CBFA00F2E073 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				1ABF6EC120A3441D007963B1 /* Network */,
 				1A550DE3208B6E0600F2E073 /* Additions */,
 				1A550B91208AF7FB00F2E073 /* EXTENSION */,
 			);
@@ -238,7 +241,7 @@
 		1A550B91208AF7FB00F2E073 /* EXTENSION */ = {
 			isa = PBXGroup;
 			children = (
-				1A550B92208AF82700F2E073 /* Bunde+Extention.swift */,
+				1ABF6EC620A347DF007963B1 /* Bunde+Extention.swift */,
 				1A60B5BC2090BD14007A0563 /* UIBarButtonItem+Extension.swift */,
 			);
 			path = EXTENSION;
@@ -298,6 +301,14 @@
 				1A66CE56209F3AA4005D44F5 /* LSVisitorView.swift */,
 			);
 			path = VisitorView;
+			sourceTree = "<group>";
+		};
+		1ABF6EC120A3441D007963B1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1ABF6EC220A34441007963B1 /* LSNetworkManager.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		3143D5A3C2A858E500E957CA /* Frameworks */ = {
@@ -448,7 +459,9 @@
 				1A550E12208B6E0600F2E073 /* NSArray+CZAddition.m in Sources */,
 				1A550E06208B6E0600F2E073 /* UIView+CZAddition.m in Sources */,
 				1A550E09208B6E0600F2E073 /* UIImage+Extension.m in Sources */,
+				1ABF6EC320A34441007963B1 /* LSNetworkManager.swift in Sources */,
 				1A550E05208B6E0600F2E073 /* UIColor+CZAddition.m in Sources */,
+				1ABF6EC720A347DF007963B1 /* Bunde+Extention.swift in Sources */,
 				1A550E0F208B6E0600F2E073 /* NSObject+CZRuntime.m in Sources */,
 				1A550B482088CD1E00F2E073 /* LSBaseViewController.swift in Sources */,
 				1A550E0D208B6E0600F2E073 /* UIButton+CZAddition.m in Sources */,
@@ -462,7 +475,6 @@
 				1A550B502088CDC600F2E073 /* LSHomeViewController.swift in Sources */,
 				1A550E0B208B6E0600F2E073 /* NSString+CZPath.m in Sources */,
 				1A550E0A208B6E0600F2E073 /* NSString+CZBase64.m in Sources */,
-				1A550B93208AF82700F2E073 /* Bunde+Extention.swift in Sources */,
 				1A550E0E208B6E0600F2E073 /* NSObject+CZAddition.m in Sources */,
 				1A4DD4F31EBEC8BA001F97BD /* AppDelegate.swift in Sources */,
 				1A550E14208B6E0600F2E073 /* NSArray+Log.m in Sources */,

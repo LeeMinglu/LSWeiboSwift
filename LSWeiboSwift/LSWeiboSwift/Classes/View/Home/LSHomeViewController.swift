@@ -24,7 +24,14 @@ class LSHomeViewController: LSBaseViewController {
     }
     
     override func loadData() {
-        super.loadData()
+        let parameters = ["access_token":"2.00r27RPGzrWmFEb3dca20e3304egfU"]
+        let urlString = "https://api.weibo.com/2/statuses/home_timeline.json"
+        
+        LSNetworkManager.shared.get(urlString, parameters: parameters, success: { (_, json) in
+            print(json!)
+        }) { (_, error) in
+            print("请求失败")
+        }
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
             for i in 1...20 {
