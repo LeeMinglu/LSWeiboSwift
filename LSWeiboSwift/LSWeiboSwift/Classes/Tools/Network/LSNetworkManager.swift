@@ -8,6 +8,12 @@
 import UIKit
 import AFNetworking
 
+enum RequestMethod {
+    
+    case GET
+    case POST
+}
+
 class LSNetworkManager: AFHTTPSessionManager {
   
     static let shared: LSNetworkManager = {
@@ -16,5 +22,25 @@ class LSNetworkManager: AFHTTPSessionManager {
         return instance
     }()
     
+    
+    func request(method: RequestMethod = .GET, URLString: String, parameters: [String: AnyObject], completion: @escaping (_ json: Any?, _ isSuccess: Bool)->()){
+        
+        let success = { (task: URLSessionDataTask, json: Any?)->() in
+            completion(json, true)
+        }
+        
+        let failure = { (task: URLSessionDataTask?, error: Error)->() in
+            print("网络错误")
+          completion( error, false)
+            
+        }
+        
+        if method == .GET {
+            get(URLString, parameters: parameters, success: success, failure: failure)
+        } else {
+            
+            post(URLString, parameters: parameters, success: success as! (URLSessionDataTask, Any?) -> Void, failure: failure)
+        }
+    }
 
 }
