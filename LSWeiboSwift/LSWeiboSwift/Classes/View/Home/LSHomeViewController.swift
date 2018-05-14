@@ -25,7 +25,10 @@ class LSHomeViewController: LSBaseViewController {
     
     override func loadData() {
         
-        LSNetworkManager.shared.statusList()
+        // FIXME:  打印不出数据
+        LSNetworkManager.shared.statusList { (json, isSuccess) in
+            print(json)
+        }
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
             for i in 1...20 {
