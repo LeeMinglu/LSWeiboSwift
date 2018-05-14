@@ -23,13 +23,13 @@ class LSNetworkManager: AFHTTPSessionManager {
     }()
     
     
-    func request(method: RequestMethod = .GET, URLString: String, parameters: [String: Any], completion: @escaping (_ json: Any?, _ isSuccess: Bool)->()){
+    func request(method: RequestMethod = .GET, URLString: String, parameters: [String: AnyObject], completion: @escaping (_ json: Any?, _ isSuccess: Bool)->()){
         
         let success = { (task: URLSessionDataTask, json: Any?)->() in
             completion(json, true)
         }
         
-        let failure = { (task: URLSessionDataTask?, error: Any)->() in
+        let failure = { (task: URLSessionDataTask?, error: Error)->() in
             print("网络错误")
             completion( error, false)
             
@@ -39,7 +39,7 @@ class LSNetworkManager: AFHTTPSessionManager {
             get(URLString, parameters: parameters, success: success, failure: failure)
         } else {
             
-            post(URLString, parameters: parameters, success: success as! (URLSessionDataTask, Any?) -> Void, failure: failure)
+            post(URLString, parameters: parameters, success: success , failure: failure)
         }
     }
 
