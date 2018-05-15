@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A05FCDB20AB1CF40008479D /* LSStatues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05FCDA20AB1CF40008479D /* LSStatues.swift */; };
 		1A4DD4F31EBEC8BA001F97BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */; };
 		1A4DD4FA1EBEC8BA001F97BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */; };
 		1A4DD4FD1EBEC8BA001F97BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A4DD4FB1EBEC8BA001F97BD /* LaunchScreen.storyboard */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A05FCDA20AB1CF40008479D /* LSStatues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSStatues.swift; sourceTree = "<group>"; };
 		1A4DD4EF1EBEC8BA001F97BD /* LSWeiboSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSWeiboSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4DD4F21EBEC8BA001F97BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A4DD4F91EBEC8BA001F97BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		1A550B3C2088CBFA00F2E073 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1A05FCDA20AB1CF40008479D /* LSStatues.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -466,6 +469,7 @@
 				1ABF6EC320A34441007963B1 /* LSNetworkManager.swift in Sources */,
 				1A550E05208B6E0600F2E073 /* UIColor+CZAddition.m in Sources */,
 				1ABF6EC720A347DF007963B1 /* Bunde+Extention.swift in Sources */,
+				1A05FCDB20AB1CF40008479D /* LSStatues.swift in Sources */,
 				1A550E0F208B6E0600F2E073 /* NSObject+CZRuntime.m in Sources */,
 				1A550B482088CD1E00F2E073 /* LSBaseViewController.swift in Sources */,
 				1A550E0D208B6E0600F2E073 /* UIButton+CZAddition.m in Sources */,
