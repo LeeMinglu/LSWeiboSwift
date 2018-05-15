@@ -17,12 +17,10 @@ extension LSNetworkManager {
         let parameters = ["access_token":"2.00r27RPGzrWmFEb3dca20e3304egfU"]
         let urlString = "https://api.weibo.com/2/statuses/home_timeline.json"
         
-        LSNetworkManager.shared.request(method: .GET, URLString: urlString, parameters: parameters as [String: AnyObject]) { (json, isSuccess) in
+        tokenRequest(method: .GET, URLString: urlString, parameters: parameters as [String: AnyObject]) { (json, isSuccess) in
             
 //            let result = (json?["statuses"])as?[[String: Any]]
             let result = (json as? [String: Any])?["statuses"] as? [[String: AnyObject]]
-            print(result)
-            
             completion(result, isSuccess)
         }
     }

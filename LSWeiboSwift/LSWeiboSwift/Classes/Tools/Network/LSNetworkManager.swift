@@ -15,6 +15,8 @@ enum RequestMethod {
 }
 
 class LSNetworkManager: AFHTTPSessionManager {
+    
+    let access_token: String? = "2.00r27RPGzrWmFEb3dca20e3304egfU"
   
     static let shared: LSNetworkManager = {
         let instance = LSNetworkManager()
@@ -22,8 +24,28 @@ class LSNetworkManager: AFHTTPSessionManager {
         return instance
     }()
     
+    func tokenRequest(method: RequestMethod = .GET, URLString: String, parameters: [String: Any], completion: @escaping (_ json: Any?, _ isSuccess: Bool)->()) {
+        
+        guard let token = access_token else {
+            
+            print("没有token,请登录")
+            completion(nil, false)
+            return
+        }
+        
+        var parameter = parameters
+        if parameter == nil {
+            parameter = [String: Any]()
+        }
+        
+        parameter["access_token"] = token
+        
+        request(method: .GET, URLString: URLString, parameters: parameter, completion: completion)
+        
+    }
     
-    func request(method: RequestMethod = .GET, URLString: String, parameters: [String: AnyObject], completion: @escaping (_ json: Any?, _ isSuccess: Bool)->()){
+    
+    func request(method: RequestMethod = .GET, URLString: String, parameters: [String: Any], completion: @escaping (_ json: Any?, _ isSuccess: Bool)->()){
         
         let success = { (task: URLSessionDataTask, json: Any?)->() in
             completion(json, true)
@@ -31,6 +53,7 @@ class LSNetworkManager: AFHTTPSessionManager {
         
         let failure = { (task: URLSessionDataTask?, error: Error)->() in
             print("网络错误")
+            print(error)
             completion( error, false)
             
         }
