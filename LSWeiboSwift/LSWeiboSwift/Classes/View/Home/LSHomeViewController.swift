@@ -25,7 +25,7 @@ class LSHomeViewController: LSBaseViewController {
     
     override func loadData() {
         
-        // FIXME:  打印不出数据
+        // FIXME:  打印不出数据是因为返回类型不一致，要求返回字典数组，原来返回了字典
         LSNetworkManager.shared.statusList { (json, isSuccess) in
             print(json)
         }

@@ -24,10 +24,11 @@ class LSNetworkManager: AFHTTPSessionManager {
         return instance
     }()
     
-    func tokenRequest(method: RequestMethod = .GET, URLString: String, parameters: [String: Any], completion: @escaping (_ json: Any?, _ isSuccess: Bool)->()) {
+    func tokenRequest(method: RequestMethod = .GET, URLString: String, parameters: [String: AnyObject], completion: @escaping (_ json: Any?, _ isSuccess: Bool)->()) {
         
         guard let token = access_token else {
             
+            //FIXME: 发送通知
             print("没有token,请登录")
             completion(nil, false)
             return
@@ -35,10 +36,10 @@ class LSNetworkManager: AFHTTPSessionManager {
         
         var parameter = parameters
         if parameter == nil {
-            parameter = [String: Any]()
+            parameter = [String: AnyObject]()
         }
         
-        parameter["access_token"] = token
+        parameter["access_token"] = token as AnyObject
         
         request(method: .GET, URLString: URLString, parameters: parameter, completion: completion)
         
@@ -53,6 +54,12 @@ class LSNetworkManager: AFHTTPSessionManager {
         
         let failure = { (task: URLSessionDataTask?, error: Error)->() in
             print("网络错误")
+            if (task?.response as? HTTPURLResponse)?.statusCode == 403 {
+                
+                print("token已经过期了")
+                
+                //FIXME: 发送通知
+            }
             print(error)
             completion( error, false)
             
